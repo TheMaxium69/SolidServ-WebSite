@@ -90,9 +90,15 @@ header#nav-desktop nav div {
     visibility: hidden;
 }
 
-.visible-title img{
+.visible-title img.logo{
     width: 100px;
     margin: 1px;
+}
+
+.visible-title img.text{
+    width: 198px;
+    margin: 1px;
+    margin-left: -47px;
 }
 
 .visible-title img:hover{
