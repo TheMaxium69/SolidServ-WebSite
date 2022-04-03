@@ -3,7 +3,7 @@
 
 <main>
 
-    <p>Exemple</p>
+    <p>Bienvenue</p>
 
 </main>
 
