@@ -1,16 +1,25 @@
-<!--<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">rien</a>
-</nav>
-<nav class="navbar navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">SolidServ</a>
-</nav>-->
 <header id="nav-desktop">
     <div class="clear"></div>
     <nav class="fixed-header">
         <div class="site-title visible-title"><a href="./"><img class="logo" src="assets/LogoBrute.png"><img class="text" src="assets/TextBrute.png"></a></div>
         <ul class="">
-            <li><a href="">Home</a></li>
-            <li><a href="">Contact</a></li>
+            <?php
+            require "./app/env.php";
+
+            $nbPage = count($env_page);
+
+            for ($i = 1; $i <= 2; $i++) {
+
+//                    if($i != 4){
+                echo '<li';
+                if ($page == $i){
+                    echo ' class="nav-active"';
+                }
+                echo '><a href="' . $env_page[$i]["file"] . '">' . $env_page[$i]["name"] . '</a></li>';
+//                    }
+
+            }
+            ?>
         </ul>
     </nav>
 </header>
