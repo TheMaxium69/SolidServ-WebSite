@@ -1,3 +1,3 @@
-# MySiteTemplate
+# SolidServ WebSite
 
-Mon template de site web
+Il s'agit du repo du site de SolidServ
