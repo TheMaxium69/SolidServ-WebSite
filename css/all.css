@@ -97,11 +97,10 @@ header#nav-desktop nav div {
 
 .visible-title img.text{
     width: 198px;
-    margin: 1px;
-    margin-left: -47px;
+    margin: -3px 1px 1px -47px;
 }
 
-.visible-title img:hover{
+.visible-title:hover img.text{
     -webkit-transform:scale(1.10); /* Safari et Chrome */
     -moz-transform:scale(1.10); /* Firefox */
     -ms-transform:scale(1.10); /* Internet Explorer 9 */
