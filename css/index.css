@@ -31,10 +31,12 @@
     font-size: 54px;
     font-weight: 900;
     color: white;
+    margin: 22px 0;
 }
 
 #home .head .centertext h3{
     color: white;
+    font-size: 24px;
 }
 #home .head .centertext h3 a{
     color: white;
@@ -49,14 +51,90 @@
  *************************/
 
 #bull div.row{
-    margin-top: 60px;
+    margin-top: 27px;
     margin-left: 0px;
     margin-right: 0px;
 
     text-align: center;
 }
 
+#bull .col-4{
+    margin: 19px 0;
+    padding: 0px 54px;
+}
+
+#bull h3{
+    margin-bottom: 17px;
+}
+
 #bull i{
     font-size: 24px;
     color: var(--color-principal);
+}
+
+/*************************
+          OFFRE
+ *************************/
+
+#offre .row{
+
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#offre .row .col .container{
+
+    height: 362px;
+
+
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+
+    border: solid 1px #e8e8e8
+
+
+}
+
+#offre h2{
+
+    text-align: center;
+    font-size: 28px;
+    margin-top: 23px;
+    margin-bottom: -2px;
+    text-transform: uppercase;
+
+}
+
+#offre h3{
+    font-size: 21px;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 23px;
+
+}
+
+#offre g{
+    color: #959191;
+    text-align: center;
+    font-size: 16px;
+
+}
+#offre h3::first-letter {
+    text-transform: uppercase;
+}
+
+
+#offre ul{
+    margin: 0 0 0 18px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#offre li{
+    list-style: url(../assets/check.png);
+}
+
+#offre li j{
+    font-weight: 700;
+    color: var(--color-secondaire);
 }

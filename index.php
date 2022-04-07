@@ -32,7 +32,7 @@
 
                 <div class="col-4">
 
-                    <h3><i class="fas fa-handshake"></i> TRANSPARENCE/ CONFIANCE</h3>
+                    <h3><i class="fas fa-handshake"></i> CONFIANCE</h3>
 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div>
@@ -69,10 +69,85 @@
     </section>
 
 
+    <section id="offre">
+
+        <div class="row">
+
+                <div class="col">
+
+                    <div class="container">
+
+                        <h2>Stockage</h2>
+
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="container">
+
+                        <h2>Site Web</h2>
+
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
 
 
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="container">
+
+                        <h2>VPS</h2>
+
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="container">
+
+                        <h2>Minecraft</h2>
+
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="container">
+
+                        <h2>FiveM</h2>
+
+                    </div>
+
+                </div>
+
+        </div>
 
 
+    </section>
+
+
+    <br><br><br><br>
 
 
 </main>
