@@ -75,16 +75,44 @@
 
                 <div class="col">
 
-                    <div class="container">
+                    <div id="o1" class="trans container" data-size="1">
 
                         <h2>Stockage</h2>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+
+                        <div>
+
+                            <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+
+                        </div>
                     </div>
 
                 </div>
                 <div class="col">
 
-                    <div class="container">
+                    <div id="o2" class="trans container" data-size="2G">
 
                         <h2>Site Web</h2>
 
@@ -106,36 +134,115 @@
                             <li>
                                 Ipsum is simply dummy aze
                             </li>
-
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
 
                         </ul>
 
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
                     </div>
 
                 </div>
                 <div class="col">
 
-                    <div class="container">
+                    <div id="o3" class="trans container" data-size="3">
 
                         <h2>VPS</h2>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                        </ul>
+
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
                     </div>
 
                 </div>
                 <div class="col">
 
-                    <div class="container">
+                    <div id="o4" class="trans container" data-size="2D">
 
                         <h2>Minecraft</h2>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
                     </div>
 
                 </div>
                 <div class="col">
 
-                    <div class="container">
+                    <div id="o5" class="trans container" data-size="1">
 
                         <h2>FiveM</h2>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+
 
                     </div>
 
@@ -149,6 +256,8 @@
 
     <br><br><br><br>
 
+    <script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
+    <script src="javascriptfile/offre.js"></script>
 
 </main>
 
