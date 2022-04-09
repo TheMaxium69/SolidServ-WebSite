@@ -44,7 +44,7 @@ $env_page = array(
     ),
     5 => array(
         "name" => "Espace client",
-        "url" => $env_whmcs."login" ,
+        "url" => $env_whmcs."login.php" ,
     ),
     6 => array(
         "name" => 'Panier',
