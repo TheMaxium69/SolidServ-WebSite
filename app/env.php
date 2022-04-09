@@ -1,12 +1,16 @@
 <?php
 
 //PROD or DEV
-$APP_ENV = "DEV";
+$APP_ENV = "PROD";
 
 
 //Variable Share
+if ($APP_ENV == "DEV"){
+    $env_whmcs = "http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/";
+} else if ($APP_ENV == "PROD"){
+    $env_whmcs = "http://vps202.tyrolium.fr/SolidServ-WebServ/panel/";
+}
 
-$env_whmcs = "http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/";
 $env_urlFile = "./extension/";
 $env_urlLogo = "./assets/LogoOnglet.png";
 

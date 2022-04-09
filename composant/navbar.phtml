@@ -32,15 +32,7 @@
                 <?php
                 } else if ($i == 5){
 
-                    require_once '../whmcs/whmcs-8.2.1/whmcs-8.2.1/init.php';
-
-                    if ($_SESSION['login_auth_tk']){
-                        echo '<li id="li-espace" class="null"><a class="a-espace" href="' . $env_page[$i]["url"] . '"> Tu est co</a></li>';
-
-                    } else {
-                        echo '<li id="li-espace" class="null"><a class="a-espace" href="' . $env_page[$i]["url"] . '"> pas co</a></li>';
-
-                    }
+                    echo '<li id="li-espace" class="null"><a class="a-espace" href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . ' </a></li>';
 
                 } else if ($i == 6){
 

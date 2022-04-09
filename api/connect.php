@@ -1,4 +1,10 @@
 <?php
+
+
+var_dump($_POST);
+$username = $_POST['username'];
+$password = $_POST['password'];
+
 /**
  * WHMCS Sample Local API Call
  *
@@ -10,9 +16,6 @@
  * @link       http://www.whmcs.com/
  */
 
-var_dump($_POST);
-$username = $_POST['username'];
-$password = $_POST['password'];
 
 
 
@@ -35,7 +38,6 @@ if ($results['result'] == "success"){
     $_SESSION['user-passhash'] = $results['passwordhash'];
 
 
-
-
-
 }
+
+var_dump($_SESSION);
