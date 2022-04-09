@@ -13,7 +13,7 @@
 
     </section>
 
-    <a class="btn btn-primary" href="<?php echo $env_whmcs."store.php"?>">SHOP</a>
+    <a class="btn btn-primary" href="<?php echo $env_whmcs."store"?>">SHOP</a>
 
 </main>
 
