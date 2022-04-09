@@ -3,23 +3,48 @@
     <nav class="fixed-header">
         <div class="site-title visible-title"><a href="./"><img class="logo" src="assets/LogoBrute.png"><img class="text" src="assets/TextBrute.png"></a></div>
         <ul class="">
+
             <?php
             require "./app/env.php";
 
-            $nbPage = count($env_page);
+            for ($i = 1; $i <= 6; $i++) {
 
-            for ($i = 1; $i <= 2; $i++) {
+                if($i != 2 && $i != 5 && $i != 6){
+                    echo '<li';
+                    if ($page == $i){
+                        echo ' class="nav-active"';
+                    }
+                    echo '><a href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . '</a></li>';
+                } else if ($i == 2) { ?>
+                    <li class="nav-item dropdown <?php if ($page == $i){ echo 'nav-active';} ?>">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <?php echo $env_page[$i]["name"] ?>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="vps.php">VPS</a>
+                            <a class="dropdown-item" href="siteweb.php">Site Web</a>
+                            <a class="dropdown-item" href="minecraft.php">Minecraft</a>
+                            <a class="dropdown-item" href="fivem.php">Five M</a>
+                            <a class="dropdown-item" href="stockage.php">Stockage</a>
+                        </div>
+                    </li>
 
-//                    if($i != 4){
-                echo '<li';
-                if ($page == $i){
-                    echo ' class="nav-active"';
+                <?php
+                } else if ($i == 5){
+
+                    echo '<li id="li-espace" class="null"><a class="a-espace" href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . '</a></li>';
+
+                } else if ($i == 6){
+
+                    echo '<li class="null"><a class="a-shop" href="' . $env_page[$i]["url"] . '"><i class="fas fa-shopping-cart"></i></a></li>';
+
                 }
-                echo '><a href="' . $env_page[$i]["file"] . '">' . $env_page[$i]["name"] . '</a></li>';
-//                    }
 
             }
             ?>
+
+
+
         </ul>
     </nav>
 </header>

@@ -17,13 +17,32 @@ $env_page = array(
     1 => array(
         "title" => "Accueil | SolidServ",
         "name" => "Accueil",
-        "file" => "./",
+        "url" => "./",
         "css" => "index",
     ),
     2 => array(
-        "title" => "Contact | SolidServ",
-        "name" => "Contact",
-        "file" => "contact.php",
-        "css" => "contact",
+        "title" => "Hébergement | SolidServ",
+        "name" => "Hébergement",
+        "css" => "hebergement",
+    ),
+    3 => array(
+        "title" => "Actualité | SolidServ",
+        "name" => "Actualité",
+        "url" => "Actualite.php",
+        "css" => "Actualite",
+    ),
+    4 => array(
+        "title" => "Support | SolidServ",
+        "name" => "Support",
+        "url" => "support.php",
+        "css" => "support",
+    ),
+    5 => array(
+        "name" => "Espace client",
+        "url" => "...",
+    ),
+    6 => array(
+        "name" => 'Panier',
+        "url" => '...',
     ),
 );

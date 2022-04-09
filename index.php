@@ -68,16 +68,19 @@
 
     </section>
 
+<hr class="container">
 
     <section id="offre">
 
-        <div class="row">
+
+        <div class="row desktop">
 
                 <div class="col">
 
                     <div id="o1" class="trans container" data-size="1">
 
                         <h2>Stockage</h2>
+                        <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
                         <ul>
@@ -115,6 +118,7 @@
                     <div id="o2" class="trans container" data-size="2G">
 
                         <h2>Site Web</h2>
+                        <hr>
 
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
@@ -149,6 +153,7 @@
                     <div id="o3" class="trans container" data-size="3">
 
                         <h2>VPS</h2>
+                        <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
                         <ul>
@@ -183,6 +188,7 @@
                     <div id="o4" class="trans container" data-size="2D">
 
                         <h2>Minecraft</h2>
+                        <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
                         <ul>
@@ -217,6 +223,7 @@
                     <div id="o5" class="trans container" data-size="1">
 
                         <h2>FiveM</h2>
+                        <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
                         <ul>
@@ -249,6 +256,175 @@
                 </div>
 
         </div>
+        <div class="row mobile">
+
+            <div class="col-6">
+                <div class="row container">
+                    <div class="col-5">
+                        <h2>VPS</h2>
+                        <hr>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                    </div>
+                    <div class="col-7">
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="col-6">
+                <div class="row container">
+                    <div class="col-5">
+                        <h2>Site Web</h2>
+                        <hr>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                    </div>
+                    <div class="col-7">
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="col-6">
+                <div class="row container">
+                    <div class="col-5">
+                        <h2>Minecraft</h2>
+                        <hr>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                    </div>
+                    <div class="col-7">
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="col-6">
+                <div class="row container">
+                    <div class="col-5">
+                        <h2>FiveM</h2>
+                        <hr>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                    </div>
+                    <div class="col-7">
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="col-6">
+                <div class="row container">
+                    <div class="col-5">
+                        <h2>Stockage</h2>
+                        <hr>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                    </div>
+                    <div class="col-7">
+                        <ul>
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is <j>simply</j> dummy coucou
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy
+                            </li>
+
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+                            <li>
+                                Ipsum is simply dummy aze
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
@@ -259,7 +435,7 @@
     <script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
     <script src="javascriptfile/offre.js"></script>
 
+
 </main>
 
-
-</body> </html>
+<?php footer($page); ?> </body> </html>

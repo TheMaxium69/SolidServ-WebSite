@@ -15,19 +15,22 @@ body{
 }
 
 .container{
-    max-width: 1060px;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+
 /*************************
         TyroBTN
- *************************/
+**************************/
 
 .tyrobutton{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     background-color: var(--color-principal);
+    box-shadow: 0 2px 14px var(--color-principal);
+
 }
 
 .tyrobutton:active {
@@ -56,7 +59,7 @@ nav{
     box-shadow: 0px -19px 40px #7e7a7a;
 }
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
     #nav-desktop {
         display: none;
     }
@@ -66,7 +69,7 @@ nav{
     #nav-mobile{
         display: none;
     }
-}
+}*/
 
 /*PC*/
 
@@ -136,7 +139,7 @@ header#nav-desktop nav div {
     position: absolute;
     top: 0;
     left: 2%;
-    visibility: hidden;
+    min-width: 117px;
 }
 
 .visible-title img.logo{
@@ -174,6 +177,9 @@ header#nav-desktop nav ul li {
     margin-left: 20px;
     padding-top: 20px;
 }
+header#nav-desktop nav ul li.null:hover {
+    border-bottom: unset;
+}
 header#nav-desktop nav ul li:hover {
     border-bottom: solid #575757;
 }
@@ -183,7 +189,6 @@ header#nav-desktop nav ul li.nav-active {
 
 header#nav-desktop nav ul li a {
     text-decoration: none;
-    color: #000000;
 }
 
 /*Mobile*/
@@ -297,4 +302,102 @@ header#nav-desktop nav ul li a {
 #nav-mobile input:checked ~ nav > ul > li {
     opacity: 1;
     transition-delay: 0.5s;
+}
+
+a.dropdown-item {
+    font-size: 17px;
+    text-align: center;color: black;
+}
+.nav-link {
+     display: unset;
+     padding: unset;
+}
+
+.a-espace{
+    border: solid 2px var(--color-principal);
+    padding: 11px;
+    border-radius: 17px;
+    background: var(--color-principal);
+    color: white;
+}
+
+.a-espace:hover{
+    border: solid 2px #2974e3;
+    background: #2974e3;
+}
+
+#li-espace{
+    color: white;
+}
+
+.a-shop:hover{
+    color: var(--color-principal);
+
+}
+
+/*************************
+        FOOTER
+ *************************/
+
+footer .ftco-footer-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block; }
+footer .ftco-footer-social li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    position: relative; }
+footer .ftco-footer-social li a i {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+footer .ftco-footer-social li a:hover {
+    color: #fff; }
+
+footer .ftco-section h2 {
+    margin-bottom: 0; }
+
+footer {
+    padding: 2em 0; }
+
+footer.footer-07 {
+    background: #003f9d; }
+footer.footer-07 a {
+    color: var(--color-secondaire); }
+footer.footer-07 p {
+    color: rgba(255, 255, 255, 0.3); }
+footer.footer-07 .footer-heading {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px; }
+footer.footer-07 .footer-heading .logo {
+    color: #fff; }
+footer.footer-07 .menu {
+    margin-bottom: 30px; }
+footer.footer-07 .menu a {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+footer.footer-07 .ftco-footer-social li a {
+    background: transparent;
+    border: 1px solid white; }
+.li-page{
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+footer.footer-07 .menu .li-drop a.dropdown-item {
+    margin: unset;
+    color: black;
+    font-size: 15px;
 }

@@ -1,0 +1,58 @@
+<footer class="footer-07">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h2 class="footer-heading"><a href="#" class="logo"><img style="width: 134px;" src="assets/SolidServ.png"></a></h2>
+                <ul class="menu">
+                    <?php
+                    require "./app/env.php";
+
+                    for ($i = 1; $i <= 6; $i++) {
+
+                        if($i != 2 && $i != 6){
+
+                            echo '<li class="li-page"><a href="'. $env_page[$i]["url"] .'">'. $env_page[$i]["name"] .'</a></li>';
+
+                        } else if ($i == 2) {
+                        ?><li class="li-page li-drop">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <?php echo $env_page[$i]["name"]?>
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="vps.php">VPS</a>
+                                    <a class="dropdown-item" href="siteweb.php">Site Web</a>
+                                    <a class="dropdown-item" href="minecraft.php">Minecraft</a>
+                                    <a class="dropdown-item" href="fivem.php">Five M</a>
+                                    <a class="dropdown-item" href="stockage.php">Stockage</a>
+                                </div>
+                            </div>
+                            </li>
+
+                        <?php
+                        } else if ($i == 6){
+                            echo '<li class="li-page"><a href="'. $env_page[$i]["url"] .'"><i class="fas fa-shopping-cart"></i></a></li>';
+                        }
+
+                    } ?>
+                    <style>
+
+                    </style>
+                </ul>
+                <ul class="ftco-footer-social p-0">
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Linkdin"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <p class="copyright">
+                    Copyright &copy;2022 All rights reserved | This projet is made with by <a href="https://tyrolium.fr" target="_blank">Tyrolium</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

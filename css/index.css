@@ -31,7 +31,8 @@
     font-size: 54px;
     font-weight: 900;
     color: white;
-    margin: 22px 0;
+    margin: 22px auto;
+    max-width: 1232px;
 }
 
 #home .head .centertext h3{
@@ -45,6 +46,7 @@
 #home .head .centertext h3 a:hover{
     color: white;
 }
+
 
 /*************************
           BULL
@@ -76,10 +78,61 @@
           OFFRE
  *************************/
 
-#offre .row{
-
-    margin: 5%;
+#offre .desktop{
+    max-width: 1474px;
+    margin: 5% auto;
 }
+#offre .mobile{
+    display: none;
+}
+@media (max-width: 1664px) {
+    #offre .desktop{
+        max-width: unset;
+        margin: 5%;
+    }
+}
+
+@media (max-width: 1552px) {
+    #offre .desktop{
+        max-width: unset;
+        margin: 5% 0;
+    }
+}
+@media (max-width: 1424px) {
+    #offre .desktop{
+        display: none;
+    }
+    #offre .mobile{
+        display: flex;
+        margin-right: unset;
+        margin-left: unset;
+        margin-top: 5%;
+    }
+
+}
+
+#offre .mobile .container{
+    height: 200px;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    border: solid 1px #e8e8e8;
+    background-color: white;
+}
+#offre .mobile .col-6 {
+    margin: 1% auto;
+    min-width: 500px;
+}
+
+#offre .mobile .container .col-7{
+    margin-top: 13px;
+}
+
+#offre .mobile .container .col-7 ul{
+    font-size: 14px;
+    margin: 0;
+}
+
+
 
 #offre .row .col .container{
 
@@ -95,6 +148,9 @@
     transition: transform 0.3s ease-in;
 
     position: relative;
+    max-width: 245px;
+    min-width: 245px;
+
 }
 
 #offre h2{
