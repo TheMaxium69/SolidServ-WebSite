@@ -1,11 +1,12 @@
 <?php
 
 //PROD or DEV
-$APP_ENV = "PROD";
+$APP_ENV = "DEV";
 
 
 //Variable Share
 
+$env_whmcs = "http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/";
 $env_urlFile = "./extension/";
 $env_urlLogo = "./assets/LogoOnglet.png";
 
@@ -28,7 +29,7 @@ $env_page = array(
     3 => array(
         "title" => "Actualité | SolidServ",
         "name" => "Actualité",
-        "url" => "Actualite.php",
+        "url" => "actu.php",
         "css" => "Actualite",
     ),
     4 => array(
@@ -39,10 +40,10 @@ $env_page = array(
     ),
     5 => array(
         "name" => "Espace client",
-        "url" => "...",
+        "url" => $env_whmcs."login" ,
     ),
     6 => array(
         "name" => 'Panier',
-        "url" => '...',
+        "url" => $env_whmcs."cart.php?a=view",
     ),
 );

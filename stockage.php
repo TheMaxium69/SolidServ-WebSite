@@ -16,4 +16,4 @@
 </main>
 
 
-</body> </html>
+<?php footer($page); ?> </body> </html>

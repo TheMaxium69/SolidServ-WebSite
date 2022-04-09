@@ -107,7 +107,7 @@
 
                         <div>
 
-                            <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                            <button id="btn-service" class="tyrobutton" data-url="stockage.php">voir plus</button>
 
                         </div>
                     </div>
@@ -144,7 +144,7 @@
 
                         </ul>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
                     </div>
 
                 </div>
@@ -179,7 +179,7 @@
                         </ul>
 
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="vps.php">voir plus</button>
                     </div>
 
                 </div>
@@ -214,7 +214,7 @@
                         </ul>
 
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="minecraft.php">voir plus</button>
                     </div>
 
                 </div>
@@ -248,7 +248,7 @@
 
                         </ul>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
 
 
                     </div>
@@ -265,7 +265,7 @@
                         <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="vps.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -298,7 +298,7 @@
                         <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -331,7 +331,7 @@
                         <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="minecraft.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -364,7 +364,7 @@
                         <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -397,7 +397,7 @@
                         <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="service.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="stockage.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>

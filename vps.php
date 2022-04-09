@@ -13,7 +13,9 @@
 
     </section>
 
+    <a class="btn btn-primary" href="<?php echo $env_whmcs."store"?>">SHOP</a>
+
 </main>
 
 
-</body> </html>
+<?php footer($page); ?> </body> </html>
