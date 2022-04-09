@@ -1,9 +1,9 @@
 <?php
 
 
-var_dump($_POST);
+/*var_dump($_POST);
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = $_POST['password'];*/
 
 /**
  * WHMCS Sample Local API Call
@@ -21,7 +21,19 @@ $password = $_POST['password'];
 
 require_once '../../whmcs/whmcs-8.2.1/whmcs-8.2.1/init.php';
 
-$command = 'ValidateLogin';
+
+$command = 'GetProducts';
+$postData = array(
+    'gid' => '1',
+);
+$adminUsername = 'TheMaximeSan'; // Optional for WHMCS 7.2 and later
+
+$results = localAPI($command, $postData, $adminUsername);
+print_r($results);
+var_dump($results);
+
+
+/*$command = 'ValidateLogin';
 $postData = array(
     'email' => $username,
     'password2' => $password,
@@ -40,4 +52,4 @@ if ($results['result'] == "success"){
 
 }
 
-var_dump($_SESSION);
+var_dump($_SESSION);*/
