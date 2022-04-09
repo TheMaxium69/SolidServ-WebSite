@@ -1,12 +1,12 @@
 <?php
 
 //PROD or DEV
-$APP_ENV = "PROD";
+$APP_ENV = "DEV";
 
 
 //Variable Share
 if ($APP_ENV == "DEV"){
-    $env_whmcs = "http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/";
+    $env_whmcs = "http://localhost/SolidServ-WebSite/panel/";
 } else if ($APP_ENV == "PROD"){
     $env_whmcs = "/panel/";
 }
