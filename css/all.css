@@ -6,6 +6,7 @@
 :root {
     --color-principal: #095bd5;
     --color-secondaire: #e77908;
+    --color-background: #003f9d;
 }
 
 body{
@@ -369,7 +370,7 @@ footer {
     padding: 2em 0; }
 
 footer.footer-07 {
-    background: #003f9d; }
+    background: var(--color-background); }
 footer.footer-07 a {
     color: var(--color-secondaire); }
 footer.footer-07 p {

@@ -281,7 +281,7 @@
  *************************/
 
 #reseau .back-border{
-    background-color: var(--color-principal);
+    background-color: var(--color-background);
 }
 
 #reseau .up-border{
@@ -294,7 +294,7 @@
 }
 
 #reseau .contenu{
-    background-color: var(--color-principal);
+    background-color: var(--color-background);
     padding: 1px;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
