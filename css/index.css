@@ -74,6 +74,10 @@
     color: var(--color-principal);
 }
 
+#bull .col-4:nth-child(2n) i {
+    color: var(--color-secondaire);
+}
+
 /*************************
           OFFRE
  *************************/
@@ -241,6 +245,114 @@
     transform:unset;
 }
 
+/*************************
+          support
+ *************************/
+#support{
+    margin: 65px 0 20px;
+}
 
+#support .row .col-6 img{
+    width: 110%
+}
 
+#support .row .col-6:last-child{
+    padding-top: 20px;
+}
 
+#support .row .col-6 h2{
+    text-align: center;
+    color: var(--color-principal);
+    font-size: 28px;
+    margin: 23px;
+}
+
+#support li{
+    list-style: initial;
+}
+
+#support .row .col-6 p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*************************
+          reseaux
+ *************************/
+
+#reseau .back-border{
+    background-color: var(--color-principal);
+}
+
+#reseau .up-border{
+    width: 100%;
+    position: relative;
+    height: 5vw;
+    background: white;
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
+}
+
+#reseau .contenu{
+    background-color: var(--color-principal);
+    padding: 1px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#reseau .contenu h2{
+    font-size: 26px;
+    margin: 5%;
+}
+
+#reseau .contenu h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#reseau .contenu p{
+    margin: 26px 0 58px;
+    padding: 0 34px;
+}
+
+#reseau i{
+    color: var(--color-secondaire);
+}
+
+/*************************
+          engament
+ *************************/
+
+#eng{
+    margin: 75px 0;
+}
+
+#eng .row .col-6 img{
+    width: 110%;
+    margin-top: -45px;
+    margin-left: -10px;
+
+}
+#eng .col-6:first-child{
+    padding-left: 45px;
+}
+
+#eng .row .col-6:last-child{
+    padding-top: 20px;
+}
+
+#eng .row .col-6 h2{
+    text-align: center;
+    color: var(--color-principal);
+    font-size: 28px;
+    margin: 23px;
+}
+
+#eng li{
+    list-style: initial;
+}
+
+#eng .row .col-6 p{
+    font-size: 18px;
+    font-weight: 300;
+}

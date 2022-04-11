@@ -429,13 +429,118 @@
 
     </section>
 
+    <hr>
 
-    <br><br><br><br>
+    <section id="support">
 
-    <script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
-    <script src="javascriptfile/offre.js"></script>
+        <div class="row container">
+            <div class="col-6">
+                <img src="assets/date.svg">
 
+
+            </div>
+            <div class="col-6">
+
+                <h2>Support</h2>
+                <ul>
+                    <li>
+                        <p>
+                            <!--Notre support dispnible h24 sur notre site mais aussi sur discord, on répondra a toute vos problématiques-->
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <!--Suivez les potentielle panne ou probléme technique directement sur le site ou sur vos reseau préfere comme discord, sincronisé et en temps réel-->
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </li>
+                </ul>
+
+                <!--VOIR BTN-->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reseau">
+
+        <div class="back-border">
+            <div class="up-border">
+            </div>
+
+        </div>
+
+
+        <div class="contenu">
+
+            <div class="container">
+
+                <h2>Suivez-nous sur nos reseaux</h2>
+
+                <div class="row">
+
+                    <div class="col-4">
+                        <h3><i class="fab fa-instagram"></i> Instagram</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    </div>
+                    <div class="col-4">
+                        <h3><i class="fab fa-twitter"></i>  Twitter</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    </div>
+                    <div class="col-4">
+                        <h3><i class="fab fa-linkedin"></i>  Linkedin</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section id="eng">
+
+
+        <div class="row container">
+            <div class="col-6">
+
+                <h2>Nos engagment / pour quoi nous</h2>
+                <ul>
+                    <li>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-6">
+                <img src="assets/protect.svg">
+
+            </div>
+
+        </div>
+
+
+    </section>
 
 </main>
+
+<script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
+<script src="javascriptfile/offre.js"></script>
 
 <?php footer($page); ?> </body> </html>
