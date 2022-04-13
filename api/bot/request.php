@@ -1,18 +1,24 @@
 <?php
 
-include "db.php";
+include "../db.php";
 
-var_dump($_GET);
 
-if ($_GET['param1']) {
+if ($_GET['content'] && $_GET['user'] && $_GET['token']) {
 
-    $content = $_GET['param1'];
+    $content = $_GET['content'];
+    $user = $_GET['user'];
+    $token = $_GET['token'];
 
-    $q = $db->prepare("INSERT INTO `test` (`content`) VALUES (:content)");
+    if ($token = $tokenBDD){
 
-    $q->execute([
-        'content' => $content
-    ]);
+        $q = $db->prepare("INSERT INTO `actu` (`user`, `content`) VALUES (:user, :content)");
+
+        $q->execute([
+            'user' => $user,
+            'content' => $content
+        ]);
+
+    }
 
 }
 

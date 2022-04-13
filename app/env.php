@@ -51,3 +51,12 @@ $env_page = array(
         "url" => $env_whmcs."cart.php?a=view",
     ),
 );
+
+$env_admin = array(
+
+    "363366883652796416" => "Maxime Tournier",
+
+    "858948371388563457" => "Pierre-Louis Devaud"
+
+
+);
