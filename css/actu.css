@@ -1,0 +1,156 @@
+/*************************
+          START
+ *************************/
+#start .ac-head{
+    width: 100%;
+    height: 246px;
+    background: linear-gradient( rgb(2 5 14 / 40%), rgb(2 14 60 / 60%) ), url(../assets/background.png);
+    background-color: blue;
+    border-bottom-left-radius: 30% 10%;
+    border-bottom-right-radius: 30% 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#start .ac-centertext{
+    position: absolute;
+    width: 70%;
+    margin-top: 66px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    text-shadow: 1px 4px 10px black;
+}
+
+#start .ac-head .ac-centertext h1 {
+    font-size: 54px;
+    font-weight: 900;
+    color: white;
+    margin: 22px 0;
+}
+/*************************
+          INTRO
+ *************************/
+
+#intro{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+#intro button{
+    font-size: 12px;
+}
+
+/*************************
+          MESSAGE
+ *************************/
+
+#actu{
+    margin-top: 40px;
+}
+
+#actu p{
+    margin-top: 1rem;
+}
+
+.chat-thread {
+    margin: 24px auto 0 auto;
+    /*padding: 0 20px 0 0;*/
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat-thread li {
+    position: relative;
+    clear: both;
+    display: inline-block;
+    padding: 16px 40px 16px 20px;
+    margin: 0 0 20px 0;
+    font: 16px/20px "Noto Sans", sans-serif;
+    border-radius: 10px;
+    background-color: rgba(0, 25, 255, 0.2);;
+}
+
+.chat-thread li:before {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    content: "";
+}
+
+.chat-thread li#m:after {
+    position: absolute;
+    top: 15px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(25, 147, 147, 0.2);
+}
+
+.chat-thread li#m {
+    animation: show-chat-odd 0.15s 1 ease-in;
+    -moz-animation: show-chat-odd 0.15s 1 ease-in;
+    -webkit-animation: show-chat-odd 0.15s 1 ease-in;
+    float: right;
+    margin-right: 80px;
+    color: #088ae7;
+}
+
+.chat-thread li#m:before {
+    right: -70px;
+    background-image: url(../assets/actu/m.png);
+}
+
+.chat-thread li#p:after {
+    border-right: 15px solid transparent;
+    right: -15px;
+}
+
+.chat-thread li#p {
+    animation: show-chat-even 0.15s 1 ease-in;
+    -moz-animation: show-chat-even 0.15s 1 ease-in;
+    -webkit-animation: show-chat-even 0.15s 1 ease-in;
+    float: left;
+    margin-left: 80px;
+    color: #324af5;
+}
+
+.chat-thread li#p:before {
+    left: -70px;
+    background-image: url(../assets/actu/p.png);
+}
+
+.chat-thread li#p:after {
+    border-left: 15px solid transparent;
+    left: -15px;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 18px;
+}
+
+.chat-window-message {
+    width: 100%;
+    height: 48px;
+    font: 32px/48px "Noto Sans", sans-serif;
+    background: none;
+    color: #0AD5C1;
+    border: 0;
+    border-bottom: 1px solid rgba(25, 147, 147, 0.2);
+    outline: none;
+}
+    .chat-thread {
+        width: 100%;
+    }
+
+    .chat-window {
+        left: 25%;
+        width: 50%;
+    }
+

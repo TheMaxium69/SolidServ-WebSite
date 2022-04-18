@@ -1,5 +1,5 @@
 /*************************
-          HOME
+          ALL
  *************************/
 
 #home .heb-head{
@@ -30,3 +30,17 @@
     color: white;
     margin: 22px 0;
 }
+
+/*************************
+          MINECRAFT
+ *************************/
+
+#mc .heb-head{
+    background: linear-gradient( rgb(2 5 14 / 40%), rgb(2 14 60 / 60%) ), url(../assets/mc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#mc
+
