@@ -18,19 +18,23 @@ $password = $_POST['password'];*/
 
 
 
+function product(){
+    $command = 'GetProducts';
+    $postData = array(
+        'gid' => '1',
+    );
+    $adminUsername = 'TheMaximeSan';
 
-require_once '../../whmcs/whmcs-8.2.1/whmcs-8.2.1/init.php';
+    $results = localAPI($command, $postData, $adminUsername);
+
+    return $results['products'];
+}
 
 
-$command = 'GetProducts';
-$postData = array(
-    'gid' => '1',
-);
-$adminUsername = 'TheMaximeSan'; // Optional for WHMCS 7.2 and later
 
-$results = localAPI($command, $postData, $adminUsername);
-print_r($results);
-var_dump($results);
+
+
+
 
 
 /*$command = 'ValidateLogin';

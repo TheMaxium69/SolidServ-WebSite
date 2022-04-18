@@ -32,6 +32,109 @@
 }
 
 /*************************
+          VPS
+ *************************/
+
+#vps #formule .desktop{
+    max-width: 1474px;
+    margin: 5% auto;
+}
+
+@media (max-width: 1664px) {
+    #vps #formule .desktop{
+        max-width: unset;
+        margin: 5%;
+    }
+}
+
+@media (max-width: 1552px) {
+    #vps #formule .desktop{
+        max-width: unset;
+        margin: 5% 0;
+    }
+}
+
+
+#vps #formule .row .col .container{
+
+    height: 362px;
+
+
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+
+    border: solid 1px #e8e8e8;
+    background-color: white;
+
+    transition: transform 0.3s ease-in;
+
+    position: relative;
+    max-width: 245px;
+    min-width: 245px;
+
+}
+
+#vps #formule h2{
+
+    text-align: center;
+    font-size: 28px;
+    margin-top: 23px;
+    margin-bottom: -2px;
+    text-transform: uppercase;
+
+}
+
+#vps #formule h3{
+    font-size: 21px;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 23px;
+
+}
+
+#vps #formule g{
+    color: #959191;
+    text-align: center;
+    font-size: 16px;
+
+}
+#vps #formule h3::first-letter {
+    text-transform: uppercase;
+}
+
+
+#vps #formule ul{
+    margin: 0 0 0 18px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#vps #formule li{
+    list-style: url(../assets/check.png);
+}
+
+#vps #formule li j{
+    font-weight: 700;
+    color: var(--color-secondaire);
+}
+
+#vps #formule .tyrobutton{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 2%;
+    width: 80%;
+    /* margin-left: 15%; */
+    /* margin: 0 auto 0 auto; */
+    font-size: 11px;
+    text-transform: uppercase;
+    transition: transform 0s ease-in;
+}
+
+
+
+
+
+/*************************
           MINECRAFT
  *************************/
 
@@ -41,6 +144,3 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
-#mc
-

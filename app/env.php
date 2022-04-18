@@ -63,9 +63,18 @@ $env_admin = array(
 
 $env_admin_role = array(
 
-    "Maxime Tournier" => "PDG de Tyrolium & Fondateur de SolidServ",
+    "Maxime Tournier" => "Fondateur de SolidServ & <a href='https://tyrolium.fr'>Tyrolium</a>",
 
     "Pierre-Louis Devaud" => "Fondateur de SolidServ"
+
+
+);
+
+$env_gid = array(
+
+    "vps" => 1,
+
+    "web" => 2
 
 
 );
