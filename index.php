@@ -27,40 +27,40 @@
                 <div class="col-4">
                     <h3><i class="fas fa-bolt"></i> PUISSANCE</h3>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>Nous utilisons des serveurs <strong>récents</strong> et <strong>performants</strong> de plus, nous travaillons dur pour vous faire bénéficier du meilleurs <strong>rapport qualité-prix</strong> de manière à vous proposer une offre au plus proche de vos attentes.</p>
                 </div>
 
                 <div class="col-4">
 
                     <h3><i class="fas fa-handshake"></i> CONFIANCE</h3>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>Vos données sont en <strong>sécurité</strong>, tous nos serveurs sont en <strong>France</strong>, nous respectons toutes les normes Européennes et nous sommes engagés pour le <strong>respect de votre vie privée.</strong></p>
                 </div>
 
                 <div class="col-4">
 
                     <h3><i class="fas fa-trophy"></i> EXPERIENCE</h3>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>Grâce aux différents projets sur lesquels les équipes de <a target="_blank" href="https://tyrolium.fr">Tyrolium</a> ont travaillé, nous savons ce dont vous avez besoin, en tant que joueur, développeur, administrateur serveur ou simple curieux.</p>
                 </div>
 
                 <div class="col-4">
 
                     <h3><i class="fas fa-tools"></i> SUPPORT</h3>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>Ne craignez pas les problèmes techniques, le support est disponible <strong>24h/24</strong> et <strong>7J/7</strong>, de plus, nous nous efforçons de former nos supports pour leur permettre de répondre au mieux à vos exigences.</p>
                 </div>
 
                 <div class="col-4">
                     <h3><i class="fas fa-shield-alt"></i> FIABILITE </h3>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>Notre infrastructure est conçue de manière à garantir sa <strong>stabilité</strong>, avec un uptime d’environ 99% nos serveurs sont près pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité. </p>
                 </div>
 
                 <div class="col-4">
                     <h3><i class="fas fa-thumbs-up"></i> SATISFACTION</h3>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p>Notre équipe prend à cœur chacun de vos avis car nous essayons de continuer de nous <strong>améliorer</strong>, pour fournir un service qui essaye d'être toujours meilleur, SolidServ, ce n’est pas que nous, c’est aussi vous.</p>
                 </div>
 
             </div>
@@ -158,24 +158,29 @@
 
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Processeur jusqu'a 4.5GHz+
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Ram dédier jusqu'a 32go
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                Stockage <j>SSD NVMe</j> jusqu'a 500go
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Bande passante à partir de <j>250Mbit/s</j>
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Utilisateur root/Administrateur
                             </li>
+
+                            <li>
+                                Acces <j>SSH/SFTP</j>
+                            </li>
+
                         </ul>
 
 
@@ -193,22 +198,28 @@
 
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Allumé <j>24h/24</j> et <j>7J/7</j>
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Processeur jusqu'a 4.5GHz+
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                <j>Slot ilimité</j>
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Ram dédier jusqu'a 32go
                             </li>
                             <li>
-                                Ipsum is simply dummy aze
+                                Acces <j>FTP/SFTP</j>
+                            </li>
+                            <li>
+                                 Spigot/Forge/Sponge/OpenMod ...
+                            </li>
+                            <li>
+                                Panel Pterodactyl
                             </li>
 
                         </ul>
@@ -336,22 +347,28 @@
                     <div class="col-7">
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Allumé <j>24h/24</j> et <j>7J/7</j>
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Processeur jusqu'a 4.5GHz+
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                <j>Slot ilimité</j>
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Ram dédier jusqu'a 32go
                             </li>
                             <li>
-                                Ipsum is simply dummy aze
+                                Acces <j>FTP/SFTP</j>
+                            </li>
+                            <li>
+                                Spigot/Forge/Sponge/OpenMod ...
+                            </li>
+                            <li>
+                                Panel Pterodactyl
                             </li>
 
                         </ul>
