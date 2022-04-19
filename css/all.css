@@ -7,6 +7,9 @@
     --color-principal: #095bd5;
     --color-secondaire: #e77908;
     --color-background: #003f9d;
+
+
+    --color-mc-secondaire: #ff0000;
 }
 
 body{
@@ -18,6 +21,10 @@ body{
 .container{
     margin-left: auto;
     margin-right: auto;
+}
+
+.red{
+    color: var(--color-mc-secondaire)!important;
 }
 
 

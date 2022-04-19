@@ -74,7 +74,13 @@ $env_gid = array(
 
     "vps" => 1,
 
-    "web" => 2
+    "web" => 2,
+
+    "minecraft" => 3,
+
+    "fivem" => 4,
+
+    "stockage" => 5
 
 
 );

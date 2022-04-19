@@ -30,32 +30,132 @@
     color: white;
     margin: 22px 0;
 }
+/*INFO IMG DROIT*/
+#info-droit{
+    margin: 65px 0 20px;
+}
 
-/*************************
-          VPS
- *************************/
+#info-droit .row .col-6 img{
+    width: 110%
+}
 
-#vps #formule .desktop{
+#info-droit .row .col-6:last-child{
+    padding-top: 20px;
+}
+
+#info-droit .row .col-6 h2{
+    text-align: center;
+    color: var(--color-principal);
+    font-size: 28px;
+    margin: 23px;
+}
+
+#info-droit li{
+    list-style: initial;
+}
+
+#info-droit .row .col-6 p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*INFO IMG GAUCHE*/
+#info-gauche{
+    margin: 75px 0;
+}
+
+#info-gauche .row .col-6 img{
+    width: 110%;
+    margin-top: -45px;
+    margin-left: -10px;
+
+}
+#info-gauche .col-6:first-child{
+    padding-left: 45px;
+}
+
+#info-gauche .row .col-6:last-child{
+    padding-top: 20px;
+}
+
+#info-gauche .row .col-6 h2{
+    text-align: center;
+    color: var(--color-principal);
+    font-size: 28px;
+    margin: 23px;
+}
+
+#info-gauche li{
+    list-style: initial;
+}
+
+#info-gauche .row .col-6 p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*partenaire*/
+#partenaire .back-border{
+    background-color: var(--color-background);
+}
+
+#partenaire .up-border{
+    width: 100%;
+    position: relative;
+    height: 5vw;
+    background: white;
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
+}
+
+#partenaire .contenu{
+    background-color: var(--color-background);
+    padding: 1px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#partenaire .contenu h2{
+    font-size: 26px;
+    margin: 5%;
+}
+
+#partenaire .contenu h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#partenaire .contenu p{
+    margin: 26px 0 58px;
+    padding: 0 34px;
+}
+
+#partenaire i{
+    color: var(--color-secondaire);
+}
+
+/*formule*/
+#formule .desktop{
     max-width: 1474px;
     margin: 5% auto;
 }
 
 @media (max-width: 1664px) {
-    #vps #formule .desktop{
+    #formule .desktop{
         max-width: unset;
         margin: 5%;
     }
 }
 
 @media (max-width: 1552px) {
-    #vps #formule .desktop{
+    #formule .desktop{
         max-width: unset;
         margin: 5% 0;
     }
 }
 
 
-#vps #formule .row .col .container{
+#formule .row .col .container{
 
     height: 362px;
 
@@ -74,7 +174,7 @@
 
 }
 
-#vps #formule h2{
+#formule h2{
 
     text-align: center;
     font-size: 28px;
@@ -84,7 +184,7 @@
 
 }
 
-#vps #formule h3{
+#formule h3{
     font-size: 21px;
     color: var(--color-principal);
     text-align: center;
@@ -92,33 +192,33 @@
 
 }
 
-#vps #formule g{
+#formule g{
     color: #959191;
     text-align: center;
     font-size: 16px;
 
 }
-#vps #formule h3::first-letter {
+#formule h3::first-letter {
     text-transform: uppercase;
 }
 
 
-#vps #formule ul{
+#formule ul{
     margin: 0 0 0 18px;
     font-size: 12px;
     font-weight: 300;
 }
 
-#vps #formule li{
+#formule li{
     list-style: url(../assets/check.png);
 }
 
-#vps #formule li j{
+#formule li j{
     font-weight: 700;
     color: var(--color-secondaire);
 }
 
-#vps #formule .tyrobutton{
+#formule .tyrobutton{
     position: absolute;
     bottom: 20px;
     margin-left: 2%;
@@ -134,13 +234,80 @@
 
 
 
+
+
+
 /*************************
-          MINECRAFT
+          VPS
  *************************/
 
-#mc .heb-head{
-    background: linear-gradient( rgb(2 5 14 / 40%), rgb(2 14 60 / 60%) ), url(../assets/mc.jpg);
+#vps .heb-head{
+    background: url(../assets/vps.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -323px;
+}
+
+/*************************
+          SITE WEB
+ *************************/
+
+#web .heb-head{
+    background: url(../assets/siteweb.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+/*************************
+          MINECRAFT
+ *************************/
+#mc{
+
+    /*font-family: 'VT323', monospace;
+    font-family: 'Indie Flower', cursive;*/
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+
+#mc .heb-head{
+    background: url(../assets/mc.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -323px;
+}
+
+#mc #info-droit .row .col-6 p{
+    font-size: 12px;
+}
+#mc #info-gauche .row .col-6 p{
+    font-size: 12px;
+}
+
+#mc img#sword{
+    width: 60px;
+    margin-bottom: 8px;
+    margin-top: unset;
+    margin-left: unset;
+}
+
+/*************************
+          fivem
+ *************************/
+
+#fivem{
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+#fivem .heb-head{
+    background: url(../assets/fivem.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
