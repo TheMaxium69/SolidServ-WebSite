@@ -84,23 +84,30 @@
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
                         <ul>
+
                             <li>
-                                Ipsum is simply dummy
+                                Stockage jusqu'a <j>100To</j>
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Bande passante à partir de 250Mbit/s
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                Jusqu'à <j>100 utilisateurs</j> connectés
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Disque dur <j>Raid</j> ou <j>SSD NVMe</j>
                             </li>
+
                             <li>
-                                Ipsum is simply dummy aze
+                                Allumé <j>24h/24</j> et <j>7J/7</j>
+                            </li>
+
+
+                            <li>
+                                Acces FTP/SFTP
                             </li>
 
                         </ul>
@@ -124,22 +131,28 @@
 
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Trafic jusqu'à <j>100 000 Visites/Mois</j>
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Compatible <j>PHP</j> (Toute Version)
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                Stockage SSD NVMe jusqu'a 100go
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Acces <j>FTP/SFTP</j> et <j>cPanel</j>
                             </li>
                             <li>
-                                Ipsum is simply dummy aze
+                                Installation en 1-clic du <j>SSL</j>
+                            </li>
+                            <li>
+                                Dispo avec Wordpress/Shopify...
+                            </li>
+                            <li>
+                                BDD <j>MySQL/MariaDB</j> Offerte
                             </li>
 
                         </ul>
@@ -162,7 +175,7 @@
                             </li>
 
                             <li>
-                                Ram dédier jusqu'a 32go
+                                Ram dédiée jusqu'a 32go
                             </li>
 
                             <li>
@@ -210,7 +223,7 @@
                             </li>
 
                             <li>
-                                Ram dédier jusqu'a 32go
+                                Ram dédiée jusqu'a 32go
                             </li>
                             <li>
                                 Acces <j>FTP/SFTP</j>
@@ -239,22 +252,28 @@
 
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Processeur jusqu'a 4.5GHz+
+                            </li>
+                            <li>
+                                <j>Anti-DDOS</j> Game
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Uptime de 99%
+                            </li>
+                            <li>
+                                Ram dédiée jusqu'a 32go
                             </li>
 
-                            <li>
-                                Ipsum is simply dummy
-                            </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Acces <j>FTP/SFTP</j>
                             </li>
                             <li>
-                                Ipsum is simply dummy aze
+                                BDD <j>MySQL/MariaDB</j> Offerte
+                            </li>
+                            <li>
+                                Panel Pterodactyl
                             </li>
 
                         </ul>
@@ -462,19 +481,17 @@
                 <ul>
                     <li>
                         <p>
-                            <!--Notre support dispnible h24 sur notre site mais aussi sur discord, on répondra a toute vos problématiques-->
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Notre support est disponible 24h/24 et 7J/7 sur notre site mais aussi sur discord, par téléphone et par mail, nous répondrons à toute vos
                         </p>
                     </li>
                     <li>
                         <p>
-                            <!--Suivez les potentielle panne ou probléme technique directement sur le site ou sur vos reseau préfere comme discord, sincronisé et en temps réel-->
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Suivez les potentielle panne ou problème technique directement sur le site ou sur vos réseaux préférés comme discord et twitter, en temps réel avec vos services
                         </p>
                     </li>
                 </ul>
 
-                <!--VOIR BTN-->
+                <button id="btn-ticket" class="tyrobutton" data-url="support.php">voir plus</button>
 
             </div>
         </div>
@@ -499,15 +516,18 @@
 
                     <div class="col-4">
                         <h3><i class="fab fa-instagram"></i> Instagram</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <p>Pour suivre nos actualités commerciales, et profiter de nos dernières offres tout en suivant le travail de nos équipes.</p>
+                        <button id="btn-reseau" class="tyrobutton" data-url="https://www.instagram.com/solidserv/">Suivez-nous</button>
                     </div>
                     <div class="col-4">
                         <h3><i class="fab fa-twitter"></i>  Twitter</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <p>Pour être proche de nous et être au courant de ce qu’il se passe sur SolidServ. Et qui sait, peut-être que des cadeaux vous y attendent.</p>
+                        <button id="btn-reseau" class="tyrobutton" data-url="https://twitter.com/solid_serv">Suivez-nous</button>
                     </div>
                     <div class="col-4">
                         <h3><i class="fab fa-linkedin"></i>  Linkedin</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <p>Pour suivre nos actualités professionnelles, voir les nouveaux partenaires, et toutes informations sur le bon fonctionnement du projet.</p>
+                        <button id="btn-reseau" class="tyrobutton" data-url="https://www.linkedin.com/company/solidserv">Suivez-nous</button>
                     </div>
 
 
@@ -529,16 +549,15 @@
         <div class="row container">
             <div class="col-6">
 
-                <h2>Nos engagment / pour quoi nous</h2>
+                <h2>Nos engagements</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            SolidServ et Tyrolium s’engagent à faire de nos projets des services français fait par des français. Les projets resteront français tout en continuant d’essayer de toujours innover, notre projet oeuvre pour un monde meilleur.</p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Nous vivons dans un monde où vos données sont commercialisées comme des produits, ici, nous luttons contre la vente de données, c’est pourquoi nous ne proposons pas de services gratuits financés par vos données.
                         </p>
                     </li>
                 </ul>

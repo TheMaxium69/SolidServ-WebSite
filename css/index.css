@@ -311,12 +311,23 @@
 }
 
 #reseau .contenu p{
-    margin: 26px 0 58px;
+    margin: 26px 0 22px;
     padding: 0 34px;
 }
 
 #reseau i{
     color: var(--color-secondaire);
+}
+
+#reseau #btn-reseau{
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: var(--color-secondaire);
+    box-shadow: unset;
+    font-size: 11px;
+    margin-bottom: 45px;
+
 }
 
 /*************************
