@@ -1,4 +1,4 @@
-<?php include "app/app.php"; $page = 2; head($page); ?>
+<?php include "app/app.php"; $page = 2; $souspage = 2; head($page, $souspage); ?>
 <body> <header> <?php navbar($page); ?> </header>
 
 <main id="web">
@@ -66,17 +66,15 @@
                 <img src="assets/wwwserveur.png">
             </div>
             <div class="col-6">
-                <h2>Puissance</h2>
+                <h2>Performance</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Avec la simplicité et la puissance de nos serveurs WEB, concentrez vous sur l’essentiel et laissez nous faire le reste, vous avez le choix, avec un accès FTP vous permettant de mettre vos propres fichiers web (HTML, CSS, JS, PHP…) ou bien un panel simple (cPanel) qui vous permet d’installer des CMS plug and play comme WordPress ou Shopify !</p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Notre infrastructure WEB utilise uniquement du stockage rapide (SSD), ainsi que de performances optimales vous permettant un trafic important sur votre site web, l’option SSL est également disponible sur tous nos serveurs web pour augmenter la sécurité et le référencement de votre site !</p>
                     </li>
                 </ul>
             </div>
@@ -86,16 +84,16 @@
     <section id="info-gauche">
         <div class="row container">
             <div class="col-6">
-                <h2>TechnoUnique</h2>
+                <h2>Fiabilité</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>

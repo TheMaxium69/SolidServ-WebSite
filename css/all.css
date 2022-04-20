@@ -148,6 +148,7 @@ header#nav-desktop nav div {
     top: 0;
     left: 2%;
     min-width: 117px;
+    border-radius: 11px;
 }
 
 .visible-title img.logo{

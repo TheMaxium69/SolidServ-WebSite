@@ -1,4 +1,4 @@
-<?php include "app/app.php"; $page = 2; head($page); ?>
+<?php include "app/app.php"; $page = 2; $souspage = 1; head($page, $souspage); ?>
 <body> <header> <?php navbar($page); ?> </header>
 
 <main id="vps">
@@ -68,16 +68,15 @@
                 <img src="assets/pa-server.png">
             </div>
             <div class="col-6">
-                <h2>Puissance</h2>
+                <h2>Performance</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            La virtualisation KVM (Kernel Virtual Machine) permet une plus grande stabilité de vos VPS ainsi que de meilleures performances, en tout points cette technologie Open Source saura vous satisfaire.</p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Avec notre infrastructure composée de serveurs avec des processeurs AMD Ryzen 7 3800x jusqu'à 4.5 GHz, nous pouvons vous garantir des performances optimales qui conviendront à tous vos projets. De plus, notre RAM DDR4 possède la technologie ECC ce qui permet de limiter au maximum les crashs ou corruptions causés par la RAM.
                         </p>
                     </li>
                 </ul>
@@ -88,22 +87,22 @@
     <section id="info-gauche">
         <div class="row container">
             <div class="col-6">
-                <h2>TechnoUnique</h2>
+                <h2>Fiabilité</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>
             </div>
             <div class="col-6">
-                <img src="assets/pa-server2.png">
+                <img src="assets/vps2.png">
             </div>
         </div>
     </section>

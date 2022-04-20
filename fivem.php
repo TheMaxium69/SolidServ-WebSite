@@ -1,4 +1,4 @@
-<?php include "app/app.php"; $page = 2; head($page); ?>
+<?php include "app/app.php"; $page = 2; $souspage = 4; head($page, $souspage); ?>
 <body> <header> <?php navbar($page); ?> </header>
 
 <main id="fivem">
@@ -63,20 +63,19 @@
     <section id="info-droit">
         <div class="row container">
             <div class="col-6">
-                <img src="assets/fivem.png">
+                <img src="assets/moto.png">
             </div>
             <div class="col-6">
-                <h2>Puissance</h2>
+                <h2>Performance</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Nos serveurs FiveM allient puissance et fiabilité, avec ça pas du tout, vous pourrez accueillir tous les habitants de la ville de Los Santos sans soucis ! Sur notre hébergeur, vos projets avancerons aussi vite qu’une Ocelot Pariah !
                         </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Sur SolidServ, on vous donne ce pourquoi vous payer, la RAM n’est pas partagée et nous essayons de toujours fournir le meilleur rapport prix/performance du marché, de plus, avec nous, vous êtes en sécurité avec l’Anti Ddos Game que nous utilisons.</p>
                     </li>
                 </ul>
             </div>
@@ -86,22 +85,22 @@
     <section id="info-gauche">
         <div class="row container">
             <div class="col-6">
-                <h2>TechUnique</h2>
+                <h2>Fiabilité</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>
             </div>
             <div class="col-6">
-                <img src="assets/fivemArm.png">
+                <img src="assets/flic.png">
             </div>
         </div>
     </section>
@@ -116,13 +115,11 @@
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Nous utilisons Pterodactyl un panel de gestion simple ayant fait ses preuves et esthétique qui vous permettra de gérer aisément votre serveur ! </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Sur le panel, vous aurez un accès direct à une console ainsi qu’à un WEB FTP, vous pourrez ajouter des sous utilisateurs et relancer votre serveur, changer de version…</p>
                     </li>
                 </ul>
             </div>

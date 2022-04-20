@@ -1,11 +1,29 @@
 <?php
 
-function head($page)
+function head($page, $souspage=null)
 {
     include "env.php";
 
     if (!empty($env_page[$page])) {
+        if ($page == 2){
+            if ($souspage == null){
+
+                $title = $env_page[$page]["title"];
+
+            } else {
+
+                $title = $env_sous_page[$souspage]["title"];
+
+
+            }
+
+
+        }
+
+
         $title = $env_page[$page]["title"];
+
+        
     } else {
         $title = $env_page[0]["title"];
     }

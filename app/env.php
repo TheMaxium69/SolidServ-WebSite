@@ -52,6 +52,25 @@ $env_page = array(
     ),
 );
 
+$env_sous_page = array(
+    //Page
+    1 => array(
+        "title" => "VPS | SolidServ",
+    ),
+    2 => array(
+        "title" => "Site Web | SolidServ",
+    ),
+    3 => array(
+        "title" => "Minecraft | SolidServ",
+    ),
+    4 => array(
+        "title" => "FiveM | SolidServ",
+    ),
+    5 => array(
+        "title" => "Stockage | SolidServ",
+    ),
+);
+
 $env_admin = array(
 
     "363366883652796416" => "Maxime Tournier",

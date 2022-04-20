@@ -54,7 +54,7 @@
                 <div class="col-4">
                     <h3><i class="fas fa-shield-alt"></i> FIABILITE </h3>
 
-                    <p>Notre infrastructure est conçue de manière à garantir sa <strong>stabilité</strong>, avec un uptime d’environ 99% nos serveurs sont près pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité. </p>
+                    <p>Notre infrastructure est conçue de manière à garantir sa <strong>stabilité</strong>, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité. </p>
                 </div>
 
                 <div class="col-4">
@@ -114,7 +114,7 @@
 
                         <div>
 
-                            <button id="btn-service" class="tyrobutton" data-url="stockage.php">voir plus</button>
+                            <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr();">indisponible</button>
 
                         </div>
                     </div>
@@ -481,12 +481,12 @@
                 <ul>
                     <li>
                         <p>
-                            Notre support est disponible 24h/24 et 7J/7 sur notre site mais aussi sur discord, par téléphone et par mail, nous répondrons à toute vos
+                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site mais aussi sur Discord, par téléphone et par mail, nous répondrons à toutes vos  problématiques.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Suivez les potentielle panne ou problème technique directement sur le site ou sur vos réseaux préférés comme discord et twitter, en temps réel avec vos services
+                            Suivez les potentielles pannes ou problèmes technique directement sur le site ou sur vos réseaux préférés comme Discord et Twitter, en temps réel avec vos services.
                         </p>
                     </li>
                 </ul>
@@ -553,11 +553,11 @@
                 <ul>
                     <li>
                         <p>
-                            SolidServ et Tyrolium s’engagent à faire de nos projets des services français fait par des français. Les projets resteront français tout en continuant d’essayer de toujours innover, notre projet oeuvre pour un monde meilleur.</p>
+                            SolidServ et Tyrolium s’engagent à faire de nos projets des services <strong>français</strong> fait par des français. Les projets resteront français tout en continuant d’essayer de toujours <strong>innover</strong>, notre projet oeuvre pour un monde meilleur.</p>
                     </li>
                     <li>
                         <p>
-                            Nous vivons dans un monde où vos données sont commercialisées comme des produits, ici, nous luttons contre la vente de données, c’est pourquoi nous ne proposons pas de services gratuits financés par vos données.
+                            Nous vivons dans un monde où vos données sont commercialisées comme des produits, ici, <strong>nous luttons contre la vente de données</strong>, c’est pourquoi nous ne proposons pas de services gratuits financés par vos données.
                         </p>
                     </li>
                 </ul>
@@ -578,5 +578,21 @@
 
 <script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
 <script src="javascriptfile/offre.js"></script>
+
+<script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+<script  src="javascriptfile/notif.js"></script>
+
+    <script>
+        function pageerr(){
+            if(Text != 1){
+                iziToast.info({
+                    title: 'Info',
+                    position: 'bottomRight',
+                    <?php ?>
+                    message: 'Les serveurs de stockage ne sont pas encore disponibles.'
+                });
+            }
+        }
+    </script>
 
 <?php footer($page); ?> </body> </html>

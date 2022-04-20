@@ -1,4 +1,4 @@
-<?php include "app/app.php"; $page = 2; head($page); ?>
+<?php include "app/app.php"; $page = 2; $souspage = 3; head($page, $souspage); ?>
 <body> <header> <?php navbar($page); ?> </header>
 
 <main id="mc">
@@ -70,13 +70,11 @@
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Grâce à la puissance de nos serveurs, vous pourrez créer avec pour seule limite votre imagination et celle de vos amis, construire des bâtiments à plusieurs c’est toujours mieux, développer les plugins les plus originaux, ou créer un mod qui rajoute des épées bleues et rouges ! Vous avez les clés en main !</p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Nos serveurs Minecraft bénéficient de slots illimités ainsi que de RAM dédiée et puissante (mais pas illimité, car ça, c’est pas possible !), la possibilité de mettre votre propre jar, vos propre mod et plugin, de plus nos serveurs sont compatibles Spigot, BungeeCord, Sponge, Forge, Fabric… À peu près tout en fait !</p>
                     </li>
                 </ul>
             </div>
@@ -86,16 +84,16 @@
     <section id="info-gauche">
         <div class="row container">
             <div class="col-6">
-                <h2><img src="assets/RhodoniteSword.png" id="sword">24h/24</h2>
+                <h2><img src="assets/RhodoniteSword.png" id="sword">Fiabilité</h2>
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>
@@ -116,13 +114,11 @@
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Nous utilisons Pterodactyl un panel de gestion simple ayant fait ses preuves et esthétique qui vous permettra de gérer aisément votre serveur ! </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                            Sur le panel, vous aurez un accès direct à une console ainsi qu’à un WEB FTP, vous pourrez ajouter des sous utilisateurs et relancer votre serveur, changer de version…</p>
                     </li>
                 </ul>
             </div>
