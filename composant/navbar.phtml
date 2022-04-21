@@ -48,3 +48,89 @@
         </ul>
     </nav>
 </header>
+
+<header id="nav-mobile">
+    <h1><a href="./"><img class="logo" src="assets/LogoBrute.png"><img class="text" src="assets/TextBrute.png"></a></h1>
+
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul>
+            <?php
+
+
+
+            require "./app/env.php";
+
+            for ($i = 1; $i <= 6; $i++) {
+
+                if($i != 2 && $i != 5 && $i != 6){
+                    echo '<li';
+                    if ($page == $i){
+                        echo ' class="nav-active"';
+                    }
+                    echo '><a href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . '</a></li>';
+                } else {
+
+
+                 } if ($i == 2) { ?>
+
+                    <li class="nav-item dropdown <?php if ($page == $i){ echo 'nav-active';} ?>">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <?php echo $env_page[$i]["name"] ?>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="vps.php">VPS</a>
+                            <a class="dropdown-item" href="siteweb.php">Site Web</a>
+                            <a class="dropdown-item" href="minecraft.php">Minecraft</a>
+                            <a class="dropdown-item" href="fivem.php">Five M</a><!--
+                            <a class="dropdown-item" href="stockage.php">Stockage</a>-->
+                        </div>
+                    </li>
+
+                    <?php
+                } else if ($i == 5){
+
+                    echo '<li><a class="a-espace" href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . ' </a></li>';
+
+                } else if ($i == 6){
+
+                    echo '<li><a href="' . $env_page[$i]["url"] . '"><i class="fas fa-shopping-cart"></i></a></li>';
+
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+            /*$nbPage = count($env_page);
+
+            for ($i = 1; $i <= 5; $i++) {
+
+//                if($i != 4){
+                echo '<li';
+                if ($page == $i){
+                    echo ' class="nav-active"';
+                }
+                echo '><a href="' . $env_page[$i]["file"] . '">' . $env_page[$i]["name"] . '</a></li>';
+
+//                }
+
+
+            }*/
+            ?>
+        </ul>
+    </nav>
+</header>
