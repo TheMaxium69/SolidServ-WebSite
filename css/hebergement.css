@@ -145,6 +145,15 @@
     color: var(--color-secondaire);
 }
 
+@media (max-width: 814px) {
+    #partenaire .col-4{
+        -ms-flex:unset;
+        flex: unset;
+        max-width: unset;
+    }
+
+}
+
 /*formule*/
 #formule .desktop{
     max-width: 1474px;
@@ -361,6 +370,18 @@
     margin-bottom: 8px;
     margin-top: unset;
     margin-left: unset;
+}
+
+#mc #formule h3 {
+    font-size: 13px;
+}
+
+#mc #formule ul {
+    font-size: 9px;
+}
+
+#mc #formule h2 {
+    font-size: 20px;
 }
 
 /*************************

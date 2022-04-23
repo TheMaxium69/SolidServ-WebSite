@@ -25,6 +25,7 @@
                 if ($product['gid'] == $env_gid['fivem']){
                     /*echo "GOOD : " . $product['pid'];*/
                     /*var_dump($product); */
+                    $isExist = true;
                     ?>
                     <div class="col">
 
@@ -36,11 +37,11 @@
 
                             <h3><?= $product['pricing']['EUR']['monthly'] ?>€/Mois</h3>
 
-                            <p><?= $product['description'] ?></p>
+                            <ul><?= $product['description'] ?></ul>
 
                             <div>
 
-                                <button id="btn-commande" class="tyrobutton" data-url="http://localhost/SolidServ-WebSite/panel/cart.php?a=add&pid=<?= $product['pid'] ?>">commandé</button>
+                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=<?= $product['pid'] ?>">commandé</button>
 
                             </div>
 
@@ -52,7 +53,7 @@
                     $isHere = "no";
                 }
             } }
-            if ($isHere == "no"){
+            if ($isHere == "no" && $isExist != true){
                 echo "<p class='err'>Indiponible pour le moment</p>";
             } ?>
         </div>
@@ -163,12 +164,12 @@
                 <ul>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site mais aussi sur Discord, par téléphone et par mail, nous répondrons à toutes vos  problématiques.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Suivez les potentielles pannes ou problèmes technique directement sur le site ou sur vos réseaux préférés comme Discord et Twitter, en temps réel avec vos services.
                         </p>
                     </li>
                 </ul>
@@ -181,6 +182,9 @@
     </section>
 
 </main>
+
+
+<script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
 
 
 <?php footer($page); ?> </body> </html>
