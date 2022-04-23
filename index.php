@@ -738,7 +738,7 @@
                     </li>
                 </ul>
 
-                <button id="btn-ticket" class="tyrobutton" data-url="support.php">voir plus</button>
+                <!--<button id="btn-ticket" class="tyrobutton" data-url="support.php">voir plus</button>-->
 
             </div>
         </div>

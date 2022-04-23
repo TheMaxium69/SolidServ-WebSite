@@ -392,6 +392,17 @@
     font-weight: 300;
 }
 
+@media (max-width: 991px) {
+    #support .row .col-6{
+        -ms-flex:unset;
+        flex: unset;
+        max-width: unset;
+    }
+    #support .col-6:last-child {
+        padding-left: 15px;
+    }
+}
+
 /*************************
           reseaux
  *************************/
@@ -445,6 +456,14 @@
     margin-bottom: 45px;
 
 }
+@media (max-width: 814px) {
+    #reseau .col-4{
+        -ms-flex:unset;
+        flex: unset;
+        max-width: unset;
+    }
+
+}
 
 /*************************
           engament
@@ -482,4 +501,15 @@
 #eng .row .col-6 p{
     font-size: 18px;
     font-weight: 300;
+}
+
+@media (max-width: 991px) {
+    #eng .row .col-6{
+        -ms-flex:unset;
+        flex: unset;
+        max-width: unset;
+    }
+    #eng .col-6:first-child {
+        padding-left: 15px;
+    }
 }
