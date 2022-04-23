@@ -12,6 +12,13 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+@media (max-width: 377px) {
+    #suppo #start .ac-head{
+        background-size: 115%;
+    }
+
+}
+
 
 #suppo #start .ac-centertext{
     position: absolute;

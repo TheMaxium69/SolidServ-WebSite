@@ -59,6 +59,8 @@
     color: white;
 }
 
+
+
 @media (max-width: 887px){
     #home .head{
         background-size: unset;
@@ -87,6 +89,20 @@
     }
 }
 
+@media (max-width: 440px){
+    #home .head .centertext {
+        margin-top: 75px;
+    }
+    #home .head .centertext h1 {
+        font-size: 35px;
+        max-width: 355px;
+    }
+    #home .head .centertext h3 {
+        font-size: 20px;
+        max-width: 355px;
+        margin: 0 auto;
+    }
+}
 
 
 /*************************
@@ -135,9 +151,18 @@
         -ms-flex: unset;
         flex: unset;
         max-width: unset;
-        margin: 0px 0;
-        padding: 0px 15px;
+        margin: 8px 0;
+        padding: 0 15px;
     }
+}
+
+@media (max-width: 440px) {
+    #bull .container .row .col-4 p{
+        font-size: 14px;
+        max-width: 355px;
+        margin: 0px auto;
+    }
+
 }
 
 
