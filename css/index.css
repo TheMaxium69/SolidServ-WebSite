@@ -47,10 +47,50 @@
     color: white;
 }
 
+@media (max-width: 887px){
+    #home .head{
+        background-size: unset;
+    }
+    #home .head .centertext{
+         width: 100%;
+         margin-left: unset;
+         margin-right: unset;
+     }
+}
+@media (max-width: 626px){
+    #home .head .centertext{
+        margin-top: 41px;
+    }
+}
+
+@media (max-width: 499px){
+    #home .head .centertext h1{
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 373px){
+    #home .head .centertext{
+        margin-top: 14px;
+    }
+}
+
+
 
 /*************************
           BULL
  *************************/
+@media (max-width: 991px){
+    #bull .container{
+        max-width: unset;
+        margin-left: unset;
+        margin-right: unset;
+        width: unset;
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
 
 #bull div.row{
     margin-top: 27px;
@@ -64,6 +104,32 @@
     margin: 19px 0;
     padding: 0px 54px;
 }
+
+@media(max-width: 961px){
+    #bull .col-4{
+        padding: 0px 15px;
+    }
+}
+@media(max-width: 720px){
+    #bull .col-4{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 495px){
+    #bull .col-4{
+        -ms-flex: unset;
+        flex: unset;
+        max-width: unset;
+        margin: 0px 0;
+        padding: 0px 15px;
+    }
+}
+
+
+
 
 #bull h3{
     margin-bottom: 17px;
@@ -81,7 +147,9 @@
 /*************************
           OFFRE
  *************************/
-
+#offre #ord2{
+    display: none;
+}
 
 #offre .desktop{
     max-width: 1474px;
@@ -114,6 +182,17 @@
         margin-top: 5%;
     }
 
+}
+@media (max-width: 505px) {
+    #offre .desktop{
+        display: none;
+    }
+    #offre #ord2{
+        display: initial;
+    }
+    #offre .mobile{
+        display: none;
+    }
 }
 
 #offre .mobile .container{
@@ -244,6 +323,42 @@
     -ms-transform:unset; /* Internet Explorer 9 */
     -o-transform:unset; /* Opera */
     transform:unset;
+}
+
+@media (max-width: 506px) {
+    .trans[data-size="3"] {
+        -webkit-transform:unset; /* Safari et Chrome */
+        -moz-transform:unset; /* Firefox */
+        -ms-transform:unset; /* Internet Explorer 9 */
+        -o-transform:unset; /* Opera */
+        transform:unset;
+    }
+    .trans[data-size="2D"] {
+        -webkit-transform:unset; /* Safari et Chrome */
+        -moz-transform:unset; /* Firefox */
+        -ms-transform:unset; /* Internet Explorer 9 */
+        -o-transform:unset; /* Opera */
+        transform:unset;
+    }
+    .trans[data-size="2G"] {
+        -webkit-transform:unset; /* Safari et Chrome */
+        -moz-transform:unset; /* Firefox */
+        -ms-transform:unset; /* Internet Explorer 9 */
+        -o-transform:unset; /* Opera */
+        transform:unset;
+    }
+    .trans[data-size="1"] {
+        -webkit-transform:unset; /* Safari et Chrome */
+        -moz-transform:unset; /* Firefox */
+        -ms-transform:unset; /* Internet Explorer 9 */
+        -o-transform:unset; /* Opera */
+        transform:unset;
+    }
+
+    #offre .row .col .container{
+        margin: 10px auto;
+    }
+
 }
 
 /*************************

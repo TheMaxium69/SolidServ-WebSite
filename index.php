@@ -18,7 +18,6 @@
     </section>
 
 
-
     <section id="bull">
 
         <div class="container">
@@ -71,6 +70,226 @@
 <hr class="container">
 
     <section id="offre">
+
+        <div class="row desktop" id="ord2">
+
+
+                <div class="col">
+
+                    <div id="o3" class="trans container" data-size="3">
+
+                        <h2>VPS</h2>
+                        <hr>
+                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                        <ul>
+                            <li>
+                                Processeur jusqu'a 4.5GHz+
+                            </li>
+
+                            <li>
+                                Ram dédiée jusqu'a 32go
+                            </li>
+
+                            <li>
+                                Stockage <j>SSD NVMe</j> jusqu'a 500go
+                            </li>
+
+                            <li>
+                                Bande passante à partir de <j>250Mbit/s</j>
+                            </li>
+
+                            <li>
+                                Utilisateur root/Administrateur
+                            </li>
+
+                            <li>
+                                Acces <j>SSH/SFTP</j>
+                            </li>
+
+                        </ul>
+
+
+                        <button id="btn-service" class="tyrobutton" data-url="vps.php">voir plus</button>
+                    </div>
+
+                </div>
+
+
+            <div class="col">
+
+                <div id="o2" class="trans container" data-size="2G">
+
+                    <h2>Site Web</h2>
+                    <hr>
+
+                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                    <ul>
+                        <li>
+                            Trafic jusqu'à <j>100 000 Visites/Mois</j>
+                        </li>
+
+                        <li>
+                            Compatible <j>PHP</j> (Toute Version)
+                        </li>
+
+                        <li>
+                            Stockage SSD NVMe jusqu'a 100go
+                        </li>
+
+                        <li>
+                            Acces <j>FTP/SFTP</j> et <j>cPanel</j>
+                        </li>
+                        <li>
+                            Installation en 1-clic du <j>SSL</j>
+                        </li>
+                        <li>
+                            Dispo avec Wordpress/Shopify...
+                        </li>
+                        <li>
+                            BDD <j>MySQL/MariaDB</j> Offerte
+                        </li>
+
+                    </ul>
+
+                    <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div id="o4" class="trans container" data-size="2D">
+
+                    <h2>Minecraft</h2>
+                    <hr>
+                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                    <ul>
+                        <li>
+                            Allumé <j>24h/24</j> et <j>7J/7</j>
+                        </li>
+
+                        <li>
+                            Processeur jusqu'a 4.5GHz+
+                        </li>
+
+                        <li>
+                            <j>Slot ilimité</j>
+                        </li>
+
+                        <li>
+                            Ram dédiée jusqu'a 32go
+                        </li>
+                        <li>
+                            Acces <j>FTP/SFTP</j>
+                        </li>
+                        <li>
+                            Spigot/Forge/Sponge/OpenMod ...
+                        </li>
+                        <li>
+                            Panel Pterodactyl
+                        </li>
+
+                    </ul>
+
+
+                    <button id="btn-service" class="tyrobutton" data-url="minecraft.php">voir plus</button>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div id="o5" class="trans container" data-size="1">
+
+                    <h2>FiveM</h2>
+                    <hr>
+                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                    <ul>
+                        <li>
+                            Processeur jusqu'a 4.5GHz+
+                        </li>
+                        <li>
+                            <j>Anti-DDOS</j> Game
+                        </li>
+
+                        <li>
+                            Uptime de 99%
+                        </li>
+                        <li>
+                            Ram dédiée jusqu'a 32go
+                        </li>
+
+
+                        <li>
+                            Acces <j>FTP/SFTP</j>
+                        </li>
+                        <li>
+                            BDD <j>MySQL/MariaDB</j> Offerte
+                        </li>
+                        <li>
+                            Panel Pterodactyl
+                        </li>
+
+                    </ul>
+
+                    <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
+
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div id="o1" class="trans container" data-size="1">
+
+                    <h2>Stockage</h2>
+                    <hr>
+                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+
+                    <ul>
+
+                        <li>
+                            Stockage jusqu'a <j>100To</j>
+                        </li>
+
+                        <li>
+                            Bande passante à partir de 250Mbit/s
+                        </li>
+
+                        <li>
+                            Jusqu'à <j>100 utilisateurs</j> connectés
+                        </li>
+
+                        <li>
+                            Disque dur <j>Raid</j> ou <j>SSD NVMe</j>
+                        </li>
+
+                        <li>
+                            Allumé <j>24h/24</j> et <j>7J/7</j>
+                        </li>
+
+
+                        <li>
+                            Acces FTP/SFTP
+                        </li>
+
+                    </ul>
+
+                    <div>
+
+                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr();">indisponible</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
 
 
         <div class="row desktop">
@@ -285,6 +504,8 @@
 
                 </div>
 
+
+
         </div>
         <div class="row mobile">
 
@@ -300,23 +521,29 @@
                     <div class="col-7">
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Processeur jusqu'a 4.5GHz+
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Ram dédiée jusqu'a 32go
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                Stockage <j>SSD NVMe</j> jusqu'a 500go
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Bande passante à partir de <j>250Mbit/s</j>
                             </li>
+
                             <li>
-                                Ipsum is simply dummy aze
+                                Utilisateur root/Administrateur
                             </li>
+
+                            <li>
+                                Acces <j>SSH/SFTP</j>
+                            </li>
+
 
                         </ul>
                     </div>
@@ -333,23 +560,30 @@
                     <div class="col-7">
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Trafic jusqu'à <j>100 000 Visites/Mois</j>
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Compatible <j>PHP</j> (Toute Version)
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                Stockage SSD NVMe jusqu'a 100go
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Acces <j>FTP/SFTP</j> et <j>cPanel</j>
                             </li>
                             <li>
-                                Ipsum is simply dummy aze
+                                Installation en 1-clic du <j>SSL</j>
                             </li>
+                            <li>
+                                Dispo avec Wordpress/Shopify...
+                            </li>
+                            <li>
+                                BDD <j>MySQL/MariaDB</j> Offerte
+                            </li>
+
 
                         </ul>
                     </div>
@@ -378,7 +612,7 @@
                             </li>
 
                             <li>
-                                Ram dédier jusqu'a 32go
+                                Ram dédiée jusqu'a 32go
                             </li>
                             <li>
                                 Acces <j>FTP/SFTP</j>
@@ -389,6 +623,7 @@
                             <li>
                                 Panel Pterodactyl
                             </li>
+
 
                         </ul>
                     </div>
@@ -405,24 +640,29 @@
                     <div class="col-7">
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Processeur jusqu'a 4.5GHz+
+                            </li>
+                            <li>
+                                <j>Anti-DDOS</j> Game
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
-                            </li>
-
-                            <li>
-                                Ipsum is simply dummy
-                            </li>
-
-                            <li>
-                                Ipsum is simply dummy aze
+                                Uptime de 99%
                             </li>
                             <li>
-                                Ipsum is simply dummy aze
+                                Ram dédiée jusqu'a 32go
                             </li>
 
+
+                            <li>
+                                Acces <j>FTP/SFTP</j>
+                            </li>
+                            <li>
+                                BDD <j>MySQL/MariaDB</j> Offerte
+                            </li>
+                            <li>
+                                Panel Pterodactyl
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -433,28 +673,35 @@
                         <hr>
                         <h3><g>à partir de :</g><br> 30€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="stockage.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr();">indisponible</button>
                     </div>
                     <div class="col-7">
                         <ul>
                             <li>
-                                Ipsum is simply dummy
+                                Stockage jusqu'a <j>100To</j>
                             </li>
 
                             <li>
-                                Ipsum is <j>simply</j> dummy coucou
+                                Bande passante à partir de 250Mbit/s
                             </li>
 
                             <li>
-                                Ipsum is simply dummy
+                                Jusqu'à <j>100 utilisateurs</j> connectés
                             </li>
 
                             <li>
-                                Ipsum is simply dummy aze
+                                Disque dur <j>Raid</j> ou <j>SSD NVMe</j>
                             </li>
+
                             <li>
-                                Ipsum is simply dummy aze
+                                Allumé <j>24h/24</j> et <j>7J/7</j>
                             </li>
+
+
+                            <li>
+                                Acces FTP/SFTP
+                            </li>
+
 
                         </ul>
                     </div>
