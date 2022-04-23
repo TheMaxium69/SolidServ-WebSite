@@ -15,6 +15,10 @@
 
 @media (max-width: 460px) {
     #start .ac-head {
+        background: url(../assets/actu.webp);
+        background-color: blue;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: 185%;
     }
     
