@@ -11,7 +11,7 @@ if ($_GET['content'] && $_GET['user'] && $_GET['token']) {
 
     if ($token = $tokenBDD){
 
-        $q = $db->prepare("INSERT INTO `actu` (`user`, `content`) VALUES (:user, :content)");
+        $q = $db->prepare("INSERT INTO `announcement` (`user`, `content`) VALUES (:user, :content)");
 
         $q->execute([
             'user' => $user,
