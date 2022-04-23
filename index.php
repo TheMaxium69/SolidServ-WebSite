@@ -67,7 +67,7 @@
 
     </section>
 
-<hr class="container">
+<hr class="container hors-sec">
 
     <section id="offre">
 
@@ -712,7 +712,7 @@
 
     </section>
 
-    <hr>
+    <hr class="hors-sec">
 
     <section id="support">
 
