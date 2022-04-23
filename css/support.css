@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-@media (max-width: 377px) {
+@media (max-width: 404px) {
     #suppo #start .ac-head{
         background-size: 115%;
     }
