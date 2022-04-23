@@ -46,30 +46,16 @@
 #home .head .centertext h3 a:hover{
     color: white;
 }
-@media (max-width: 1156px) {
-    #home .head .centertext h1{
-        font-size: 49px;
-    }
-}
-
-@media (max-width: 830px) {
-    #home .head .centertext{
-        width:unset;
-        margin-left: unset;
-        margin-right: unset;
-    }
-
-}
 
 @media (max-width: 887px){
     #home .head{
         background-size: unset;
     }
     #home .head .centertext{
-         width: 100%;
-         margin-left: unset;
-         margin-right: unset;
-     }
+        width: 100%;
+        margin-left: unset;
+        margin-right: unset;
+    }
 }
 @media (max-width: 626px){
     #home .head .centertext{
