@@ -94,6 +94,17 @@
     font-weight: 300;
 }
 
+@media (max-width: 991px) {
+    .col-6 {
+        -ms-flex: unset;
+        flex: unset;
+        max-width: unset;
+    }
+    #info-droit .row .col-6 img {
+        width: 100%;
+    }
+}
+
 /*partenaire*/
 #partenaire .back-border{
     background-color: var(--color-background);
@@ -249,6 +260,28 @@
     background-position: 0 -323px;
 }
 
+@media (max-width: 1030px) {
+    #vps .heb-head{
+        background: url(../assets/vps.jpg);
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: unset;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    #vps .heb-head{
+        background: url(../assets/vps.jpg);
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: 145%;
+        background-position: unset;
+    }
+
+}
+
 /*************************
           SITE WEB
  *************************/
@@ -258,6 +291,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+@media (max-width: 728px) {
+    #web .heb-head{
+        background: url(../assets/siteweb.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 203%;
+    }
 }
 
 /*************************
@@ -278,6 +319,34 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0 -323px;
+}
+
+@media (max-width: 1027px) {
+    #mc .heb-head {
+        background: url(../assets/mc.jpg);
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0px -133px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    #mc .heb-head {
+        background: url(../assets/mc.jpg);
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: 143%;
+        background-position: -110px 0px;;
+    }
+
+}
+
+@media (max-width: 605px) {
+    #mc #home .heb-head .heb-centertext h1 {
+        font-size: 29px;
+    }
 }
 
 #mc #info-droit .row .col-6 p{
@@ -309,5 +378,12 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+@media (max-width: 743px) {
+    #fivem .heb-head {
+        background: url(../assets/fivem.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 225%;
+    }
+}
 
