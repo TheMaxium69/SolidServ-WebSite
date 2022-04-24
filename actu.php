@@ -33,6 +33,8 @@
                     } else if ($username == "Pierre-Louis Devaud"){
                         $id = "p";
                     }
+                    $dateSrc = $actu['date'];
+                    $dateTime = new DateTime($dateSrc);
                 ?>
                     <li id="<?=$id?>">
 
@@ -41,6 +43,7 @@
                         <p>
                             <?php echo nl2br($actu['content']); ?>
                         </p>
+                        <small><?= $dateTime->format('H:i d/m/y') ?></small>
 
                     </li>
 
