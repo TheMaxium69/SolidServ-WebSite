@@ -76,7 +76,7 @@
 
                 <div class="col">
 
-                    <div id="o3" class="trans container" data-size="3">
+                    <div class="trans container" data-size="3">
 
                         <h2>VPS</h2>
                         <hr>
@@ -118,7 +118,7 @@
 
             <div class="col">
 
-                <div id="o2" class="trans container" data-size="2G">
+                <div class="trans container" data-size="2G">
 
                     <h2>Site Web</h2>
                     <hr>
@@ -159,7 +159,7 @@
             </div>
             <div class="col">
 
-                <div id="o4" class="trans container" data-size="2D">
+                <div class="trans container" data-size="2D">
 
                     <h2>Minecraft</h2>
                     <hr>
@@ -200,7 +200,7 @@
             </div>
             <div class="col">
 
-                <div id="o5" class="trans container" data-size="1">
+                <div class="trans container" data-size="1">
 
                     <h2>FiveM</h2>
                     <hr>
@@ -243,7 +243,7 @@
 
             <div class="col">
 
-                <div id="o1" class="trans container" data-size="1">
+                <div class="trans container" data-size="1">
 
                     <h2>Stockage</h2>
                     <hr>
