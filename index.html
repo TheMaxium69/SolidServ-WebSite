@@ -1,18 +1,161 @@
-<!doctype html>
-<title>Site en d&#233;veloppement</title>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SolidServ</title>
+    <link href="https://solidserv.fr/assets/LogoOnglet.png" rel="shortcut icon">
+
+    <meta name="title" content="SolidServ">
+    <meta name="description" content="Site web de SolidServ"/>
+    <meta property="og:title" content="SolidServ"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://solidserv.fr/"/>
+    <meta property="og:image" content="https://tyrolium.fr/Contenu/Image/SolidServ%20Site.png"/>
+    <meta property="og:description" content="SolidServ L'hébergeur de confiance créé par des professionels du secteur.
+Parce que vos projets méritent d'être réalisés
+avec le savoir-faire des équipes de Tyrolium."/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
 <style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
+    :root {
+        --smaller: .75;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        align-items: center;
+        background-color: #ffffff;
+        display: flex;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container {
+        color: #1f4ab6;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: normal;
+        letter-spacing: .125rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    li span {
+        display: block;
+        font-size: 4.5rem;
+    }
+
+    .emoji {
+        display: none;
+        padding: 1rem;
+    }
+
+    .emoji span {
+        font-size: 4rem;
+        padding: 0 .5rem;
+    }
+
+    @media all and (max-width: 768px) {
+        h1 {
+            font-size: calc(1.5rem * var(--smaller));
+        }
+
+        li {
+            font-size: calc(1.125rem * var(--smaller));
+        }
+
+        li span {
+            font-size: calc(3.375rem * var(--smaller));
+        }
+    }
+
+
 </style>
 
-<article>
-  <h1>Reviens bient&#244;t ! </h1>
-  <div>
-    <p>D&#233;sol&#233;, ce site en en d&#233;veloppement, il ouvrira bient&#244;t !</p>
-    <p>La team Solidserv</p>
-  </div>
-</article>
+
+
+<div class="container">
+    <h1 id="headline">COMPTE A REBOURS</h1>
+    <div id="countdown">
+        <ul>
+            <li><span id="days"></span>Jours</li>
+            <li><span id="hours"></span>Heures</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Secondes</li>
+        </ul>
+    </div>
+    <div id="content" class="emoji">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let today = new Date(),
+            dd = String(today.getDate()).padStart(2, "0"),
+            mm = String(today.getMonth() + 1).padStart(2, "0"),
+            yyyy = today.getFullYear(),
+            nextYear = yyyy + 1,
+            dayMonth = "05/07/",
+            birthday = dayMonth + yyyy;
+
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > birthday) {
+            birthday = dayMonth + nextYear;
+        }
+
+        const countDown = new Date(birthday).getTime(),
+            x = setInterval(function() {
+
+                const now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                if (distance < 0) {
+                    document.getElementById("headline").innerText = "It's my birthday!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    clearInterval(x);
+                }
+            }, 0)
+    }());
+
+
+
+</script>
+</body>
+</html>
