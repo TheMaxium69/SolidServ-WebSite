@@ -126,7 +126,7 @@
         </div>
     </section>
 
-    <section id="partenaire">
+    <!--<section id="partenaire">
         <div class="back-border">
             <div class="up-border">
             </div>
@@ -136,8 +136,8 @@
                 <h2>Partenaire</h2>
                 <div class="row">
                     <div class="col-4">
-                        <h3>Jackie</h3>
-                        <small>Youtubeur</small>
+                        <h3>TyroServ</h3>
+                        <small>Serveur Minecraft - PVP/Faction</small>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                     </div>
                     <div class="col-4">
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 
     <section id="info-gauche">

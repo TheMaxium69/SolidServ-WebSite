@@ -127,7 +127,7 @@
         </div>
     </section>
 
-    <section id="partenaire">
+    <!--<section id="partenaire">
         <div class="back-border">
             <div class="up-border">
             </div>
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 
     <section id="info-gauche">

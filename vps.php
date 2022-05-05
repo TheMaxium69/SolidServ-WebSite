@@ -25,7 +25,7 @@
 
             foreach ($produitAll as $productCompresse) {foreach ($productCompresse as $product){
 
-                if ($product['gid'] == $env_gid['vps']){
+                if ($product['gid'] == $env_gid['vps'] && $product['name'] != "vps-delphine"){
                     /*echo "GOOD : " . $product['pid'];*/
                     /*var_dump($product); */
                     $isExist = true;
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section id="partenaire">
+   <!-- <section id="partenaire">
         <div class="back-border">
             <div class="up-border">
             </div>
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 
     <section id="info-droit">

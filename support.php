@@ -24,7 +24,7 @@
         <p>Ou contactez-nous sur :</p>
         <ul>
             <li>
-                <small><a href="mailto:support@solidserv.fr">support@solidserv.fr</a></small>
+                <small><a href="mailto:support@solidserv.xyz">support@solidserv.xyz</a></small>
             </li>
             <li>
                 <small>+33 6 11 11 26 69</small>

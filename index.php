@@ -80,7 +80,7 @@
 
                         <h2>VPS</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 12€/Mois</h3>
 
                         <ul>
                             <li>
@@ -123,7 +123,7 @@
                     <h2>Site Web</h2>
                     <hr>
 
-                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 5€/Mois</h3>
 
                     <ul>
                         <li>
@@ -153,7 +153,7 @@
 
                     </ul>
 
-                    <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
+                    <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr1();">indisponible</button>
                 </div>
 
             </div>
@@ -163,7 +163,7 @@
 
                     <h2>Minecraft</h2>
                     <hr>
-                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 3€/Mois</h3>
 
                     <ul>
                         <li>
@@ -204,7 +204,7 @@
 
                     <h2>FiveM</h2>
                     <hr>
-                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 10€/Mois</h3>
 
                     <ul>
                         <li>
@@ -247,7 +247,7 @@
 
                     <h2>Stockage</h2>
                     <hr>
-                    <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 4.50€/Mois</h3>
 
                     <ul>
 
@@ -300,7 +300,7 @@
 
                         <h2>Stockage</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 4.50€/Mois</h3>
 
                         <ul>
 
@@ -346,7 +346,7 @@
                         <h2>Site Web</h2>
                         <hr>
 
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 5€/Mois</h3>
 
                         <ul>
                             <li>
@@ -376,7 +376,7 @@
 
                         </ul>
 
-                        <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr1();">indisponible</button>
                     </div>
 
                 </div>
@@ -386,7 +386,7 @@
 
                         <h2>VPS</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 12€/Mois</h3>
 
                         <ul>
                             <li>
@@ -426,7 +426,7 @@
 
                         <h2>Minecraft</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 3€/Mois</h3>
 
                         <ul>
                             <li>
@@ -467,7 +467,7 @@
 
                         <h2>FiveM</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 10€/Mois</h3>
 
                         <ul>
                             <li>
@@ -514,7 +514,7 @@
                     <div class="col-5">
                         <h2>VPS</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 12€/Mois</h3>
 
                         <button id="btn-service" class="tyrobutton" data-url="vps.php">voir plus</button>
                     </div>
@@ -553,9 +553,9 @@
                     <div class="col-5">
                         <h2>Site Web</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 5€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr1();">indisponibles</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -593,7 +593,7 @@
                     <div class="col-5">
                         <h2>Minecraft</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 3€/Mois</h3>
 
                         <button id="btn-service" class="tyrobutton" data-url="minecraft.php">voir plus</button>
                     </div>
@@ -633,7 +633,7 @@
                     <div class="col-5">
                         <h2>FiveM</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 10€/Mois</h3>
 
                         <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
                     </div>
@@ -671,7 +671,7 @@
                     <div class="col-5">
                         <h2>Stockage</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 30€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 4.50€/Mois</h3>
 
                         <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr();">indisponible</button>
                     </div>
@@ -837,6 +837,17 @@
                     position: 'bottomRight',
                     <?php ?>
                     message: 'Les serveurs de stockage ne sont pas encore disponibles.'
+                });
+            }
+        }
+
+        function pageerr1(){
+            if(Text != 1){
+                iziToast.info({
+                    title: 'Info',
+                    position: 'bottomRight',
+                    <?php ?>
+                    message: 'Les serveurs web ne sont pas encore disponibles.'
                 });
             }
         }
