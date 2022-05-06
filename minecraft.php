@@ -41,7 +41,7 @@
 
                             <div>
 
-                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=<?= $product['pid'] ?>">commandé</button>
+                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=<?= $product['pid'] ?>">commander</button>
 
                             </div>
 
