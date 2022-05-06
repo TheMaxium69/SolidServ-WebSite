@@ -15,146 +15,245 @@
 Parce que vos projets méritent d'être réalisés
 avec le savoir-faire des équipes de Tyrolium."/>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
+
+
+
+    <!--
+
+    CODE DU COUNTDOWN APPARTIEN A :
+
+    https://codepen.io/FlorinPop17/pen/YbpwyG
+
+    -->
+
+
 
 </head>
 <body>
 <style>
-    :root {
-        --smaller: .75;
-    }
+    @import url('https://fonts.googleapis.com/css?family=Lato');
 
     * {
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    html, body {
-        height: 100%;
-        margin: 0;
     }
 
     body {
-        align-items: center;
-        background-color: #ffffff;
-        display: flex;
-        font-family: 'Ubuntu', sans-serif;
-    }
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
-    .container {
-        color: #1f4ab6;
-        margin: 0 auto;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        min-height: 100vh;
+        font-family: 'Lato', sans-serif;
+        margin: 0;
     }
 
     h1 {
-        font-weight: normal;
-        letter-spacing: .125rem;
+        letter-spacing: 2px;
+        text-align: center;
         text-transform: uppercase;
     }
 
-    li {
-        display: inline-block;
-        font-size: 1.5em;
-        list-style-type: none;
-        padding: 1em;
+    .countdown-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .countdown-item {
+        color: #111;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 30px;
+        margin: 10px;
+        padding-top: 10px;
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .countdown-item span {
+        color: #333;
+        font-size: 12px;
+        font-weight: 600;
         text-transform: uppercase;
     }
 
-    li span {
-        display: block;
-        font-size: 4.5rem;
+    .countdown-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
     }
 
-    .emoji {
+    footer {
+        background-color: #222;
+        color: #fff;
+        font-size: 14px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+
+    footer i {
+        color: red;
+    }
+
+    footer a {
+        color: #3c97bf;
+        text-decoration: none;
+    }
+
+    .countdown-item:first-child{
+
         display: none;
-        padding: 1rem;
     }
-
-    .emoji span {
-        font-size: 4rem;
-        padding: 0 .5rem;
-    }
-
-    @media all and (max-width: 768px) {
-        h1 {
-            font-size: calc(1.5rem * var(--smaller));
-        }
-
-        li {
-            font-size: calc(1.125rem * var(--smaller));
-        }
-
-        li span {
-            font-size: calc(3.375rem * var(--smaller));
-        }
-    }
-
 
 </style>
 
+<div id="app"></div>
 
-
-<div class="container">
-    <h1 id="headline">COMPTE A REBOURS</h1>
-    <div id="countdown">
-        <ul>
-            <li><span id="days"></span>Jours</li>
-            <li><span id="hours"></span>Heures</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Secondes</li>
-        </ul>
-    </div>
-    <div id="content" class="emoji">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.3/umd/react-dom.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script><script  src="./script.js"></script>
 <script>
-    (function () {
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
+    function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}class Countdown extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "state",
+        {
+            days: undefined,
+            hours: undefined,
+            minutes: undefined,
+            seconds: undefined });}
 
-        let today = new Date(),
-            dd = String(today.getDate()).padStart(2, "0"),
-            mm = String(today.getMonth() + 1).padStart(2, "0"),
-            yyyy = today.getFullYear(),
-            nextYear = yyyy + 1,
-            dayMonth = "05/08/",
-            birthday = dayMonth + yyyy;
 
-        today = mm + "/" + dd + "/" + yyyy;
-        if (today > birthday) {
-            birthday = dayMonth + nextYear;
+        componentDidMount() {
+            this.interval = setInterval(() => {
+                const { timeTillDate, timeFormat } = this.props;
+                const then = moment(timeTillDate, timeFormat);
+                const now = moment();
+                const countdown = moment(then - now);
+                const days = countdown.format('D');
+                const hours = countdown.format('HH');
+                const minutes = countdown.format('mm');
+                const seconds = countdown.format('ss');
+
+                this.setState({ days, hours, minutes, seconds });
+            }, 1000);
         }
 
-        const countDown = new Date(birthday).getTime(),
-            x = setInterval(function() {
+        componentWillUnmount() {
+            if (this.interval) {
+                clearInterval(this.interval);
+            }
+        }
 
-                const now = new Date().getTime(),
-                    distance = countDown - now;
+        render() {
+            const { days, hours, minutes, seconds } = this.state;
+            const daysRadius = mapNumber(days, 30, 0, 0, 360);
+            const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
+            const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
+            const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
 
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            if (!seconds) {
+                return null;
+            }
 
-                if (distance < 0) {
-                    document.getElementById("headline").innerText = "It's my birthday!";
-                    document.getElementById("countdown").style.display = "none";
-                    document.getElementById("content").style.display = "block";
-                    clearInterval(x);
-                }
-            }, 0)
-    }());
+            return /*#__PURE__*/(
+                React.createElement("div", null, /*#__PURE__*/
+                    React.createElement("h1", null, "COMPTE A REBOURS"), /*#__PURE__*/
+                    React.createElement("div", { className: "countdown-wrapper" },
+                        days && /*#__PURE__*/
+                        React.createElement("div", { className: "countdown-item" }, /*#__PURE__*/
+                            React.createElement(SVGCircle, { radius: daysRadius }),
+                            days, /*#__PURE__*/
+                            React.createElement("span", null, "days")),
 
 
+                        hours && /*#__PURE__*/
+                        React.createElement("div", { className: "countdown-item" }, /*#__PURE__*/
+                            React.createElement(SVGCircle, { radius: hoursRadius }),
+                            hours, /*#__PURE__*/
+                            React.createElement("span", null, "hours")),
+
+
+                        minutes && /*#__PURE__*/
+                        React.createElement("div", { className: "countdown-item" }, /*#__PURE__*/
+                            React.createElement(SVGCircle, { radius: minutesRadius }),
+                            minutes, /*#__PURE__*/
+                            React.createElement("span", null, "minutes")),
+
+
+                        seconds && /*#__PURE__*/
+                        React.createElement("div", { className: "countdown-item" }, /*#__PURE__*/
+                            React.createElement(SVGCircle, { radius: secondsRadius }),
+                            seconds, /*#__PURE__*/
+                            React.createElement("span", null, "seconds")))));
+
+
+
+
+
+        }}
+
+
+    const SVGCircle = ({ radius }) => /*#__PURE__*/
+        React.createElement("svg", { className: "countdown-svg" }, /*#__PURE__*/
+            React.createElement("path", { fill: "none", stroke: "#333", "stroke-width": "4", d: describeArc(50, 50, 48, 0, radius) }));
+
+
+
+    ReactDOM.render( /*#__PURE__*/
+        React.createElement(Countdown, {
+            timeTillDate: "05 07 2022, 1:00 pm",
+            timeFormat: "MM DD YYYY, h:mm a" }),
+
+        document.getElementById('app'));
+
+
+    // From stackoverflow: https://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle
+    function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+        var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+
+        return {
+            x: centerX + radius * Math.cos(angleInRadians),
+            y: centerY + radius * Math.sin(angleInRadians) };
+
+    }
+
+    function describeArc(x, y, radius, startAngle, endAngle) {
+
+        var start = polarToCartesian(x, y, radius, endAngle);
+        var end = polarToCartesian(x, y, radius, startAngle);
+
+        var largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+        var d = [
+            "M", start.x, start.y,
+            "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y].
+        join(" ");
+
+        return d;
+    }
+
+    // Stackoverflow: https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+    function mapNumber(number, in_min, in_max, out_min, out_max) {
+        return (number - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
 
 </script>
 </body>
