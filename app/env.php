@@ -69,6 +69,9 @@ $env_sous_page = array(
     5 => array(
         "title" => "Stockage | SolidServ",
     ),
+    6 => array(
+        "title" => "Serveur Dédier | SolidServ",
+    ),
 );
 
 $env_admin = array(
@@ -99,7 +102,9 @@ $env_gid = array(
 
     "fivem" => 3,
 
-    "stockage" => 5
+    "stockage" => 5,
+
+    "dedier" => 6,
 
 
 );

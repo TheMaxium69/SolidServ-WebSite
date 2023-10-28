@@ -465,9 +465,9 @@
 
                     <div id="o5" class="trans container" data-size="1">
 
-                        <h2>FiveM</h2>
+                        <h2>Dédier</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 10€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 60€/Mois</h3>
 
                         <ul>
                             <li>
@@ -497,7 +497,7 @@
 
                         </ul>
 
-                        <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr2();">INDISPONILE</button>
 
 
                     </div>
@@ -631,11 +631,11 @@
             </div><div class="col-6">
                 <div class="row container">
                     <div class="col-5">
-                        <h2>FiveM</h2>
+                        <h2>Dédier</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 10€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 60€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
+                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr2();">INDISPONIBLE</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -851,6 +851,18 @@
                 });
             }
         }
+
+        function pageerr2(){
+            if(Text != 1){
+                iziToast.info({
+                    title: 'Info',
+                    position: 'bottomRight',
+                    <?php ?>
+                    message: 'Les serveurs dédier ne sont pas encore disponibles.'
+                });
+            }
+        }
+    </script
     </script>
 
 <?php footer($page); ?> </body> </html>
