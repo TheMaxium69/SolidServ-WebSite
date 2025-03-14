@@ -120,7 +120,7 @@ $env_product = array(
             'name' => 'VPS-1',
             'description' =>
                 '<li><j>1 vCore</j> 4.5GHz</li>
-                            <li>Processeur Ryzen 5 </li>
+                            <li>Processeur Ryzen 7 </li>
                             <li>Ram dédiée <j>2go</J></li>
                             <li>Uptime de 99%</li>
                             <li>Stockage <j>50go</j></li>
@@ -128,7 +128,7 @@ $env_product = array(
                             <li>Bande passante à partir de 250Mbit/s</li>',
             'pricing' => array(
                 'EUR' => array(
-                    'monthly' => '12.00'
+                    'monthly' => '3.00'
                 )
             )
 
@@ -139,7 +139,7 @@ $env_product = array(
             'name' => 'VPS-2',
             'description' =>
                 '<li><j>2 vCore</j> 4.5GHz</li>
-                                    <li>Processeur Ryzen 5 </li>
+                                    <li>Processeur Ryzen 7 </li>
                                     <li>Ram dédiée <j>4go</J></li>
                                     <li>Uptime de 99%</li>
                                     <li>Stockage <j>100go</j></li>
@@ -147,7 +147,7 @@ $env_product = array(
                                     <li>Bande passante à partir de 250Mbit/s</li>',
             'pricing' => array(
                 'EUR' => array(
-                    'monthly' => '22.00'
+                    'monthly' => '8.00'
                 )
             )
 
@@ -158,7 +158,7 @@ $env_product = array(
             'name' => 'VPS-3',
             'description' =>
                 '<li><j>4 vCore</j> 4.5GHz</li>
-                                    <li>Processeur Ryzen 5 </li>
+                                    <li>Processeur Ryzen 7 </li>
                                     <li>Ram dédiée <j>8go</J></li>
                                     <li>Uptime de 99%</li>
                                     <li>Stockage <j>150go</j></li>
@@ -166,7 +166,26 @@ $env_product = array(
                                     <li>Bande passante à partir de 250Mbit/s</li>',
             'pricing' => array(
                 'EUR' => array(
-                    'monthly' => '32.00'
+                    'monthly' => '10.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['vps'],
+            'name' => 'VPS-4',
+            'description' =>
+                '<li><j>6 vCore</j> 4.5GHz</li>
+                                    <li>Processeur Ryzen 7 </li>
+                                    <li>Ram dédiée <j>10go</J></li>
+                                    <li>Uptime de 99%</li>
+                                    <li>Stockage <j>250go</j></li>
+                                    <li>Acces SSH/SFTP</li>
+                                    <li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '16.00'
                 )
             )
 
@@ -186,7 +205,7 @@ $env_product = array(
             'name' => 'Yellorite',
             'description' =>
                 '<li><j>1 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>2go</J></li>
 <li>Allumé 24h/24 et 7J/7</li>
 <li>Stockage <j>15go</j></li>
@@ -206,7 +225,7 @@ $env_product = array(
             'name' => 'Amethys',
             'description' =>
                 '<li><j>1 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>4go</J></li>
 <li>Allumé 24h/24 et 7J/7</li>
 <li>Stockage <j>30go</j></li>
@@ -226,7 +245,7 @@ $env_product = array(
             'name' => 'Rhodonite',
             'description' =>
                 '<li><j>2 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>6go</J></li>
 <li>Allumé 24h/24 et 7J/7</li>
 <li>Stockage <j>45go</j></li>
@@ -246,7 +265,7 @@ $env_product = array(
             'name' => 'Aventurium',
             'description' =>
                 '<li><j>4 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>8go</J></li>
 <li>Allumé 24h/24 et 7J/7</li>
 <li>Stockage <j>75go</j></li>
@@ -274,7 +293,7 @@ $env_product = array(
             'name' => 'FiveM MK1',
             'description' =>
                 '<li><j>2 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>4go</J></li>
 <li>Anti-DDOS Game</li>
 <li>Stockage <j>30go</j></li>
@@ -283,7 +302,7 @@ $env_product = array(
 <li>Bande passante à partir de 250Mbit/s</li>',
             'pricing' => array(
                 'EUR' => array(
-                    'monthly' => '10.00'
+                    'monthly' => '8.00'
                 )
             )
 
@@ -294,7 +313,7 @@ $env_product = array(
             'name' => 'FiveM MK2',
             'description' =>
                 '<li><j>2 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>8go</J></li>
 <li>Anti-DDOS Game</li>
 <li>Stockage <j>75go</j></li>
@@ -303,7 +322,7 @@ $env_product = array(
 <li>Bande passante à partir de 250Mbit/s</li>',
             'pricing' => array(
                 'EUR' => array(
-                    'monthly' => '15.00'
+                    'monthly' => '13.00'
                 )
             )
 
@@ -314,7 +333,7 @@ $env_product = array(
             'name' => 'FiveM MK3',
             'description' =>
                 '<li><j>2 vCore</j> 4.5GHz</li>
-<li>Processeur Ryzen 5 </li>
+<li>Processeur Ryzen 7 </li>
 <li>Ram dédiée <j>10go</J></li>
 <li>Anti-DDOS Game</li>
 <li>Stockage <j>150go</j></li>
@@ -338,7 +357,63 @@ $env_product = array(
          *
          * */
 
+        array(
+            'gid' => $env_gid['web'],
+            'name' => 'CLOUD-1',
+            'description' =>
+                '
+<li>Stockage <j>2go</j></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Anti-DDOS</li>
+<li>Uptime de 99%</li>                        
+<li>BDD <j>MySQL/MariaDB</j> Offerte</li>
+<li>Acces FTP/SFTP</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '2.00'
+                )
+            )
 
+        ),
+
+        array(
+            'gid' => $env_gid['web'],
+            'name' => 'CLOUD-2',
+            'description' =>
+                '<li>Stockage <j>100go</j></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Anti-DDOS</li>
+<li>Uptime de 99%</li>                        
+<li>BDD <j>MySQL/MariaDB</j> Offerte</li>
+<li>Acces FTP/SFTP</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '4.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['web'],
+            'name' => 'CLOUD-3',
+            'description' =>
+                '<li>Stockage <j>250go</j></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Anti-DDOS</li>
+<li>Uptime de 99%</li>                        
+<li>BDD <j>MySQL/MariaDB</j> Offerte</li>
+<li>Acces FTP/SFTP</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '7.00'
+                )
+            )
+
+        ),
 
 
 
