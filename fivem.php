@@ -16,10 +16,20 @@
     <section id="formule">
         <div class="row desktop">
             <?php
-            require_once 'panel/init.php';
-            require_once 'api/whmcs/connect.php';
+            /*
+ * WHMCS
+ * */
+            //            require_once 'panel/init.php';
+            //            require_once 'api/whmcs/connect.php';
+            //
+            //            $produitAll = product();
 
-            $produitAll = product();
+            /*
+             * ENV
+             * */
+
+            $isExist = false;
+            $produitAll = $env_product;
 
             foreach ($produitAll as $productCompresse) { foreach ($productCompresse as $product){
                 if ($product['gid'] == $env_gid['fivem']){
@@ -41,8 +51,8 @@
 
                             <div>
 
-                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=<?= $product['pid'] ?>">commander</button>
-
+<!--                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=--><?php //= $product['pid'] ?><!--">commander</button>-->
+                                <button id="btn-commande" class="tyrobutton" data-url="">Sold Out</button>
                             </div>
 
                         </div>

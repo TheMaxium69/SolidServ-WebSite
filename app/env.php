@@ -106,6 +106,15 @@ $env_gid = array(
 
 $env_product = array(
     array(
+
+        /*
+         *
+         * VPS
+         *
+         *
+         * */
+
+
         array(
             'gid' => $env_gid['vps'],
             'name' => 'VPS-1',
@@ -161,7 +170,179 @@ $env_product = array(
                 )
             )
 
-        )
+        ),
+
+
+
+
+        /*
+         *
+         * MINECRAFT
+         *
+         * */
+
+        array(
+            'gid' => $env_gid['minecraft'],
+            'name' => 'Yellorite',
+            'description' =>
+                '<li><j>1 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>2go</J></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Stockage <j>15go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>Spigot/Forge/Sponge/OpenMod...</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '3.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['minecraft'],
+            'name' => 'Amethys',
+            'description' =>
+                '<li><j>1 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>4go</J></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Stockage <j>30go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>Spigot/Forge/Sponge/OpenMod...</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '6.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['minecraft'],
+            'name' => 'Rhodonite',
+            'description' =>
+                '<li><j>2 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>6go</J></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Stockage <j>45go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>Spigot/Forge/Sponge/OpenMod...</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '12.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['minecraft'],
+            'name' => 'Aventurium',
+            'description' =>
+                '<li><j>4 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>8go</J></li>
+<li>Allumé 24h/24 et 7J/7</li>
+<li>Stockage <j>75go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>Spigot/Forge/Sponge/OpenMod...</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '24.00'
+                )
+            )
+
+        ),
+
+
+
+        /*
+         *
+         * FIVEM
+         *
+         * */
+
+        array(
+            'gid' => $env_gid['fivem'],
+            'name' => 'FiveM MK1',
+            'description' =>
+                '<li><j>2 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>4go</J></li>
+<li>Anti-DDOS Game</li>
+<li>Stockage <j>30go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>BDD <j>MySQL/MariaDB</j> Offerte</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '10.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['fivem'],
+            'name' => 'FiveM MK2',
+            'description' =>
+                '<li><j>2 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>8go</J></li>
+<li>Anti-DDOS Game</li>
+<li>Stockage <j>75go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>BDD <j>MySQL/MariaDB</j> Offerte</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '15.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['fivem'],
+            'name' => 'FiveM MK3',
+            'description' =>
+                '<li><j>2 vCore</j> 4.5GHz</li>
+<li>Processeur Ryzen 5 </li>
+<li>Ram dédiée <j>10go</J></li>
+<li>Anti-DDOS Game</li>
+<li>Stockage <j>150go</j></li>
+<li>Acces FTP/SFTP</li>
+<li>BDD <j>MySQL/MariaDB</j> Offerte</li>
+<li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '20.00'
+                )
+            )
+
+        ),
+
+
+
+
+        /*
+         *
+         * WEBSITE
+         *
+         * */
+
+
+
+
+
+
     )
 
 );

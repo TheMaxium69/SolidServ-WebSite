@@ -317,8 +317,8 @@
 
     /*font-family: 'VT323', monospace;
     font-family: 'Indie Flower', cursive;*/
-    font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    /*font-family: 'Press Start 2P', cursive;*/
+    /*font-size: 10px;*/
 }
 
 
@@ -352,18 +352,18 @@
 
 }
 
-@media (max-width: 605px) {
-    #mc #home .heb-head .heb-centertext h1 {
-        font-size: 29px;
-    }
-}
+/*@media (max-width: 605px) {*/
+/*    #mc #home .heb-head .heb-centertext h1 {*/
+/*        font-size: 29px;*/
+/*    }*/
+/*}*/
 
-#mc #info-droit .row .col-6 p{
-    font-size: 12px;
-}
-#mc #info-gauche .row .col-6 p{
-    font-size: 12px;
-}
+/*#mc #info-droit .row .col-6 p{*/
+/*    font-size: 12px;*/
+/*}*/
+/*#mc #info-gauche .row .col-6 p{*/
+/*    font-size: 12px;*/
+/*}*/
 
 #mc img#sword{
     width: 60px;
@@ -372,25 +372,25 @@
     margin-left: unset;
 }
 
-#mc #formule h3 {
-    font-size: 13px;
-}
+/*#mc #formule h3 {*/
+/*    font-size: 13px;*/
+/*}*/
 
-#mc #formule ul {
-    font-size: 9px;
-}
+/*#mc #formule ul {*/
+/*    font-size: 9px;*/
+/*}*/
 
-#mc #formule h2 {
-    font-size: 20px;
-}
+/*#mc #formule h2 {*/
+/*    font-size: 20px;*/
+/*}*/
 
 /*************************
           fivem
  *************************/
 
 #fivem{
-    font-family: 'Merriweather', serif;
-    font-style: italic;
+    /*font-family: 'Merriweather', serif;*/
+    /*font-style: italic;*/
 }
 
 #fivem .heb-head{

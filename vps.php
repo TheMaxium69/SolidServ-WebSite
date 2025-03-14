@@ -31,7 +31,6 @@
              * ENV
              * */
 
-            $isHere = true;
             $isExist = false;
             $produitAll = $env_product;
 
