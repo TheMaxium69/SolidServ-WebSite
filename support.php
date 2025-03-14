@@ -24,10 +24,11 @@
         <p>Ou contactez-nous sur :</p>
         <ul>
             <li>
-                <small><a href="mailto:support@solidserv.xyz">support@solidserv.xyz</a></small>
+                <small><a href="mailto:officiel@tyrolium.fr">officiel@tyrolium.fr</a></small>
             </li>
             <li>
-                <small>+33 6 11 11 26 69</small>
+                <small>Tel : +33 7 56 88 96 97</small><br>
+                <small>Whatapp : +33 7 56 88 96 97</small>
             </li>
         </ul>
 
