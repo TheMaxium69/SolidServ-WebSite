@@ -80,7 +80,7 @@
 
                         <h2>VPS</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 12€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 4€/Mois</h3>
 
                         <ul>
                             <li>
@@ -100,7 +100,7 @@
                             </li>
 
                             <li>
-                                Utilisateur root/Administrateur
+                                Uptime de 99%
                             </li>
 
                             <li>
@@ -123,7 +123,7 @@
                     <h2>Site Web</h2>
                     <hr>
 
-                    <h3><g>à partir de :</g><br> 5€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 2€/Mois</h3>
 
                     <ul>
                         <li>
@@ -153,7 +153,7 @@
 
                     </ul>
 
-                    <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr1();">indisponible</button>
+                    <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
                 </div>
 
             </div>
@@ -182,7 +182,7 @@
                             Ram dédiée jusqu'a 32go
                         </li>
                         <li>
-                            Acces <j>FTP/SFTP</j>
+                            Accès <j>FTP/SFTP</j>
                         </li>
                         <li>
                             Spigot/Forge/Sponge/OpenMod ...
@@ -204,7 +204,7 @@
 
                     <h2>FiveM</h2>
                     <hr>
-                    <h3><g>à partir de :</g><br> 10€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 3€/Mois</h3>
 
                     <ul>
                         <li>
@@ -223,7 +223,7 @@
 
 
                         <li>
-                            Acces <j>FTP/SFTP</j>
+                            Accès <j>FTP/SFTP</j>
                         </li>
                         <li>
                             BDD <j>MySQL/MariaDB</j> Offerte
@@ -247,7 +247,7 @@
 
                     <h2>Stockage</h2>
                     <hr>
-                    <h3><g>à partir de :</g><br> 4.50€/Mois</h3>
+                    <h3><g>à partir de :</g><br> 1€/Mois</h3>
 
                     <ul>
 
@@ -273,7 +273,7 @@
 
 
                         <li>
-                            Acces FTP/SFTP
+                            Accès FTP/SFTP
                         </li>
 
                     </ul>
@@ -300,7 +300,7 @@
 
                         <h2>Stockage</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 4.50€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 1€/Mois</h3>
 
                         <ul>
 
@@ -326,7 +326,7 @@
 
 
                             <li>
-                                Acces FTP/SFTP
+                                Accès FTP/SFTP
                             </li>
 
                         </ul>
@@ -346,7 +346,7 @@
                         <h2>Site Web</h2>
                         <hr>
 
-                        <h3><g>à partir de :</g><br> 5€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 2€/Mois</h3>
 
                         <ul>
                             <li>
@@ -362,7 +362,7 @@
                             </li>
 
                             <li>
-                                Acces <j>FTP/SFTP</j> et <j>cPanel</j>
+                                Accès <j>FTP/SFTP</j> et <j>cPanel</j>
                             </li>
                             <li>
                                 Installation en 1-clic du <j>SSL</j>
@@ -376,7 +376,7 @@
 
                         </ul>
 
-                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr1();">indisponible</button>
+                        <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
                     </div>
 
                 </div>
@@ -386,7 +386,7 @@
 
                         <h2>VPS</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 12€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 4€/Mois</h3>
 
                         <ul>
                             <li>
@@ -406,11 +406,11 @@
                             </li>
 
                             <li>
-                                Utilisateur root/Administrateur
+                                Uptime de 99%
                             </li>
 
                             <li>
-                                Acces <j>SSH/SFTP</j>
+                                Accès <j>SSH/SFTP</j>
                             </li>
 
                         </ul>
@@ -445,7 +445,7 @@
                                 Ram dédiée jusqu'a 32go
                             </li>
                             <li>
-                                Acces <j>FTP/SFTP</j>
+                                Accès <j>FTP/SFTP</j>
                             </li>
                             <li>
                                  Spigot/Forge/Sponge/OpenMod ...
@@ -465,9 +465,9 @@
 
                     <div id="o5" class="trans container" data-size="1">
 
-                        <h2>Dédier</h2>
+                        <h2>FiveM</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 60€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 3€/Mois</h3>
 
                         <ul>
                             <li>
@@ -486,7 +486,7 @@
 
 
                             <li>
-                                Acces <j>FTP/SFTP</j>
+                                Accès <j>FTP/SFTP</j>
                             </li>
                             <li>
                                 BDD <j>MySQL/MariaDB</j> Offerte
@@ -497,7 +497,7 @@
 
                         </ul>
 
-                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr2();">INDISPONILE</button>
+                        <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
 
 
                     </div>
@@ -514,7 +514,7 @@
                     <div class="col-5">
                         <h2>VPS</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 12€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 4€/Mois</h3>
 
                         <button id="btn-service" class="tyrobutton" data-url="vps.php">voir plus</button>
                     </div>
@@ -537,11 +537,11 @@
                             </li>
 
                             <li>
-                                Utilisateur root/Administrateur
+                                Uptime de 99%
                             </li>
 
                             <li>
-                                Acces <j>SSH/SFTP</j>
+                                Accès <j>SSH/SFTP</j>
                             </li>
 
 
@@ -553,9 +553,9 @@
                     <div class="col-5">
                         <h2>Site Web</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 5€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 2€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr1();">indisponibles</button>
+                        <button id="btn-service" class="tyrobutton" data-url="siteweb.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -572,7 +572,7 @@
                             </li>
 
                             <li>
-                                Acces <j>FTP/SFTP</j> et <j>cPanel</j>
+                                Accès <j>FTP/SFTP</j> et <j>cPanel</j>
                             </li>
                             <li>
                                 Installation en 1-clic du <j>SSL</j>
@@ -615,7 +615,7 @@
                                 Ram dédiée jusqu'a 32go
                             </li>
                             <li>
-                                Acces <j>FTP/SFTP</j>
+                                Accès <j>FTP/SFTP</j>
                             </li>
                             <li>
                                 Spigot/Forge/Sponge/OpenMod ...
@@ -631,11 +631,11 @@
             </div><div class="col-6">
                 <div class="row container">
                     <div class="col-5">
-                        <h2>Dédier</h2>
+                        <h2>FiveM</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 60€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 3€/Mois</h3>
 
-                        <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr2();">INDISPONIBLE</button>
+                        <button id="btn-service" class="tyrobutton" data-url="fivem.php">voir plus</button>
                     </div>
                     <div class="col-7">
                         <ul>
@@ -655,7 +655,7 @@
 
 
                             <li>
-                                Acces <j>FTP/SFTP</j>
+                                Accès <j>FTP/SFTP</j>
                             </li>
                             <li>
                                 BDD <j>MySQL/MariaDB</j> Offerte
@@ -671,7 +671,7 @@
                     <div class="col-5">
                         <h2>Stockage</h2>
                         <hr>
-                        <h3><g>à partir de :</g><br> 4.50€/Mois</h3>
+                        <h3><g>à partir de :</g><br> 1€/Mois</h3>
 
                         <button id="btn-service" class="tyrobutton" data-url="javascript:pageerr();">indisponible</button>
                     </div>
@@ -699,7 +699,7 @@
 
 
                             <li>
-                                Acces FTP/SFTP
+                                Accès FTP/SFTP
                             </li>
 
 
