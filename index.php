@@ -104,7 +104,7 @@
                             </li>
 
                             <li>
-                                Acces <j>SSH/SFTP</j>
+                                Accès <j>SSH/SFTP</j>
                             </li>
 
                         </ul>
@@ -139,7 +139,7 @@
                         </li>
 
                         <li>
-                            Acces <j>FTP/SFTP</j> et <j>cPanel</j>
+                            Accès <j>FTP/SFTP</j> et <j>cPanel</j>
                         </li>
                         <li>
                             Installation en 1-clic du <j>SSL</j>
