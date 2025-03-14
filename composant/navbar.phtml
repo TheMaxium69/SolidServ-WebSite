@@ -7,9 +7,9 @@
             <?php
             require "./app/env.php";
 
-            for ($i = 1; $i <= 6; $i++) {
+            for ($i = 1; $i <= 4; $i++) {
 
-                if($i != 2 && $i != 5 && $i != 6){
+                if($i != 2 && $i != 4){
                     echo '<li';
                     if ($page == $i){
                         echo ' class="nav-active"';
@@ -21,23 +21,19 @@
                             <?php echo $env_page[$i]["name"] ?>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="vps.php">VPS</a><!--
-                            <a class="dropdown-item" href="siteweb.php">Site Web</a>-->
-                            <a class="dropdown-item" href="minecraft.php">Minecraft</a><!--
+                            <a class="dropdown-item" href="vps.php">VPS</a>
+                            <a class="dropdown-item" href="siteweb.php">Site Web</a>
+                            <a class="dropdown-item" href="minecraft.php">Minecraft</a>
                             <a class="dropdown-item" href="fivem.php">Five M</a>
-                            <a class="dropdown-item" href="stockage.php">Stockage</a>
-                            <a class="dropdown-item" href="stockage.php">Dédier</a>-->
+<!--                            <a class="dropdown-item" href="stockage.php">Stockage</a>-->
+<!--                            <a class="dropdown-item" href="stockage.php">Dédier</a>-->
                         </div>
                     </li>
 
                 <?php
-                } else if ($i == 5){
+                } else if ($i == 4){
 
                     echo '<li id="li-espace" class="null"><a class="a-espace" href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . ' </a></li>';
-
-                } else if ($i == 6){
-
-                    echo '<li class="null"><a class="a-shop" href="' . $env_page[$i]["url"] . '"><i class="fas fa-shopping-cart"></i></a></li>';
 
                 }
 
@@ -69,9 +65,9 @@
 
             require "./app/env.php";
 
-            for ($i = 1; $i <= 6; $i++) {
+            for ($i = 1; $i <= 4; $i++) {
 
-                if($i != 2 && $i != 5 && $i != 6){
+                if($i != 2 && $i != 4){
                     echo '<li';
                     if ($page == $i){
                         echo ' class="nav-active"';
@@ -88,21 +84,17 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="vps.php">VPS</a>
-<!--                            <a class="dropdown-item" href="siteweb.php">Site Web</a>-->
+                            <a class="dropdown-item" href="siteweb.php">Site Web</a>
                             <a class="dropdown-item" href="minecraft.php">Minecraft</a>
-                            <a class="dropdown-item" href="fivem.php">Five M</a><!--
-                            <a class="dropdown-item" href="stockage.php">Stockage</a>-->
+                            <a class="dropdown-item" href="fivem.php">Five M</a>
+<!--                            <a class="dropdown-item" href="stockage.php">Stockage</a>-->
                         </div>
                     </li>
 
                     <?php
-                } else if ($i == 5){
+                } else if ($i == 4){
 
                     echo '<li><a class="a-espace" href="' . $env_page[$i]["url"] . '">' . $env_page[$i]["name"] . ' </a></li>';
-
-                } else if ($i == 6){
-
-                    echo '<li><a href="' . $env_page[$i]["url"] . '"><i class="fas fa-shopping-cart"></i></a></li>';
 
                 }
 

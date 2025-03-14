@@ -7,9 +7,9 @@
                     <?php
                     require "./app/env.php";
 
-                    for ($i = 1; $i <= 6; $i++) {
+                    for ($i = 1; $i <= 4; $i++) {
 
-                        if($i != 2 && $i != 6){
+                        if($i != 2){
 
                             echo '<li class="li-page"><a href="'. $env_page[$i]["url"] .'">'. $env_page[$i]["name"] .'</a></li>';
 
@@ -21,18 +21,16 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="vps.php">VPS</a><!--
-                                    <a class="dropdown-item" href="siteweb.php">Site Web</a>-->
+                                    <a class="dropdown-item" href="vps.php">VPS</a>
+                                    <a class="dropdown-item" href="siteweb.php">Site Web</a>
                                     <a class="dropdown-item" href="minecraft.php">Minecraft</a>
-                                    <a class="dropdown-item" href="fivem.php">Five M</a><!--
-                                    <a class="dropdown-item" href="stockage.php">Stockage</a>-->
+                                    <a class="dropdown-item" href="fivem.php">Five M</a>
+<!--                                    <a class="dropdown-item" href="stockage.php">Stockage</a>-->
                                 </div>
                             </div>
                             </li>
 
                         <?php
-                        } else if ($i == 6){
-                            echo '<li class="li-page"><a href="'. $env_page[$i]["url"] .'"><i class="fas fa-shopping-cart"></i></a></li>';
                         }
 
                     } ?>

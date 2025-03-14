@@ -31,24 +31,14 @@ $env_page = array(
         "css" => "hebergement",
     ),
     3 => array(
-        "title" => "Actualité | SolidServ",
-        "name" => "Actualité",
-        "url" => "actu.php",
-        "css" => "Actualite",
-    ),
-    4 => array(
         "title" => "Support | SolidServ",
         "name" => "Support",
         "url" => "support.php",
         "css" => "support",
     ),
-    5 => array(
+    4 => array(
         "name" => "Espace client",
-        "url" => $env_whmcs."login.php" ,
-    ),
-    6 => array(
-        "name" => 'Panier',
-        "url" => $env_whmcs."cart.php?a=view",
+        "url" => "https://useritium.fr/connect.php" ,
     ),
 );
 
