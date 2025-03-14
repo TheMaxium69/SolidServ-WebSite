@@ -103,3 +103,65 @@ $env_gid = array(
 
 
 );
+
+$env_product = array(
+    array(
+        array(
+            'gid' => $env_gid['vps'],
+            'name' => 'VPS-1',
+            'description' =>
+                '<li><j>1 vCore</j> 4.5GHz</li>
+                            <li>Processeur Ryzen 5 </li>
+                            <li>Ram dédiée <j>2go</J></li>
+                            <li>Uptime de 99%</li>
+                            <li>Stockage <j>50go</j></li>
+                            <li>Acces SSH/SFTP</li>
+                            <li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '12.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['vps'],
+            'name' => 'VPS-2',
+            'description' =>
+                '<li><j>2 vCore</j> 4.5GHz</li>
+                                    <li>Processeur Ryzen 5 </li>
+                                    <li>Ram dédiée <j>4go</J></li>
+                                    <li>Uptime de 99%</li>
+                                    <li>Stockage <j>100go</j></li>
+                                    <li>Acces SSH/SFTP</li>
+                                    <li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '22.00'
+                )
+            )
+
+        ),
+
+        array(
+            'gid' => $env_gid['vps'],
+            'name' => 'VPS-3',
+            'description' =>
+                '<li><j>4 vCore</j> 4.5GHz</li>
+                                    <li>Processeur Ryzen 5 </li>
+                                    <li>Ram dédiée <j>8go</J></li>
+                                    <li>Uptime de 99%</li>
+                                    <li>Stockage <j>150go</j></li>
+                                    <li>Acces SSH/SFTP</li>
+                                    <li>Bande passante à partir de 250Mbit/s</li>',
+            'pricing' => array(
+                'EUR' => array(
+                    'monthly' => '32.00'
+                )
+            )
+
+        )
+    )
+
+);
