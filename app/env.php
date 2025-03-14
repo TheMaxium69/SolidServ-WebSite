@@ -40,6 +40,11 @@ $env_page = array(
         "name" => "Espace client",
         "url" => "https://useritium.fr/connect.php" ,
     ),
+    9999 => array(
+        "title" => "Terms & Conditions",
+        "name" => "terms",
+        "url" => "terms.php",
+    )
 );
 
 $env_sous_page = array(
