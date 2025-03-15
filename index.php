@@ -826,7 +826,7 @@
 <script src="https://tyrolium.fr/javascript/tyrobtn.js"></script>
 <script src="javascriptfile/offre.js"></script>
 
-<script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+<script src='izitoast-1.4.0/iziToast.min.js'></script>
 <script  src="javascriptfile/notif.js"></script>
 
     <script>
