@@ -52,7 +52,7 @@
                             <div>
 
 <!--                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=--><?php //= $product['pid'] ?><!--">commander</button>-->
-                                <button id="btn-commande" class="tyrobutton" data-url="">Sold Out</button>
+                                <button id="btn-commande" class="tyrobutton" data-url="">Rupture de stock</button>
                             </div>
 
                         </div>
@@ -64,7 +64,7 @@
                 }
             } }
             if ($isHere == "no" && $isExist != true){
-                echo "<p class='err'>Indiponible pour le moment</p>";
+                echo "<p class='err'>Indisponible pour le moment</p>";
             } ?>
         </div>
     </section>
@@ -81,12 +81,13 @@
                 <ul>
                     <li>
                         <p>
-                            Nos serveurs FiveM allient puissance et fiabilité, avec ça pas du tout, vous pourrez accueillir tous les habitants de la ville de Los Santos sans soucis ! Sur notre hébergeur, vos projets avancerons aussi vite qu’une Ocelot Pariah !
+                            Nos serveurs FiveM allient puissance et fiabilité. Avec ça, vous pourrez accueillir tous les habitants de la ville de Los Santos sans soucis ! Sur notre hébergeur, vos projets avanceront aussi vite qu’une Ocelot Pariah !
                         </p>
                     </li>
                     <li>
                         <p>
-                            Sur SolidServ, on vous donne ce pourquoi vous payer, la RAM n’est pas partagée et nous essayons de toujours fournir le meilleur rapport prix/performance du marché, de plus, avec nous, vous êtes en sécurité avec l’Anti Ddos Game que nous utilisons.</p>
+                            Chez SolidServ, on vous donne ce pour quoi vous payez. La RAM n’est pas partagée et nous essayons de toujours fournir le meilleur rapport prix/performance du marché. De plus, avec nous, vous êtes en sécurité grâce à l’Anti-DDoS Game que nous utilisons.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -100,12 +101,12 @@
                 <ul>
                     <li>
                         <p>
-                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
+                            Nous utilisons des serveurs récents et performants. De plus, nous travaillons dur pour vous faire bénéficier du meilleur rapport qualité-prix, de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un <i>uptime</i> d’environ 99 %. Nos serveurs sont prêts à accueillir vos projets et à vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>
@@ -122,15 +123,17 @@
                 <img src="assets/ptero.png">
             </div>
             <div class="col-6">
-                <h2>Pterotacjyl</h2>
+                <h2>Pterodactyl</h2>
                 <ul>
                     <li>
                         <p>
-                            Nous utilisons Pterodactyl un panel de gestion simple ayant fait ses preuves et esthétique qui vous permettra de gérer aisément votre serveur ! </p>
+                            Nous utilisons Pterodactyl, un panel de gestion simple et esthétique qui vous permettra de gérer aisément votre serveur !
+                        </p>
                     </li>
                     <li>
                         <p>
-                            Sur le panel, vous aurez un accès direct à une console ainsi qu’à un WEB FTP, vous pourrez ajouter des sous utilisateurs et relancer votre serveur, changer de version…</p>
+                            Sur le panel, vous aurez un accès direct à une console ainsi qu’à un web FTP. Vous pourrez ajouter des sous-utilisateurs, relancer votre serveur, changer de version, etc.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -170,16 +173,16 @@
     <section id="info-gauche">
         <div class="row container">
             <div class="col-6">
-                <h2>SUPPORT</h2>
+                <h2>Support</h2>
                 <ul>
                     <li>
                         <p>
-                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site mais aussi sur Discord, par téléphone et par mail, nous répondrons à toutes vos  problématiques.
+                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site, mais aussi sur Discord, par téléphone et par mail. Nous répondrons à toutes vos problématiques.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Suivez les potentielles pannes ou problèmes technique directement sur le site ou sur vos réseaux préférés comme Discord et Twitter, en temps réel avec vos services.
+                            Suivez les potentielles pannes ou problèmes techniques directement sur le site ou sur vos réseaux préférés, comme Discord et Twitter, en temps réel avec vos services.
                         </p>
                     </li>
                 </ul>

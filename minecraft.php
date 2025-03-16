@@ -52,7 +52,7 @@
                             <div>
 
 <!--                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=--><?php //= $product['pid'] ?><!--">commander</button>-->
-                                <button id="btn-commande" class="tyrobutton" data-url="">Sold Out</button>
+                                <button id="btn-commande" class="tyrobutton" data-url="">Rupture de stock</button>
                             </div>
 
                         </div>
@@ -64,7 +64,7 @@
                 }
             } }
             if ($isHere == "no" && $isExist != true){
-                echo "<p class='err'>Indiponible pour le moment</p>";
+                echo "<p class='err'>Indisponible pour le moment</p>";
             } ?>
         </div>
     </section>
@@ -81,11 +81,13 @@
                 <ul>
                     <li>
                         <p>
-                            Grâce à la puissance de nos serveurs, vous pourrez créer avec pour seule limite votre imagination et celle de vos amis, construire des bâtiments à plusieurs c’est toujours mieux, développer les plugins les plus originaux, ou créer un mod qui rajoute des épées bleues et rouges ! Vous avez les clés en main !</p>
+                            Grâce à la puissance de nos serveurs, vous pourrez créer avec pour seule limite votre imagination et celle de vos amis. Construire des bâtiments à plusieurs, c’est toujours mieux, développer les plugins les plus originaux ou créer un mod qui rajoute des épées bleues et rouges ! Vous avez les clés en main !
+                        </p>
                     </li>
                     <li>
                         <p>
-                            Nos serveurs Minecraft bénéficient de slots illimités ainsi que de RAM dédiée et puissante (mais pas illimité, car ça, c’est pas possible !), la possibilité de mettre votre propre jar, vos propre mod et plugin, de plus nos serveurs sont compatibles Spigot, BungeeCord, Sponge, Forge, Fabric… À peu près tout en fait !</p>
+                            Nos serveurs Minecraft bénéficient de slots illimités ainsi que de RAM dédiée et puissante (mais pas illimitée, car ça, c’est impossible !). Vous avez la possibilité de mettre votre propre jar, vos propres mods et plugins. De plus, nos serveurs sont compatibles avec Spigot, BungeeCord, Sponge, Forge, Fabric… À peu près tout, en fait !
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -99,12 +101,12 @@
                 <ul>
                     <li>
                         <p>
-                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
+                            Nous utilisons des serveurs récents et performants. De plus, nous travaillons dur pour vous faire bénéficier du meilleur rapport qualité-prix, de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un <i>uptime</i> d’environ 99 %. Nos serveurs sont prêts à accueillir vos projets et à vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>
@@ -121,15 +123,17 @@
                 <img src="assets/ptero.png">
             </div>
             <div class="col-6">
-                <h2 class="red"><img src="assets/TyroliumSword.png" id="sword">Pterotacjyl</h2>
+                <h2 class="red"><img src="assets/TyroliumSword.png" id="sword">Pterodactyl</h2>
                 <ul>
                     <li>
                         <p>
-                            Nous utilisons Pterodactyl un panel de gestion simple ayant fait ses preuves et esthétique qui vous permettra de gérer aisément votre serveur ! </p>
+                            Nous utilisons Pterodactyl, un panel de gestion simple et esthétique qui vous permettra de gérer aisément votre serveur !
+                        </p>
                     </li>
                     <li>
                         <p>
-                            Sur le panel, vous aurez un accès direct à une console ainsi qu’à un WEB FTP, vous pourrez ajouter des sous utilisateurs et relancer votre serveur, changer de version…</p>
+                            Sur le panel, vous aurez un accès direct à une console ainsi qu’à un web FTP. Vous pourrez ajouter des sous-utilisateurs, relancer votre serveur, changer de version, etc.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -170,16 +174,16 @@
         <div class="row container">
 
             <div class="col-6">
-                <h2>SUPPORT</h2>
+                <h2>Support</h2>
                 <ul>
                     <li>
                         <p>
-                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site mais aussi sur Discord, par téléphone et par mail, nous répondrons à toutes vos  problématiques.
+                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site, mais aussi sur Discord, par téléphone et par mail. Nous répondrons à toutes vos problématiques.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Suivez les potentielles pannes ou problèmes technique directement sur le site ou sur vos réseaux préférés comme Discord et Twitter, en temps réel avec vos services.
+                            Suivez les potentielles pannes ou problèmes techniques directement sur le site ou sur vos réseaux préférés, comme Discord et Twitter, en temps réel avec vos services.
                         </p>
                     </li>
                 </ul>

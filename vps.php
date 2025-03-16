@@ -59,7 +59,7 @@
                             <div>
 
 <!--                                <button id="btn-commande" class="tyrobutton" data-url="panel/cart.php?a=add&pid=--><?php //= $product['pid'] ?><!--">commander</button>-->
-                                <button id="btn-commande" class="tyrobutton" data-url="">Sold Out</button>
+                                <button id="btn-commande" class="tyrobutton" data-url="">Rupture de stock</button>
 
                             </div>
 
@@ -72,7 +72,7 @@
                 }
             } }
             if ($isHere == "no" && $isExist != true){
-                echo "<p class='err'>Indiponible pour le moment</p>";
+                echo "<p class='err'>Indisponible pour le moment</p>";
             } ?>
         </div>
     </section>
@@ -89,11 +89,12 @@
                 <ul>
                     <li>
                         <p>
-                            La virtualisation KVM (Kernel Virtual Machine) permet une plus grande stabilité de vos VPS ainsi que de meilleures performances, en tout points cette technologie Open Source saura vous satisfaire.</p>
+                            La virtualisation KVM (Kernel-based Virtual Machine) permet une plus grande stabilité de vos VPS ainsi que de meilleures performances. En tous points, cette technologie Open Source saura vous satisfaire.
+                        </p>
                     </li>
                     <li>
                         <p>
-                            Avec notre infrastructure composée de serveurs avec des processeurs AMD Ryzen 7 3800x jusqu'à 4.5 GHz, nous pouvons vous garantir des performances optimales qui conviendront à tous vos projets. De plus, notre RAM DDR4 possède la technologie ECC ce qui permet de limiter au maximum les crashs ou corruptions causés par la RAM.
+                            Grâce à notre infrastructure composée de serveurs équipés de processeurs AMD Ryzen 7 3800X jusqu'à 4,5 GHz, nous pouvons vous garantir des performances optimales qui conviendront à tous vos projets. De plus, notre RAM DDR4 dotée de la technologie ECC permet de limiter au maximum les crashs ou corruptions causés par la RAM.
                         </p>
                     </li>
                 </ul>
@@ -108,12 +109,12 @@
                 <ul>
                     <li>
                         <p>
-                            Nous utilisons des serveurs récents et performants de plus, nous travaillons dur pour vous faire bénéficier du meilleurs rapport qualité-prix de manière à vous proposer une offre au plus proche de vos attentes.
+                            Nous utilisons des serveurs récents et performants. De plus, nous travaillons dur pour vous faire bénéficier du meilleur rapport qualité-prix, de manière à vous proposer une offre au plus proche de vos attentes.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité.
+                            Notre infrastructure est conçue de manière à garantir sa stabilité, avec un <i>uptime</i> d’environ 99 %. Nos serveurs sont prêts à accueillir vos projets et à vous permettre de profiter de nos services en toute tranquillité.
                         </p>
                     </li>
                 </ul>
@@ -160,16 +161,16 @@
                 <img src="assets/date.svg">
             </div>
             <div class="col-6">
-                <h2>SUPPORT</h2>
+                <h2>Support</h2>
                 <ul>
                     <li>
                         <p>
-                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site mais aussi sur Discord, par téléphone et par mail, nous répondrons à toutes vos  problématiques.
+                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site, mais aussi sur Discord, par téléphone et par mail. Nous répondrons à toutes vos problématiques.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Suivez les potentielles pannes ou problèmes technique directement sur le site ou sur vos réseaux préférés comme Discord et Twitter, en temps réel avec vos services.
+                            Suivez les potentielles pannes ou problèmes techniques directement sur le site ou sur vos réseaux préférés, comme Discord et Twitter, en temps réel avec vos services.
                         </p>
                     </li>
                 </ul>
