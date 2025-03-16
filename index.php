@@ -26,7 +26,7 @@
                 <div class="col-4">
                     <h3><i class="fas fa-bolt"></i> PUISSANCE</h3>
 
-                    <p>Nous utilisons des serveurs <strong>récents</strong> et <strong>performants</strong> de plus, nous travaillons dur pour vous faire bénéficier du meilleurs <strong>rapport qualité-prix</strong> de manière à vous proposer une offre au plus proche de vos attentes.</p>
+                    <p>Nous utilisons des serveurs <strong>récents</strong> et <strong>performants</strong>. De plus, nous travaillons dur pour vous faire bénéficier du meilleur <strong>rapport qualité-prix</strong>, de manière à vous proposer une offre au plus proche de vos attentes.</p>
                 </div>
 
                 <div class="col-4">
@@ -53,13 +53,12 @@
                 <div class="col-4">
                     <h3><i class="fas fa-shield-alt"></i> FIABILITE </h3>
 
-                    <p>Notre infrastructure est conçue de manière à garantir sa <strong>stabilité</strong>, avec un uptime d’environ 99% nos serveurs sont prêts pour accueillir vos projets et vous permettre de profiter de nos services en toute tranquillité. </p>
-                </div>
+                    <p>Notre infrastructure est conçue de manière à garantir sa <strong>stabilité</strong>, avec un uptime d’environ 99 %. Nos serveurs sont prêts à accueillir vos projets et à vous permettre de profiter de nos services en toute tranquillité.</p></div>
 
                 <div class="col-4">
                     <h3><i class="fas fa-thumbs-up"></i> SATISFACTION</h3>
 
-                    <p>Notre équipe prend à cœur chacun de vos avis car nous essayons de continuer de nous <strong>améliorer</strong>, pour fournir un service qui essaye d'être toujours meilleur, SolidServ, ce n’est pas que nous, c’est aussi vous.</p>
+                    <p>Notre équipe prend à cœur chacun de vos avis, car nous essayons de continuer à nous <strong>améliorer</strong> pour fournir un service qui s'efforce d'être toujours meilleur. SolidServ, ce n’est pas que nous, c’est aussi vous.</p>
                 </div>
 
             </div>
@@ -728,12 +727,12 @@
                 <ul>
                     <li>
                         <p>
-                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site mais aussi sur Discord, par téléphone et par mail, nous répondrons à toutes vos  problématiques.
+                            Notre support est disponible <strong>24h/24</strong> et <strong>7J/7</strong> sur notre site, mais aussi sur Discord, par téléphone et par mail. Nous répondrons à toutes vos problématiques.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Suivez les potentielles pannes ou problèmes technique directement sur le site ou sur vos réseaux préférés comme Discord et Twitter, en temps réel avec vos services.
+                            Suivez les potentielles pannes ou problèmes techniques directement sur le site ou sur vos réseaux préférés, comme Discord et Twitter, en temps réel avec vos services.
                         </p>
                     </li>
                 </ul>
@@ -757,13 +756,13 @@
 
             <div class="container">
 
-                <h2>Suivez-nous sur nos reseaux</h2>
+                <h2>Suivez-nous sur nos réseaux</h2>
 
                 <div class="row">
 
                     <div class="col-4">
                         <h3><i class="fab fa-instagram"></i> Instagram</h3>
-                        <p>Pour suivre nos actualités commerciales, et profiter de nos dernières offres tout en suivant le travail de nos équipes.</p>
+                        <p>Pour suivre nos actualités commerciales et profiter de nos dernières offres, tout en suivant le travail de nos équipes.</p>
                         <button id="btn-reseau" class="tyrobutton" data-url="https://www.instagram.com/solidserv/">Suivez-nous</button>
                     </div>
                     <div class="col-4">
@@ -773,7 +772,7 @@
                     </div>
                     <div class="col-4">
                         <h3><i class="fab fa-linkedin"></i>  Linkedin</h3>
-                        <p>Pour suivre nos actualités professionnelles, voir les nouveaux partenaires, et toutes informations sur le bon fonctionnement du projet.</p>
+                        <p>Pour suivre nos actualités professionnelles, voir nos nouveaux partenaires et toutes les informations sur le bon fonctionnement du projet.</p>
                         <button id="btn-reseau" class="tyrobutton" data-url="https://www.linkedin.com/company/solidserv">Suivez-nous</button>
                     </div>
 
@@ -800,7 +799,8 @@
                 <ul>
                     <li>
                         <p>
-                            SolidServ et Tyrolium s’engagent à faire de nos projets des services <strong>français</strong> fait par des français. Les projets resteront français tout en continuant d’essayer de toujours <strong>innover</strong>, notre projet oeuvre pour un monde meilleur.</p>
+                            SolidServ et Tyrolium s’engagent à faire de nos projets des services <strong>français</strong>, faits par des Français. Les projets resteront français tout en continuant d’essayer d’<strong>innover</strong> toujours davantage. Notre projet œuvre pour un monde meilleur.
+                        </p>
                     </li>
                     <li>
                         <p>
