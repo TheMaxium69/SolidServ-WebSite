@@ -1,0 +1,149 @@
+<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+
+<div class="support-hero">
+  <div class="hero-glow hero-glow--1"></div>
+  <div class="hero-glow hero-glow--2"></div>
+  <div class="container support-hero__inner">
+    <span class="prest-badge"><i class="ri-customer-service-2-line"></i> Support</span>
+    <h1>
+      @if (lang() === 'en') { We're here for you,<br>24 hours a day. } @else { Nous sommes là pour vous,<br>24h sur 24. }
+    </h1>
+    <p class="support-hero__tagline">
+      @if (lang() === 'en') {
+        Our expert team is available around the clock to help you solve any technical problem or question about your services.
+      } @else {
+        Notre équipe d'experts est disponible en permanence pour vous aider à résoudre tout problème technique ou question concernant vos services.
+      }
+    </p>
+  </div>
+  <div class="support-hero__wave">
+    <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs><path id="w" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs>
+      <use href="#w" x="48" y="0" fill="rgba(255,255,255,0.4)"/>
+      <use href="#w" x="48" y="4" fill="rgba(255,255,255,0.25)"/>
+      <use href="#w" x="48" y="7" fill="#ffffff"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ── Canaux de contact ───────────────────────────────────────────────── -->
+
+<section class="section">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Contact us' : 'Nous contacter' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Choose your channel' : 'Choisissez votre canal' }}</h2>
+    <p class="intro">{{ lang() === 'en' ? 'Multiple ways to reach us, depending on urgency and your preference.' : 'Plusieurs façons de nous joindre, selon l\'urgence et votre préférence.' }}</p>
+
+    <div class="channels-grid">
+
+      <a href="https://discord.gg/solidserv" target="_blank" rel="noopener" class="channel-card channel-card--primary">
+        <div class="channel-card__icon"><i class="ri-discord-fill"></i></div>
+        <div class="channel-card__content">
+          <h3>Discord</h3>
+          <p>{{ lang() === 'en' ? 'Open a support ticket directly on our Discord server. Average response time: under 30 minutes.' : 'Ouvrez un ticket de support directement sur notre serveur Discord. Temps de réponse moyen : moins de 30 minutes.' }}</p>
+          <span class="channel-badge">{{ lang() === 'en' ? '24/7 — < 30 min' : '24/7 — < 30 min' }}</span>
+        </div>
+        <i class="ri-arrow-right-line channel-card__arrow"></i>
+      </a>
+
+      <a href="mailto:support@solidserv.fr" class="channel-card">
+        <div class="channel-card__icon"><i class="ri-mail-line"></i></div>
+        <div class="channel-card__content">
+          <h3>Email</h3>
+          <p>{{ lang() === 'en' ? 'Send us an email for complex requests or when you need to attach documents.' : 'Envoyez-nous un email pour les demandes complexes ou lorsque vous devez joindre des documents.' }}</p>
+          <span class="channel-badge">{{ lang() === 'en' ? 'Response in < 4h' : 'Réponse en < 4h' }}</span>
+        </div>
+        <i class="ri-arrow-right-line channel-card__arrow"></i>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light">
+  <div class="container">
+    <p class="label label--accent">FAQ</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Frequently asked questions' : 'Questions fréquentes' }}</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          {{ lang() === 'en' ? 'How quickly is my server deployed?' : 'En combien de temps mon serveur est-il déployé ?' }}
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <p class="faq-answer">{{ lang() === 'en' ? 'VPS and game servers are deployed automatically in less than 60 seconds after payment validation. Dedicated servers take between 12 and 24 hours due to hardware assembly.' : 'Les VPS et serveurs de jeu sont déployés automatiquement en moins de 60 secondes après la validation du paiement. Les serveurs dédiés prennent entre 12 et 24 heures en raison du montage hardware.' }}</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          {{ lang() === 'en' ? 'What payment methods are accepted?' : 'Quels moyens de paiement sont acceptés ?' }}
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <p class="faq-answer">{{ lang() === 'en' ? 'We accept credit/debit cards (Visa, Mastercard), PayPal and bank transfer for annual plans. All payments are secured via Stripe.' : 'Nous acceptons les cartes bancaires (Visa, Mastercard), PayPal et le virement bancaire pour les offres annuelles. Tous les paiements sont sécurisés via Stripe.' }}</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          {{ lang() === 'en' ? 'Can I upgrade my plan later?' : 'Puis-je évoluer vers une offre supérieure ?' }}
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <p class="faq-answer">{{ lang() === 'en' ? 'Yes, you can upgrade your plan at any time from your control panel. The price difference is calculated proportionally for the remaining subscription period.' : 'Oui, vous pouvez faire évoluer votre offre à tout moment depuis votre espace client. La différence de prix est calculée au prorata de la période d\'abonnement restante.' }}</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          {{ lang() === 'en' ? 'Are backups really automatic?' : 'Les sauvegardes sont-elles vraiment automatiques ?' }}
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <p class="faq-answer">{{ lang() === 'en' ? 'Yes, backups are performed automatically every day and retained for 7 days. You can trigger a manual backup at any time and restore from your control panel in one click.' : 'Oui, les sauvegardes sont effectuées automatiquement chaque jour et conservées pendant 7 jours. Vous pouvez déclencher une sauvegarde manuelle à tout moment et restaurer depuis votre espace client en un clic.' }}</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          {{ lang() === 'en' ? 'Does anti-DDoS protection impact performance?' : 'La protection anti-DDoS impacte-t-elle les performances ?' }}
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <p class="faq-answer">{{ lang() === 'en' ? 'No. Our anti-DDoS solution filters traffic transparently with negligible added latency (< 1ms). It activates automatically in case of attack without any intervention on your part.' : 'Non. Notre solution anti-DDoS filtre le trafic de manière transparente avec une latence ajoutée négligeable (< 1ms). Elle s\'active automatiquement en cas d\'attaque sans aucune intervention de votre part.' }}</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          {{ lang() === 'en' ? 'Can I cancel at any time?' : 'Puis-je annuler à tout moment ?' }}
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <p class="faq-answer">{{ lang() === 'en' ? 'Monthly plans can be cancelled at any time from your control panel with no penalty. Cancellation takes effect at the end of the current billing period.' : 'Les offres mensuelles peuvent être annulées à tout moment depuis votre espace client sans pénalité. La résiliation prend effet à la fin de la période de facturation en cours.' }}</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Garanties ───────────────────────────────────────────────────────── -->
+
+<section class="section">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Our commitments' : 'Nos engagements' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'We stand behind our services' : 'Nous nous engageons pour nos services' }}</h2>
+
+    <div class="commitment-grid">
+      <div class="commitment-card">
+        <div class="commitment-card__icon"><i class="ri-time-line"></i></div>
+        <h3>{{ lang() === 'en' ? '30-day money back' : 'Remboursement 30 jours' }}</h3>
+        <p>{{ lang() === 'en' ? 'Not satisfied? Get a full refund within 30 days, no questions asked.' : 'Pas satisfait ? Obtenez un remboursement complet sous 30 jours, sans questions posées.' }}</p>
+      </div>
+      <div class="commitment-card">
+        <div class="commitment-card__icon"><i class="ri-shield-check-line"></i></div>
+        <h3>SLA 99.9%</h3>
+        <p>{{ lang() === 'en' ? 'We guarantee 99.9% uptime on all our services. Credit issued automatically in case of downtime.' : 'Nous garantissons 99.9% de disponibilité sur tous nos services. Crédit accordé automatiquement en cas d\'indisponibilité.' }}</p>
+      </div>
+      <div class="commitment-card">
+        <div class="commitment-card__icon"><i class="ri-customer-service-2-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'Human support' : 'Support humain' }}</h3>
+        <p>{{ lang() === 'en' ? 'No bots, only real experts. Our technical support team is always available to assist you.' : 'Pas de bots, uniquement de vrais experts. Notre équipe de support technique est toujours disponible pour vous aider.' }}</p>
+      </div>
+    </div>
+  </div>
+</section>

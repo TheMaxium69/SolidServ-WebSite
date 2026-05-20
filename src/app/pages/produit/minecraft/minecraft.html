@@ -1,0 +1,157 @@
+<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+
+<div class="prest-hero">
+  <div class="hero-glow hero-glow--1"></div>
+  <div class="hero-glow hero-glow--2"></div>
+  <div class="container prest-hero__inner">
+    <span class="prest-badge"><i class="ri-gamepad-line"></i> Minecraft</span>
+    <h1>
+      @if (lang() === 'en') { Your Minecraft server,<br>live in 60 seconds. } @else { Votre serveur Minecraft,<br>en ligne en 60 secondes. }
+    </h1>
+    <p class="prest-hero__tagline">
+      @if (lang() === 'en') {
+        Optimised Minecraft hosting for Java and Bedrock. Pterodactyl panel, automatic backups and DDoS protection included on all plans.
+      } @else {
+        Hébergement Minecraft optimisé pour Java et Bedrock. Panel Pterodactyl, sauvegardes automatiques et protection DDoS inclus sur toutes les offres.
+      }
+    </p>
+    <div class="prest-hero__actions">
+      <a (click)="scrollToOffres()" class="btn-solid-white">
+        <i class="ri-gamepad-line"></i> {{ lang() === 'en' ? 'See plans' : 'Voir les offres' }}
+      </a>
+      <a routerLink="/support" class="btn-outline-white">
+        {{ lang() === 'en' ? 'Contact support' : 'Contacter le support' }}
+      </a>
+    </div>
+  </div>
+  <div class="prest-hero__wave">
+    <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs><path id="w" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs>
+      <use href="#w" x="48" y="0" fill="rgba(255,255,255,0.4)"/>
+      <use href="#w" x="48" y="4" fill="rgba(255,255,255,0.25)"/>
+      <use href="#w" x="48" y="7" fill="#f6f7fb"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ── Offres ──────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light" id="offres">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Our plans' : 'Nos offres' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Choose your Minecraft server' : 'Choisissez votre serveur Minecraft' }}</h2>
+    <p class="intro">{{ lang() === 'en' ? 'All plans include Pterodactyl panel, anti-DDoS and automatic backups.' : 'Toutes les offres incluent le panel Pterodactyl, l\'anti-DDoS et les sauvegardes automatiques.' }}</p>
+
+    <div class="pricing-grid">
+      @for (offer of offers; track offer.id) {
+        <div class="pricing-card" [class.pricing-card--highlighted]="offer.highlighted">
+          @if (offer.badge) {
+            <span class="pricing-badge">{{ offer.badge }}</span>
+          }
+          <div class="pricing-card__icon"><i [class]="offer.icon"></i></div>
+          <h3>{{ offer.name }}</h3>
+          <p class="pricing-card__desc">{{ offer.description }}</p>
+          <div class="pricing-card__price">
+            <span class="price-amount">{{ offer.price }}</span>
+            <span class="price-period">{{ offer.period }}</span>
+          </div>
+          <ul class="pricing-card__features">
+            @for (feature of offer.features; track feature) {
+              <li><i class="ri-check-line"></i> {{ feature }}</li>
+            }
+          </ul>
+          <a routerLink="/support" [class]="offer.highlighted ? 'btn-order btn-order--primary' : 'btn-order btn-order--outline'">
+            <i class="ri-shopping-cart-line"></i> {{ lang() === 'en' ? 'Order' : 'Commander' }}
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ── Caractéristiques ────────────────────────────────────────────────── -->
+
+<section class="section">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Features' : 'Fonctionnalités' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Everything for your server' : 'Tout pour votre serveur' }}</h2>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-layout-3-line"></i></div>
+        <h3>Pterodactyl Panel</h3>
+        <p>{{ lang() === 'en' ? 'Modern and intuitive control panel to manage your server, files, players and consoles.' : 'Panel de contrôle moderne et intuitif pour gérer votre serveur, fichiers, joueurs et consoles.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-gamepad-line"></i></div>
+        <h3>Java & Bedrock</h3>
+        <p>{{ lang() === 'en' ? 'Support for all server versions: Vanilla, Paper, Spigot, Forge, Fabric and Bedrock.' : 'Support de toutes les versions serveur : Vanilla, Paper, Spigot, Forge, Fabric et Bedrock.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-shield-flash-line"></i></div>
+        <h3>Anti-DDoS</h3>
+        <p>{{ lang() === 'en' ? 'Protection against DDoS attacks to keep your server accessible even during attacks.' : 'Protection contre les attaques DDoS pour maintenir votre serveur accessible même lors d\'attaques.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-save-3-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'Automatic backups' : 'Sauvegardes auto' }}</h3>
+        <p>{{ lang() === 'en' ? 'Automatic daily backups of your worlds and configurations, restorable in one click.' : 'Sauvegardes automatiques quotidiennes de vos mondes et configurations, restaurables en un clic.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-speed-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'High performance' : 'Haute performance' }}</h3>
+        <p>{{ lang() === 'en' ? 'Optimised servers for Minecraft with high clock frequency CPUs to maximise TPS.' : 'Serveurs optimisés pour Minecraft avec CPU à haute fréquence d\'horloge pour maximiser les TPS.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-plug-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'Plugins & Mods' : 'Plugins & Mods' }}</h3>
+        <p>{{ lang() === 'en' ? 'Install your plugins and mods directly from the panel without technical knowledge.' : 'Installez vos plugins et mods directement depuis le panel sans connaissances techniques.' }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Process ─────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Getting started' : 'Démarrage' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Your server in 4 steps' : 'Votre serveur en 4 étapes' }}</h2>
+
+    <div class="process-grid">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>{{ lang() === 'en' ? 'Choose your plan' : 'Choisir votre offre' }}</h3>
+        <p>{{ lang() === 'en' ? 'Select the plan matching the number of players and mods you want.' : 'Sélectionnez l\'offre correspondant au nombre de joueurs et aux mods que vous souhaitez.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>{{ lang() === 'en' ? 'Configure' : 'Configurer' }}</h3>
+        <p>{{ lang() === 'en' ? 'Choose your Minecraft version, server type and hostname from the panel.' : 'Choisissez votre version de Minecraft, le type de serveur et votre hostname depuis le panel.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>{{ lang() === 'en' ? 'Deploy' : 'Déployer' }}</h3>
+        <p>{{ lang() === 'en' ? 'Your server is automatically deployed and ready to welcome players in 60 seconds.' : 'Votre serveur est automatiquement déployé et prêt à accueillir des joueurs en 60 secondes.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <h3>{{ lang() === 'en' ? 'Play' : 'Jouer' }}</h3>
+        <p>{{ lang() === 'en' ? 'Share your IP address with your friends and start your adventure.' : 'Partagez votre adresse IP à vos amis et débutez votre aventure.' }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────────────────── -->
+
+<tyro-ui-cta
+  [title]="lang() === 'en' ? 'Ready to open<br>your server?' : 'Prêt à ouvrir<br>votre serveur ?'"
+  [label]="'Minecraft'"
+  [content]="lang() === 'en' ? 'Choose your plan and invite your friends to join your Minecraft server in less than 60 seconds.' : 'Choisissez votre offre et invitez vos amis à rejoindre votre serveur Minecraft en moins de 60 secondes.'"
+  [btn]="lang() === 'en' ? 'Launch my server' : 'Lancer mon serveur'"
+  [btnIcon]="`<i class='ri-gamepad-line'></i>`"
+  [btnRouterLink]="'/support'"
+  [subbtn]="lang() === 'en' ? 'Contact support' : 'Contacter le support'"
+  [subRouterLink]="'/support'"
+></tyro-ui-cta>

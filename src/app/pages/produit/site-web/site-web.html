@@ -1,0 +1,157 @@
+<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+
+<div class="prest-hero">
+  <div class="hero-glow hero-glow--1"></div>
+  <div class="hero-glow hero-glow--2"></div>
+  <div class="container prest-hero__inner">
+    <span class="prest-badge"><i class="ri-global-line"></i> {{ lang() === 'en' ? 'Website Hosting' : 'Hébergement Web' }}</span>
+    <h1>
+      @if (lang() === 'en') { Hosting built for<br>your success. } @else { L'hébergement pensé<br>pour votre réussite. }
+    </h1>
+    <p class="prest-hero__tagline">
+      @if (lang() === 'en') {
+        Fast, secure and managed web hosting. Free SSL, automatic backups and expert support included on every plan.
+      } @else {
+        Hébergement web rapide, sécurisé et managé. SSL gratuit, sauvegardes automatiques et support expert inclus sur chaque offre.
+      }
+    </p>
+    <div class="prest-hero__actions">
+      <a (click)="scrollToOffres()" class="btn-solid-white">
+        <i class="ri-global-line"></i> {{ lang() === 'en' ? 'See plans' : 'Voir les offres' }}
+      </a>
+      <a routerLink="/support" class="btn-outline-white">
+        {{ lang() === 'en' ? 'Contact support' : 'Contacter le support' }}
+      </a>
+    </div>
+  </div>
+  <div class="prest-hero__wave">
+    <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs><path id="w" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs>
+      <use href="#w" x="48" y="0" fill="rgba(255,255,255,0.4)"/>
+      <use href="#w" x="48" y="4" fill="rgba(255,255,255,0.25)"/>
+      <use href="#w" x="48" y="7" fill="#f6f7fb"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ── Offres ──────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light" id="offres">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Our plans' : 'Nos offres' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Choose your hosting' : 'Choisissez votre hébergement' }}</h2>
+    <p class="intro">{{ lang() === 'en' ? 'All plans include free SSL, cPanel and 24/7 support.' : 'Toutes les offres incluent le SSL gratuit, cPanel et le support 24/7.' }}</p>
+
+    <div class="pricing-grid pricing-grid--3">
+      @for (offer of offers; track offer.id) {
+        <div class="pricing-card" [class.pricing-card--highlighted]="offer.highlighted">
+          @if (offer.badge) {
+            <span class="pricing-badge">{{ offer.badge }}</span>
+          }
+          <div class="pricing-card__icon"><i [class]="offer.icon"></i></div>
+          <h3>{{ offer.name }}</h3>
+          <p class="pricing-card__desc">{{ offer.description }}</p>
+          <div class="pricing-card__price">
+            <span class="price-amount">{{ offer.price }}</span>
+            <span class="price-period">{{ offer.period }}</span>
+          </div>
+          <ul class="pricing-card__features">
+            @for (feature of offer.features; track feature) {
+              <li><i class="ri-check-line"></i> {{ feature }}</li>
+            }
+          </ul>
+          <a routerLink="/support" [class]="offer.highlighted ? 'btn-order btn-order--primary' : 'btn-order btn-order--outline'">
+            <i class="ri-shopping-cart-line"></i> {{ lang() === 'en' ? 'Order' : 'Commander' }}
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ── Caractéristiques ────────────────────────────────────────────────── -->
+
+<section class="section">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Features' : 'Fonctionnalités' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Everything you need' : 'Tout ce dont vous avez besoin' }}</h2>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-shield-check-line"></i></div>
+        <h3>SSL Gratuit</h3>
+        <p>{{ lang() === 'en' ? "Let's Encrypt SSL certificate included and automatically renewed on all your domains." : "Certificat SSL Let's Encrypt inclus et renouvelé automatiquement sur tous vos domaines." }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-layout-3-line"></i></div>
+        <h3>cPanel</h3>
+        <p>{{ lang() === 'en' ? 'Intuitive control panel to manage your sites, databases, emails and files easily.' : 'Panel de contrôle intuitif pour gérer vos sites, bases de données, emails et fichiers facilement.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-save-3-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'Daily backups' : 'Sauvegardes quotidiennes' }}</h3>
+        <p>{{ lang() === 'en' ? 'Automatic daily backups retained for 7 days. One-click restoration from cPanel.' : 'Sauvegardes automatiques quotidiennes conservées 7 jours. Restauration en un clic depuis cPanel.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-mail-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'Pro emails' : 'Emails pro' }}</h3>
+        <p>{{ lang() === 'en' ? 'Create professional email addresses on your domain with spam filtering and webmail.' : 'Créez des adresses email professionnelles sur votre domaine avec filtre anti-spam et webmail.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-speed-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'LiteSpeed' : 'LiteSpeed' }}</h3>
+        <p>{{ lang() === 'en' ? 'LiteSpeed web server for 3x faster loading than Apache with built-in cache.' : 'Serveur web LiteSpeed pour un chargement 3x plus rapide qu\'Apache avec cache intégré.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-database-2-line"></i></div>
+        <h3>MySQL & PHP</h3>
+        <p>{{ lang() === 'en' ? 'MySQL databases and PHP 8.x with latest extensions for WordPress, Drupal, Laravel...' : 'Bases de données MySQL et PHP 8.x avec les dernières extensions pour WordPress, Drupal, Laravel...' }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Process ─────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Getting started' : 'Démarrage' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Online in minutes' : 'En ligne en quelques minutes' }}</h2>
+
+    <div class="process-grid">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>{{ lang() === 'en' ? 'Choose a plan' : 'Choisir une offre' }}</h3>
+        <p>{{ lang() === 'en' ? 'Select the plan that fits your number of sites and storage needs.' : 'Sélectionnez l\'offre adaptée à votre nombre de sites et besoins en stockage.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>{{ lang() === 'en' ? 'Domain' : 'Domaine' }}</h3>
+        <p>{{ lang() === 'en' ? 'Point your domain name to our servers or register a new one directly.' : 'Pointez votre nom de domaine vers nos serveurs ou enregistrez-en un nouveau directement.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>{{ lang() === 'en' ? 'Install' : 'Installer' }}</h3>
+        <p>{{ lang() === 'en' ? 'Install WordPress or your CMS in one click from cPanel.' : 'Installez WordPress ou votre CMS en un clic depuis cPanel.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <h3>{{ lang() === 'en' ? 'Launch' : 'Lancer' }}</h3>
+        <p>{{ lang() === 'en' ? 'Your site is online with SSL and automatic backups active.' : 'Votre site est en ligne avec le SSL et les sauvegardes automatiques actifs.' }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────────────────── -->
+
+<tyro-ui-cta
+  [title]="lang() === 'en' ? 'Ready to host<br>your website?' : 'Prêt à héberger<br>votre site ?'"
+  [label]="lang() === 'en' ? 'Web Hosting' : 'Hébergement Web'"
+  [content]="lang() === 'en' ? 'Choose your plan and get your site online in a few minutes, with SSL and backups included.' : 'Choisissez votre offre et mettez votre site en ligne en quelques minutes, avec SSL et sauvegardes inclus.'"
+  [btn]="lang() === 'en' ? 'Order hosting' : 'Commander un hébergement'"
+  [btnIcon]="`<i class='ri-shopping-cart-line'></i>`"
+  [btnRouterLink]="'/support'"
+  [subbtn]="lang() === 'en' ? 'Contact support' : 'Contacter le support'"
+  [subRouterLink]="'/support'"
+></tyro-ui-cta>

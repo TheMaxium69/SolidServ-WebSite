@@ -1,0 +1,157 @@
+<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+
+<div class="prest-hero">
+  <div class="hero-glow hero-glow--1"></div>
+  <div class="hero-glow hero-glow--2"></div>
+  <div class="container prest-hero__inner">
+    <span class="prest-badge"><i class="ri-hard-drive-2-line"></i> {{ lang() === 'en' ? 'Dedicated Server' : 'Serveur Dédié' }}</span>
+    <h1>
+      @if (lang() === 'en') { Bare-metal power,<br>yours alone. } @else { La puissance bare-metal,<br>rien que pour vous. }
+    </h1>
+    <p class="prest-hero__tagline">
+      @if (lang() === 'en') {
+        100% dedicated physical servers. No shared resources, full performance and total isolation for your most critical projects.
+      } @else {
+        Serveurs physiques 100% dédiés. Aucune ressource partagée, performance totale et isolation complète pour vos projets les plus critiques.
+      }
+    </p>
+    <div class="prest-hero__actions">
+      <a (click)="scrollToOffres()" class="btn-solid-white">
+        <i class="ri-hard-drive-2-line"></i> {{ lang() === 'en' ? 'See servers' : 'Voir les serveurs' }}
+      </a>
+      <a routerLink="/support" class="btn-outline-white">
+        {{ lang() === 'en' ? 'Request a quote' : 'Demander un devis' }}
+      </a>
+    </div>
+  </div>
+  <div class="prest-hero__wave">
+    <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs><path id="w" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs>
+      <use href="#w" x="48" y="0" fill="rgba(255,255,255,0.4)"/>
+      <use href="#w" x="48" y="4" fill="rgba(255,255,255,0.25)"/>
+      <use href="#w" x="48" y="7" fill="#f6f7fb"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ── Offres ──────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light" id="offres">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Our servers' : 'Nos serveurs' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Choose your dedicated server' : 'Choisissez votre serveur dédié' }}</h2>
+    <p class="intro">{{ lang() === 'en' ? 'AMD Ryzen processors, NVMe SSD RAID and anti-DDoS on every server.' : 'Processeurs AMD Ryzen, NVMe SSD RAID et anti-DDoS sur chaque serveur.' }}</p>
+
+    <div class="pricing-grid pricing-grid--3">
+      @for (offer of offers; track offer.id) {
+        <div class="pricing-card" [class.pricing-card--highlighted]="offer.highlighted">
+          @if (offer.badge) {
+            <span class="pricing-badge">{{ offer.badge }}</span>
+          }
+          <div class="pricing-card__icon"><i [class]="offer.icon"></i></div>
+          <h3>{{ offer.name }}</h3>
+          <p class="pricing-card__desc">{{ offer.description }}</p>
+          <div class="pricing-card__price">
+            <span class="price-amount">{{ offer.price }}</span>
+            <span class="price-period">{{ offer.period }}</span>
+          </div>
+          <ul class="pricing-card__features">
+            @for (feature of offer.features; track feature) {
+              <li><i class="ri-check-line"></i> {{ feature }}</li>
+            }
+          </ul>
+          <a routerLink="/support" [class]="offer.highlighted ? 'btn-order btn-order--primary' : 'btn-order btn-order--outline'">
+            <i class="ri-shopping-cart-line"></i> {{ lang() === 'en' ? 'Order' : 'Commander' }}
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ── Caractéristiques ────────────────────────────────────────────────── -->
+
+<section class="section">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Infrastructure' : 'Infrastructure' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Enterprise-grade infrastructure' : 'Infrastructure de niveau entreprise' }}</h2>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-cpu-line"></i></div>
+        <h3>AMD Ryzen</h3>
+        <p>{{ lang() === 'en' ? 'Latest generation AMD Ryzen 5000 series processors for unmatched single-thread performance.' : 'Processeurs AMD Ryzen série 5000 dernière génération pour des performances single-thread inégalées.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-hard-drive-line"></i></div>
+        <h3>NVMe SSD RAID</h3>
+        <p>{{ lang() === 'en' ? 'NVMe SSD storage in RAID configuration for redundancy and maximum read/write performance.' : 'Stockage NVMe SSD en configuration RAID pour la redondance et des performances de lecture/écriture maximales.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-shield-flash-line"></i></div>
+        <h3>Anti-DDoS</h3>
+        <p>{{ lang() === 'en' ? 'Volumetric attack protection up to 2 Tbps filtering upstream of the datacenter.' : 'Protection contre les attaques volumétriques jusqu\'à 2 Tbps filtrant en amont du datacenter.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-tools-line"></i></div>
+        <h3>IPMI / KVM</h3>
+        <p>{{ lang() === 'en' ? 'Out-of-band management access for remote administration even in case of OS failure.' : 'Accès de gestion hors bande pour l\'administration à distance même en cas de panne d\'OS.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-global-line"></i></div>
+        <h3>{{ lang() === 'en' ? '10 Gbps network' : 'Réseau 10 Gbps' }}</h3>
+        <p>{{ lang() === 'en' ? 'High-speed uplink with redundant connection to multiple internet service providers.' : 'Uplink haute vitesse avec connexion redondante vers plusieurs fournisseurs d\'accès internet.' }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i class="ri-lock-2-line"></i></div>
+        <h3>{{ lang() === 'en' ? 'Physical isolation' : 'Isolation physique' }}</h3>
+        <p>{{ lang() === 'en' ? 'Your server is physically isolated, guaranteeing no interference from other tenants.' : 'Votre serveur est physiquement isolé, garantissant aucune interférence d\'autres locataires.' }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Process ─────────────────────────────────────────────────────────── -->
+
+<section class="section bg-light">
+  <div class="container">
+    <p class="label label--accent">{{ lang() === 'en' ? 'Deployment' : 'Déploiement' }}</p>
+    <h2 class="title">{{ lang() === 'en' ? 'Ready in 24h' : 'Prêt en 24h' }}</h2>
+
+    <div class="process-grid">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>{{ lang() === 'en' ? 'Order' : 'Commander' }}</h3>
+        <p>{{ lang() === 'en' ? 'Choose your server and finalize your order. Payment validated in seconds.' : 'Choisissez votre serveur et finalisez votre commande. Paiement validé en quelques secondes.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>{{ lang() === 'en' ? 'Provisioning' : 'Provisionnement' }}</h3>
+        <p>{{ lang() === 'en' ? 'Our team assembles and tests your server in our datacenter.' : 'Notre équipe assemble et teste votre serveur dans notre datacenter.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>{{ lang() === 'en' ? 'OS Installation' : "Installation de l'OS" }}</h3>
+        <p>{{ lang() === 'en' ? 'Installation of your chosen operating system with our custom templates.' : 'Installation de votre système d\'exploitation choisi avec nos templates personnalisés.' }}</p>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <h3>{{ lang() === 'en' ? 'Delivery' : 'Livraison' }}</h3>
+        <p>{{ lang() === 'en' ? 'Receive your credentials and IPMI access within 24h of your order.' : 'Recevez vos identifiants et l\'accès IPMI sous 24h après votre commande.' }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────────────────── -->
+
+<tyro-ui-cta
+  [title]="lang() === 'en' ? 'Need a dedicated<br>server?' : 'Besoin d\'un serveur<br>dédié ?'"
+  [label]="lang() === 'en' ? 'Dedicated Server' : 'Serveur Dédié'"
+  [content]="lang() === 'en' ? 'Choose your server or contact us for a custom configuration adapted to your infrastructure.' : 'Choisissez votre serveur ou contactez-nous pour une configuration personnalisée adaptée à votre infrastructure.'"
+  [btn]="lang() === 'en' ? 'Order a server' : 'Commander un serveur'"
+  [btnIcon]="`<i class='ri-shopping-cart-line'></i>`"
+  [btnRouterLink]="'/support'"
+  [subbtn]="lang() === 'en' ? 'Custom quote' : 'Devis personnalisé'"
+  [subRouterLink]="'/support'"
+></tyro-ui-cta>
