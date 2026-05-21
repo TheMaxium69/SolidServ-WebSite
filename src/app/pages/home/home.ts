@@ -11,4 +11,8 @@ import { Header } from '../../components/header/header';
 })
 export class Home {
   readonly lang = inject(TyroUiLangService).lang;
+    protected readonly Date = Date;
+  anneesExpertise: number = new Date().getFullYear() - 2022;
+
+
 }

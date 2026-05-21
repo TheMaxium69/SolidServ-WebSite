@@ -251,6 +251,10 @@
 /* ── Dark theme ─────────────────────────────────────────────────────────── */
 
 :host-context([data-theme="dark"]) .section  { background: #0f1117 !important; }
+:host-context([data-theme="dark"]) .stats-section  { background: linear-gradient(
+        135deg,
+        #0000FF 0%,
+        #BF0000 100%) !important; }
 :host-context([data-theme="dark"]) .bg-light { background: #161b27 !important; }
 :host-context([data-theme="dark"]) .title    { color: #f3f4f6 !important; }
 :host-context([data-theme="dark"]) .intro    { color: #9ca3af !important; }
