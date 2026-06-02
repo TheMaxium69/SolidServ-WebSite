@@ -1,6 +1,6 @@
 import { ApplicationConfig, isDevMode, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { TYRO_RELAY_URL, TYRO_THEME_RELAY_URL } from 'tyrolium-ui';
+import { TYRO_RELAY_URL, TYRO_RELAY_PAGE_URL } from 'tyrolium-ui';
 
 import { routes } from './app.routes';
 
@@ -11,8 +11,8 @@ export const appConfig: ApplicationConfig = {
     {
       provide: TYRO_RELAY_URL,
       useValue: isDevMode()
-        ? 'http://localhost:9001/theme-relay.html'  // tyrolium-website doit tourner sur :9001mai
-        : TYRO_THEME_RELAY_URL,
+        ? 'http://localhost:9001/relay.html'  // port de tyrolium-website en dev
+        : TYRO_RELAY_PAGE_URL,
     },
   ],
 };
