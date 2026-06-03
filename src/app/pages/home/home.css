@@ -266,3 +266,14 @@
 :host-context([data-theme="dark"]) .why-card { background: #1f2937; border-color: #374151; }
 :host-context([data-theme="dark"]) .why-card h3 { color: #f3f4f6; }
 :host-context([data-theme="dark"]) .why-card p  { color: #9ca3af; }
+:host-context([data-theme="dark"]) .why-card__icon { background: #1e2d5a; color: #60a5fa; }
+
+:host-context([data-theme="dark"]) .icon--blue   { background: #1e2d5a; color: #60a5fa; }
+:host-context([data-theme="dark"]) .icon--navy   { background: #1e2d5a; color: #93c5fd; }
+:host-context([data-theme="dark"]) .icon--purple { background: #2d1e5a; color: #a78bfa; }
+:host-context([data-theme="dark"]) .icon--green  { background: #1e3d2a; color: #4ade80; }
+:host-context([data-theme="dark"]) .icon--red    { background: #3d1e1e; color: #f87171; }
+
+:host-context([data-theme="dark"]) .feature-list li { color: #d1d5db; }
+:host-context([data-theme="dark"]) .feature-list li i { color: #60a5fa; }
+:host-context([data-theme="dark"]) .card-link { color: #60a5fa; }

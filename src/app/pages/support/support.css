@@ -200,6 +200,15 @@
   margin-bottom: 0.6rem;
 }
 
+.channel-email {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
 .channel-badge {
   display: inline-block;
   font-family: 'Inter', sans-serif;
@@ -334,6 +343,10 @@
 
 /* ── Responsive ─────────────────────────────────────────────────────────── */
 
+@media (max-width: 1100px) {
+  .channels-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 992px) {
   .commitment-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -359,8 +372,12 @@
 :host-context([data-theme="dark"]) .support-hero__wave svg use:last-child { fill: #0f1117; }
 
 :host-context([data-theme="dark"]) .channel-card { background: #1f2937; border-color: #374151; }
+:host-context([data-theme="dark"]) .channel-card--primary { border-color: #3b5bdb; box-shadow: 0 0 0 1px #3b5bdb, 0 4px 20px rgba(59, 91, 219, 0.15); }
 :host-context([data-theme="dark"]) .channel-card h3 { color: #f3f4f6; }
 :host-context([data-theme="dark"]) .channel-card p  { color: #9ca3af; }
+:host-context([data-theme="dark"]) .channel-card__icon { background: #1e2d5a; color: #60a5fa; }
+:host-context([data-theme="dark"]) .channel-badge { background: #1e2d5a; color: #60a5fa; }
+:host-context([data-theme="dark"]) .channel-email { color: #60a5fa; }
 
 :host-context([data-theme="dark"]) .faq-item { background: #1f2937; border-color: #374151; }
 :host-context([data-theme="dark"]) .faq-question { color: #f3f4f6; }
