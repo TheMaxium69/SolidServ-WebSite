@@ -15,7 +15,7 @@ export class App {
   public currentUser: any = [];
 
   public PROJECT_NAME = 'SolidServ';
-  public PROJECT_LOGO = 'assets/SolidServ.png';
+  public PROJECT_LOGO = 'assets/tyrolium-ui/projects/SolidServ.png';
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
       ? `<strong>SolidServ</strong> is <strong>Tyrolium's hosting subsidiary</strong>, offering high-performance server solutions. From <strong>VPS</strong> to <strong>dedicated servers</strong> and game servers, we power your projects with reliability and performance. <em>A Tyrolium company</em>`
@@ -57,9 +57,12 @@ export class App {
   );
 
   public socials: ITyroUiNavbarPages[] = [
-    { label: 'discord',   link: 'https://discord.gg/solidserv',          icon: 'ri-discord-fill' },
-    { label: 'twitter',   link: 'https://x.com/SolidServ',               icon: 'ri-twitter-x-fill' },
-    { label: 'github',    link: 'https://github.com/tyrolium',            icon: 'ri-github-fill' },
     { label: 'instagram', link: 'https://www.instagram.com/solidserv/',  icon: 'ri-instagram-line' },
+    { label: 'x',   link: 'https://x.com/solid_serv',               icon: 'ri-twitter-x-fill' },
+    { label: 'youtube',   link: 'https://www.youtube.com/channel/UCB3F4NN820r3Se4ZZinQpHA',  icon: 'ri-youtube-fill' },
+    { label: 'discord',   link: 'https://discord.gg/ycwWzmCQNx',          icon: 'ri-discord-fill' },
+    { label: 'linkedin',  link: 'https://www.linkedin.com/company/solidserv',      icon: 'ri-linkedin-fill' },
+    { label: 'tiktok',    link: 'https://www.tiktok.com/@solidserv?',                icon: 'ri-tiktok-fill' },
+    { label: 'github',    link: 'https://github.com/SolidServ',            icon: 'ri-github-fill' },
   ];
 }
