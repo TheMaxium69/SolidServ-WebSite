@@ -18,8 +18,8 @@ export class App {
   public PROJECT_LOGO = 'assets/tyrolium-ui/projects/SolidServ.png';
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
-      ? `<strong>SolidServ</strong> is <strong>Tyrolium's hosting subsidiary</strong>, offering high-performance server solutions. From <strong>VPS</strong> to <strong>dedicated servers</strong> and game servers, we power your projects with reliability and performance. <em>A Tyrolium company</em>`
-      : `<strong>SolidServ</strong> est la <strong>filiale d'hébergement de Tyrolium</strong>, proposant des solutions serveur haute performance. Du <strong>VPS</strong> aux <strong>serveurs dédiés</strong> en passant par les serveurs de jeu, nous alimentons vos projets avec fiabilité et performance. <em>Une société Tyrolium</em>`
+      ? `<strong>SolidServ</strong> is a <strong>server hosting provider based in France</strong> for businesses and individuals. VPS, web hosting, dedicated servers and game servers - reliable, high-performance infrastructure for all your projects. <em>A Tyrolium subsidiary.</em>`
+      : `<strong>SolidServ</strong> est un <strong>hébergeur de serveurs situé en France</strong> pour les entreprises et les particuliers. VPS, hébergement web, serveurs dédiés et serveurs de jeu - une infrastructure fiable et haute performance pour tous vos projets. <em>Une filiale de Tyrolium.</em>`
   );
 
   public pages = computed<ITyroUiNavbarPages[]>(() =>
