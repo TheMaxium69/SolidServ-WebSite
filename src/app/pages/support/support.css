@@ -369,7 +369,9 @@
 :host-context([data-theme="dark"]) .title    { color: #f3f4f6 !important; }
 :host-context([data-theme="dark"]) .intro    { color: #9ca3af !important; }
 :host-context([data-theme="dark"]) .label--accent { color: #60a5fa !important; }
-:host-context([data-theme="dark"]) .support-hero__wave svg use:last-child { fill: #0f1117; }
+:host-context([data-theme="dark"]) .support-hero__wave svg use:first-of-type  { fill: rgba(15, 17, 23, 0.4); }
+:host-context([data-theme="dark"]) .support-hero__wave svg use:nth-of-type(2) { fill: rgba(15, 17, 23, 0.65); }
+:host-context([data-theme="dark"]) .support-hero__wave svg use:last-child     { fill: #0f1117; }
 
 :host-context([data-theme="dark"]) .channel-card { background: #1f2937; border-color: #374151; }
 :host-context([data-theme="dark"]) .channel-card--primary { border-color: #3b5bdb; box-shadow: 0 0 0 1px #3b5bdb, 0 4px 20px rgba(59, 91, 219, 0.15); }
