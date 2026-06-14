@@ -383,6 +383,8 @@
 
 :host-context([data-theme="dark"]) .faq-item { background: #1f2937; border-color: #374151; }
 :host-context([data-theme="dark"]) .faq-question { color: #f3f4f6; }
+:host-context([data-theme="dark"]) .faq-item[open] .faq-question { color: #f3f4f6; }
+:host-context([data-theme="dark"]) .faq-item[open] .faq-question i { color: #60a5fa; }
 :host-context([data-theme="dark"]) .faq-answer   { color: #9ca3af; }
 
 :host-context([data-theme="dark"]) .commitment-card { background: #1f2937; border-color: #374151; }
