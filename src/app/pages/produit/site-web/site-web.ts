@@ -90,7 +90,7 @@ export class SiteWeb {
       id: 'cloud-1',
       name: 'Cloud-1',
       icon: 'ri-global-line',
-      price: '€3.99',
+      price: '€2.99',
       period: '/month',
       description: 'Perfect for a personal website or a blog.',
       features: [
