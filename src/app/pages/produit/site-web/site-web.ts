@@ -28,7 +28,7 @@ export class SiteWeb {
       id: 'cloud-1',
       name: 'Cloud-1',
       icon: 'ri-global-line',
-      price: '3,99 €',
+      price: '2,99 €',
       period: '/mois',
       description: 'Parfait pour un site personnel ou un blog.',
       features: [
