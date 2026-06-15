@@ -171,7 +171,7 @@ export class Fivem {
       icon: 'ri-steering-2-line',
       price: '€59.99',
       period: '/month',
-      description: 'Maximum power for the best RP servers.',
+      description: 'Maximum power for the best French RP servers.',
       features: [
         '32 GB dedicated RAM',
         '256 player slots',

@@ -92,7 +92,7 @@ export class Vps {
         '16 Go RAM DDR4',
         '250 Go NVMe SSD',
         '1 Gbps de bande passante',
-        '2 adresse IPv4 dédiée',
+        '2 adresses IPv4 dédiées',
         'Anti-DDoS inclus',
         'Accès SSH',
         'Snapshots inclus',

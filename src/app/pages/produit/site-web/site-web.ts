@@ -36,7 +36,7 @@ export class SiteWeb {
         '5 Go espace disque SSD',
         'Bande passante illimitée',
         'Certificat SSL gratuit',
-        '1 adresses email',
+        '1 adresse email',
         'cPanel inclus',
         'Support 24/7',
       ],
