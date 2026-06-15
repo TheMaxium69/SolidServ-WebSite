@@ -23,8 +23,7 @@ export interface ServeurDedieOffer {
 export class ServeurDedie {
   readonly lang = inject(TyroUiLangService).lang;
 
-  /* ── Modifiez les offres ici ── */
-  readonly offers: ServeurDedieOffer[] = [
+  private readonly offersFr: ServeurDedieOffer[] = [
     {
       id: 'dedi-entry',
       name: 'Entry',
@@ -88,6 +87,75 @@ export class ServeurDedie {
       ],
     },
   ];
+
+  private readonly offersEn: ServeurDedieOffer[] = [
+    {
+      id: 'dedi-entry',
+      name: 'Entry',
+      icon: 'ri-hard-drive-2-line',
+      price: '€49.99',
+      period: '/month',
+      description: 'Entry-level dedicated server for web hosting and apps.',
+      features: [
+        'AMD Ryzen 5 3600 (6c/12t)',
+        '32 GB RAM DDR4',
+        '2 × 500 GB NVMe SSD',
+        '1 Gbps bandwidth',
+        '1 dedicated IPv4 address',
+        '/27 IPv6 block',
+        'Anti-DDoS included',
+        'IPMI / KVM included',
+        'Support 24/7',
+      ],
+    },
+    {
+      id: 'dedi-pro',
+      name: 'Pro',
+      icon: 'ri-hard-drive-2-line',
+      price: '€89.99',
+      period: '/month',
+      description: 'The best performance/price ratio for your ambitious projects.',
+      features: [
+        'AMD Ryzen 7 5800X (8c/16t)',
+        '64 GB RAM DDR4',
+        '2 × 1 TB NVMe SSD',
+        '1 Gbps bandwidth',
+        '2 dedicated IPv4 addresses',
+        '/27 IPv6 block',
+        'Anti-DDoS included',
+        'IPMI / KVM included',
+        'Priority support 24/7',
+        'SLA 99.9%',
+      ],
+      highlighted: true,
+      badge: 'Recommended',
+    },
+    {
+      id: 'dedi-elite',
+      name: 'Elite',
+      icon: 'ri-hard-drive-2-line',
+      price: '€149.99',
+      period: '/month',
+      description: 'Ultimate power for very high-traffic applications.',
+      features: [
+        'AMD Ryzen 9 5950X (16c/32t)',
+        '128 GB RAM DDR4',
+        '2 × 2 TB NVMe SSD',
+        '10 Gbps bandwidth',
+        '4 dedicated IPv4 addresses',
+        '/24 IPv6 block',
+        'Anti-DDoS included',
+        'IPMI / KVM included',
+        'Priority support 24/7',
+        'SLA 99.99%',
+        'IP Failover included',
+      ],
+    },
+  ];
+
+  get offers(): ServeurDedieOffer[] {
+    return this.lang() === 'en' ? this.offersEn : this.offersFr;
+  }
 
   scrollToOffres() {
     const el = document.getElementById('offres');

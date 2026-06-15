@@ -23,8 +23,7 @@ export interface MinecraftOffer {
 export class Minecraft {
   readonly lang = inject(TyroUiLangService).lang;
 
-  /* ── Modifiez les offres ici ── */
-  readonly offers: MinecraftOffer[] = [
+  private readonly offersFr: MinecraftOffer[] = [
     {
       id: 'mc-yellorite',
       name: 'Yellorite',
@@ -105,6 +104,92 @@ export class Minecraft {
       ],
     },
   ];
+
+  private readonly offersEn: MinecraftOffer[] = [
+    {
+      id: 'mc-yellorite',
+      name: 'Yellorite',
+      icon: 'ri-gamepad-line',
+      price: '€3.99',
+      period: '/month',
+      description: 'Perfect for playing with friends or testing your server.',
+      features: [
+        '1 vCPU AMD Ryzen 7',
+        '2 GB dedicated RAM',
+        '15 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'Java & Bedrock',
+        'Automatic backups',
+        'Anti-DDoS included',
+      ],
+    },
+    {
+      id: 'mc-amethys',
+      name: 'Amethys',
+      icon: 'ri-gamepad-line',
+      price: '€6.99',
+      period: '/month',
+      description: 'The ideal plan for an active community.',
+      features: [
+        '1 vCPU AMD Ryzen 7',
+        '4 GB dedicated RAM',
+        '30 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'Java & Bedrock',
+        'Automatic backups',
+        'Anti-DDoS included',
+        'Mods & plugins supported',
+        'solidserv.fr subdomain',
+      ],
+      highlighted: true,
+      badge: 'Popular',
+    },
+    {
+      id: 'mc-rhodonite',
+      name: 'Rhodonite',
+      icon: 'ri-gamepad-line',
+      price: '€12.99',
+      period: '/month',
+      description: 'For modded servers and large communities.',
+      features: [
+        '2 vCPU AMD Ryzen 7',
+        '6 GB dedicated RAM',
+        '45 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'Java & Bedrock',
+        'Automatic backups',
+        'Anti-DDoS included',
+        'Mods & plugins supported',
+        'solidserv.fr subdomain',
+        'Priority support',
+      ],
+    },
+    {
+      id: 'mc-aventurium',
+      name: 'Aventurium',
+      icon: 'ri-gamepad-line',
+      price: '€24.99',
+      period: '/month',
+      description: 'Maximum power for server networks.',
+      features: [
+        '4 vCPU AMD Ryzen 7',
+        '8 GB dedicated RAM',
+        '75 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'Java & Bedrock',
+        'Automatic backups',
+        'Anti-DDoS included',
+        'Mods & plugins supported',
+        'solidserv.fr subdomain',
+        'Priority support 24/7',
+        'Bungee/Velocity servers included',
+      ],
+    },
+  ];
+
+  get offers(): MinecraftOffer[] {
+    return this.lang() === 'en' ? this.offersEn : this.offersFr;
+  }
 
   scrollToOffres() {
     const el = document.getElementById('offres');

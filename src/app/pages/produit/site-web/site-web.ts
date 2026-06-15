@@ -23,8 +23,7 @@ export interface SiteWebOffer {
 export class SiteWeb {
   readonly lang = inject(TyroUiLangService).lang;
 
-  /* ── Modifiez les offres ici ── */
-  readonly offers: SiteWebOffer[] = [
+  private readonly offersFr: SiteWebOffer[] = [
     {
       id: 'cloud-1',
       name: 'Cloud-1',
@@ -85,6 +84,72 @@ export class SiteWeb {
       ],
     },
   ];
+
+  private readonly offersEn: SiteWebOffer[] = [
+    {
+      id: 'cloud-1',
+      name: 'Cloud-1',
+      icon: 'ri-global-line',
+      price: '€3.99',
+      period: '/month',
+      description: 'Perfect for a personal website or a blog.',
+      features: [
+        '1 website',
+        '5 GB SSD disk space',
+        'Unlimited bandwidth',
+        'Free SSL certificate',
+        '1 email address',
+        'cPanel included',
+        'Support 24/7',
+      ],
+    },
+    {
+      id: 'cloud-2',
+      name: 'Cloud-2',
+      icon: 'ri-global-line',
+      price: '€6.99',
+      period: '/month',
+      description: 'The balanced plan for professionals and SMBs.',
+      features: [
+        '5 websites',
+        '20 GB SSD disk space',
+        'Unlimited bandwidth',
+        'Free SSL certificate',
+        '5 email addresses',
+        'cPanel included',
+        'Support 24/7',
+        'Daily backups',
+        'Unlimited MySQL databases',
+      ],
+      highlighted: true,
+      badge: 'Popular',
+    },
+    {
+      id: 'cloud-3',
+      name: 'Cloud-3',
+      icon: 'ri-global-line',
+      price: '€14.99',
+      period: '/month',
+      description: 'Maximum power for agencies and e-commerce.',
+      features: [
+        '30 websites',
+        '150 GB SSD disk space',
+        'Unlimited bandwidth',
+        'Free SSL certificate',
+        '20 email addresses',
+        'cPanel included',
+        'Priority support 24/7',
+        'Daily backups',
+        'Unlimited MySQL databases',
+        'PHP 8.x & Node.js',
+        'CDN included',
+      ],
+    },
+  ];
+
+  get offers(): SiteWebOffer[] {
+    return this.lang() === 'en' ? this.offersEn : this.offersFr;
+  }
 
   scrollToOffres() {
     const el = document.getElementById('offres');

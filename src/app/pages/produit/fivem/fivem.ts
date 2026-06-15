@@ -23,8 +23,7 @@ export interface FivemOffer {
 export class Fivem {
   readonly lang = inject(TyroUiLangService).lang;
 
-  /* ── Modifiez les offres ici ── */
-  readonly offers: FivemOffer[] = [
+  private readonly offersFr: FivemOffer[] = [
     {
       id: 'fivem-starter',
       name: 'Starter',
@@ -106,6 +105,93 @@ export class Fivem {
       ],
     },
   ];
+
+  private readonly offersEn: FivemOffer[] = [
+    {
+      id: 'fivem-starter',
+      name: 'Starter',
+      icon: 'ri-steering-2-line',
+      price: '€9.99',
+      period: '/month',
+      description: 'For a small RP community just getting started.',
+      features: [
+        '4 GB dedicated RAM',
+        '32 player slots',
+        '30 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'OneSync Legacy',
+        'Anti-DDoS included',
+        'Automatic backups',
+      ],
+    },
+    {
+      id: 'fivem-pro',
+      name: 'Pro',
+      icon: 'ri-steering-2-line',
+      price: '€19.99',
+      period: '/month',
+      description: 'The ideal plan for established RP servers.',
+      features: [
+        '8 GB dedicated RAM',
+        '64 player slots',
+        '50 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'OneSync Infinity',
+        'Anti-DDoS included',
+        'Automatic backups',
+        'solidserv.fr subdomain',
+        'Priority support',
+      ],
+      highlighted: true,
+      badge: 'Popular',
+    },
+    {
+      id: 'fivem-business',
+      name: 'Business',
+      icon: 'ri-steering-2-line',
+      price: '€34.99',
+      period: '/month',
+      description: 'For large RP communities and high-population servers.',
+      features: [
+        '16 GB dedicated RAM',
+        '128 player slots',
+        '100 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'OneSync Infinity',
+        'Anti-DDoS included',
+        'Automatic backups',
+        'solidserv.fr subdomain',
+        'Priority support 24/7',
+        'MySQL included',
+      ],
+    },
+    {
+      id: 'fivem-enterprise',
+      name: 'Enterprise',
+      icon: 'ri-steering-2-line',
+      price: '€59.99',
+      period: '/month',
+      description: 'Maximum power for the best RP servers.',
+      features: [
+        '32 GB dedicated RAM',
+        '256 player slots',
+        '200 GB NVMe SSD',
+        'Pterodactyl panel included',
+        'OneSync Infinity',
+        'Anti-DDoS included',
+        'Automatic backups',
+        'solidserv.fr subdomain',
+        'Priority support 24/7',
+        'MySQL included',
+        'Dedicated IP included',
+        'SLA 99.9%',
+      ],
+    },
+  ];
+
+  get offers(): FivemOffer[] {
+    return this.lang() === 'en' ? this.offersEn : this.offersFr;
+  }
 
   scrollToOffres() {
     const el = document.getElementById('offres');

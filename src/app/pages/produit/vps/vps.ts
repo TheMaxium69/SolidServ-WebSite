@@ -23,8 +23,7 @@ export interface VpsOffer {
 export class Vps {
   readonly lang = inject(TyroUiLangService).lang;
 
-  /* ── Modifiez les offres ici ── */
-  readonly offers: VpsOffer[] = [
+  private readonly offersFr: VpsOffer[] = [
     {
       id: 'vps-1',
       name: 'VPS-1',
@@ -100,8 +99,91 @@ export class Vps {
         'Support prioritaire 24/7',
         'SLA 99.99%',
       ],
-    }
+    },
   ];
+
+  private readonly offersEn: VpsOffer[] = [
+    {
+      id: 'vps-1',
+      name: 'VPS-1',
+      icon: 'ri-cpu-line',
+      price: '€3.99',
+      period: '/month',
+      description: 'Ideal to start a project, a blog or a showcase website.',
+      features: [
+        '1 vCPU AMD Ryzen 7',
+        '2 GB RAM DDR4',
+        '50 GB NVMe SSD',
+        '1 Gbps bandwidth',
+        '1 dedicated IPv4 address',
+        'Anti-DDoS included',
+        'SSH access',
+      ],
+    },
+    {
+      id: 'vps-2',
+      name: 'VPS-2',
+      icon: 'ri-cpu-line',
+      price: '€8.99',
+      period: '/month',
+      description: 'The go-to for web applications and small game servers.',
+      features: [
+        '2 vCPU AMD Ryzen 7',
+        '4 GB RAM DDR4',
+        '100 GB NVMe SSD',
+        '1 Gbps bandwidth',
+        '1 dedicated IPv4 address',
+        'Anti-DDoS included',
+        'SSH access',
+        'Snapshots included',
+      ],
+      highlighted: true,
+      badge: 'Popular',
+    },
+    {
+      id: 'vps-4',
+      name: 'VPS-4',
+      icon: 'ri-cpu-line',
+      price: '€11.99',
+      period: '/month',
+      description: 'For demanding applications and advanced game servers.',
+      features: [
+        '4 vCPU AMD Ryzen 7',
+        '8 GB RAM DDR4',
+        '150 GB NVMe SSD',
+        '1 Gbps bandwidth',
+        '1 dedicated IPv4 address',
+        'Anti-DDoS included',
+        'SSH access',
+        'Snapshots included',
+        'Priority support',
+      ],
+    },
+    {
+      id: 'vps-8',
+      name: 'VPS-8',
+      icon: 'ri-cpu-line',
+      price: '€25.99',
+      period: '/month',
+      description: 'Maximum power for high-traffic projects.',
+      features: [
+        '8 vCPU AMD Ryzen 7',
+        '16 GB RAM DDR4',
+        '250 GB NVMe SSD',
+        '1 Gbps bandwidth',
+        '2 dedicated IPv4 addresses',
+        'Anti-DDoS included',
+        'SSH access',
+        'Snapshots included',
+        'Priority support 24/7',
+        'SLA 99.99%',
+      ],
+    },
+  ];
+
+  get offers(): VpsOffer[] {
+    return this.lang() === 'en' ? this.offersEn : this.offersFr;
+  }
 
   scrollToOffres() {
     const el = document.getElementById('offres');
