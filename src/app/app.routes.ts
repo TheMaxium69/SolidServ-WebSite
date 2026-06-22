@@ -7,7 +7,7 @@ import { SiteWeb } from './pages/produit/site-web/site-web';
 import { ServeurDedie } from './pages/produit/serveur-dedie/serveur-dedie';
 import { Minecraft } from './pages/produit/minecraft/minecraft';
 import { Fivem } from './pages/produit/fivem/fivem';
-import {TyroUiNotFound} from "tyrolium-ui";
+import { TyroUiForbidden, TyroUiNotFound } from "tyrolium-ui";
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -24,5 +24,6 @@ export const routes: Routes = [
       { path: 'fivem',         component: Fivem },
     ],
   },
-  { path: '**', component: TyroUiNotFound }
+  { path: '403', component: TyroUiForbidden },
+  { path: '**',  component: TyroUiNotFound }
 ];
