@@ -101,7 +101,7 @@ export class Fivem {
         'Support prioritaire 24/7',
         'MySQL inclus',
         'IP dédiée incluse',
-        'SLA 99.9%',
+        'SLA 99.5%',
       ],
     },
   ];
@@ -184,7 +184,7 @@ export class Fivem {
         'Priority support 24/7',
         'MySQL included',
         'Dedicated IP included',
-        'SLA 99.9%',
+        'SLA 99.5%',
       ],
     },
   ];
