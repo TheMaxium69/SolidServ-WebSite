@@ -1,4 +1,5 @@
-import { Component, inject, AfterViewInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
+import { Component, inject, AfterViewInit, OnDestroy, ViewChild, ElementRef, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TyroUiLangService } from 'tyrolium-ui';
 
@@ -17,6 +18,7 @@ interface Particle {
   styleUrl: './header.css',
 })
 export class Header implements AfterViewInit, OnDestroy {
+  private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   @ViewChild('canvas') canvasRef!: ElementRef<HTMLCanvasElement>;
 
   readonly lang = inject(TyroUiLangService).lang;
@@ -33,6 +35,7 @@ export class Header implements AfterViewInit, OnDestroy {
   private readonly COLORS  = ['#4d6fff', '#7090ff', '#2233cc', '#cc2233', '#ffffff', '#99aaff'];
 
   ngAfterViewInit() {
+    if (!this.isBrowser) return;
     const canvas = this.canvasRef.nativeElement;
     this.ctx = canvas.getContext('2d')!;
     this.resize(canvas);
@@ -55,6 +58,7 @@ export class Header implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    if (!this.isBrowser) return;
     cancelAnimationFrame(this.rafId);
     window.removeEventListener('resize', this.onResize);
   }
