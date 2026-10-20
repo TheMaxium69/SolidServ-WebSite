@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "SolidServ",
+  "short_name": "SolidServ",
+  "description": "SolidServ est un hébergeur de serveurs situé en France pour les entreprises et les particuliers. VPS, hébergement web, serveurs dédiés et serveurs de jeu - une infrastructure fiable et haute performance pour tous vos projets. Une filiale de Tyrolium.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
